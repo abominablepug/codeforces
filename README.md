@@ -4,7 +4,7 @@ Organized both by **difficulty rating** ([`ratings/`](./ratings/)) and across **
 
 | Total Solved | Solved Rating Span | Current Comfort Zone | Next Stretch Target | Tags Unlocked |
 | :---: | :---: | :---: | :---: | :---: |
-| **12** | `800 – 1300` | **`1200`** | **`1300 – 1400`** | **`11 / 37`** |
+| **13** | `800 – 1300` | **`1200`** | **`1300 – 1400`** | **`14 / 37`** |
 
 ---
 
@@ -17,7 +17,7 @@ Organized both by **difficulty rating** ([`ratings/`](./ratings/)) and across **
 | `800` | **1** | `█` | [`ratings/0800/`](./ratings/0800/) |
 | `900` | **0** | `░` | — |
 | `1000` | **0** | `░` | — |
-| `1100` | **3** | `███` | [`ratings/1100/`](./ratings/1100/) |
+| `1100` | **4** | `████` | [`ratings/1100/`](./ratings/1100/) |
 | `1200` | **6** | `██████` | [`ratings/1200/`](./ratings/1200/) *(comfort zone)* |
 | `1300` | **2** | `██` | [`ratings/1300/`](./ratings/1300/) *(current ceiling)* |
 | `1400` | **0** | `░` | **Next milestone — target this band!** |
@@ -40,12 +40,10 @@ These fundamental competitive programming tags appear frequently at your target 
 | :--- | :--- | :---: |
 | [`strings`](./tags/strings/) | [1917B - Erase First or Second Letter](https://codeforces.com/contest/1917/problem/B) | `1100` |
 | [`bitmasks`](./tags/bitmasks/) | [1909B - Make Almost Equal With Mod](https://codeforces.com/contest/1909/problem/B) | `1200` |
-| [`dfs and similar`](./tags/dfs-and-similar/) | [1829E - The Lakes](https://codeforces.com/contest/1829/problem/E) | `1100` |
-| [`graphs`](./tags/graphs/) | [1676G - White-Black Balanced Subtrees](https://codeforces.com/contest/1676/problem/G) | `1300` |
 | [`games`](./tags/games/) | [1931E - Anna and the Valentine's Day Gift](https://codeforces.com/contest/1931/problem/E) | `1400` |
 | [`combinatorics`](./tags/combinatorics/) | [1931D - Divisible Pairs](https://codeforces.com/contest/1931/problem/D) | `1300` |
 | [`geometry`](./tags/geometry/) | [1850E - Cardboard for Pictures](https://codeforces.com/contest/1850/problem/E) | `1100` |
-| [`dsu`](./tags/dsu/) | [2008D - Sakurako's Hobby](https://codeforces.com/contest/2008/problem/D) | `1100` |
+| [`trees`](./tags/trees/) | [1857D - Strong Vertices](https://codeforces.com/contest/1857/problem/D) | `1300` |
 
 ### 3. Lightly Practiced Topics (`1–2` Solved — Build Consistency)
 
@@ -56,6 +54,9 @@ These fundamental competitive programming tags appear frequently at your target 
 | [`dp`](./tags/dp/) | `2` | `1200` | [1703F - Yet Another Problem About Pairs Satisfying an Inequality](https://codeforces.com/contest/1703/problem/F) (`1300`) |
 | [`number theory`](./tags/number-theory/) | `2` | `1200` | [1881D - Divide and Equalize](https://codeforces.com/contest/1881/problem/D) (`1300`) |
 | [`data structures`](./tags/data-structures/) | `1` | `1200` | [1793C - Dora and Search](https://codeforces.com/contest/1793/problem/C) (`1200`) |
+| [`dfs and similar`](./tags/dfs-and-similar/) | `1` | `1100` | [1676G - White-Black Balanced Subtrees](https://codeforces.com/contest/1676/problem/G) (`1300`) |
+| [`dsu`](./tags/dsu/) | `1` | `1100` | [2129A - Double Perspective](https://codeforces.com/contest/2129/problem/A) (`1300`) |
+| [`graphs`](./tags/graphs/) | `1` | `1100` | [1829F - Forever Winter](https://codeforces.com/contest/1829/problem/F) (`1300`) |
 
 ---
 
@@ -66,9 +67,9 @@ These fundamental competitive programming tags appear frequently at your target 
 | Tag | Solved | Bar | Rating Span | Folder |
 | :--- | :---: | :--- | :---: | :--- |
 | [`greedy`](./tags/greedy/) | **7** | `███████░` | `1100–1300` | [`tags/greedy/`](./tags/greedy/) |
+| [`implementation`](./tags/implementation/) | **5** | `█████░░░` | `1100–1300` | [`tags/implementation/`](./tags/implementation/) |
 | [`math`](./tags/math/) | **5** | `█████░░░` | `800–1300` | [`tags/math/`](./tags/math/) |
 | [`binary search`](./tags/binary-search/) | **4** | `████░░░░` | `1100–1300` | [`tags/binary-search/`](./tags/binary-search/) |
-| [`implementation`](./tags/implementation/) | **4** | `████░░░░` | `1100–1300` | [`tags/implementation/`](./tags/implementation/) |
 | [`sortings`](./tags/sortings/) | **4** | `████░░░░` | `1100–1300` | [`tags/sortings/`](./tags/sortings/) |
 | [`two pointers`](./tags/two-pointers/) | **4** | `████░░░░` | `1100–1300` | [`tags/two-pointers/`](./tags/two-pointers/) |
 | [`brute force`](./tags/brute-force/) | **2** | `██░░░░░░` | `1100–1200` | [`tags/brute-force/`](./tags/brute-force/) |
@@ -76,8 +77,11 @@ These fundamental competitive programming tags appear frequently at your target 
 | [`dp`](./tags/dp/) | **2** | `██░░░░░░` | `1100–1200` | [`tags/dp/`](./tags/dp/) |
 | [`number theory`](./tags/number-theory/) | **2** | `██░░░░░░` | `1200` | [`tags/number-theory/`](./tags/number-theory/) |
 | [`data structures`](./tags/data-structures/) | **1** | `█░░░░░░░` | `1200` | [`tags/data-structures/`](./tags/data-structures/) |
+| [`dfs and similar`](./tags/dfs-and-similar/) | **1** | `█░░░░░░░` | `1100` | [`tags/dfs-and-similar/`](./tags/dfs-and-similar/) |
+| [`dsu`](./tags/dsu/) | **1** | `█░░░░░░░` | `1100` | [`tags/dsu/`](./tags/dsu/) |
+| [`graphs`](./tags/graphs/) | **1** | `█░░░░░░░` | `1100` | [`tags/graphs/`](./tags/graphs/) |
 
-**Unpracticed Core Tags (`0` solved):** [`strings`](./tags/strings/) · [`bitmasks`](./tags/bitmasks/) · [`dfs and similar`](./tags/dfs-and-similar/) · [`graphs`](./tags/graphs/) · [`games`](./tags/games/) · [`combinatorics`](./tags/combinatorics/) · [`geometry`](./tags/geometry/) · [`dsu`](./tags/dsu/) · [`trees`](./tags/trees/)
+**Unpracticed Core Tags (`0` solved):** [`strings`](./tags/strings/) · [`bitmasks`](./tags/bitmasks/) · [`games`](./tags/games/) · [`combinatorics`](./tags/combinatorics/) · [`geometry`](./tags/geometry/) · [`trees`](./tags/trees/)
 
 <details>
 <summary><strong>Unpracticed Advanced / Specialized Tags (17 tags, typically 1600+)</strong></summary>
@@ -93,6 +97,7 @@ These fundamental competitive programming tags appear frequently at your target 
 | Difficulty | Problem | Solution | Tags | Completed |
 | :---: | :--- | :--- | :--- | :---: |
 | `800` | [2145A - Candies for Nephews](https://codeforces.com/contest/2145/problem/A) | [`candiesForNephews.cpp`](./ratings/0800/candiesForNephews.cpp) | [`math`](./tags/math/) | 2025-11-01 |
+| `1100` | [1829E - The Lakes](https://codeforces.com/contest/1829/problem/E) | [`theLakes.cpp`](./ratings/1100/theLakes.cpp) | [`dfs and similar`](./tags/dfs-and-similar/), [`dsu`](./tags/dsu/), [`graphs`](./tags/graphs/), [`implementation`](./tags/implementation/) | 2026-11-07 |
 | `1100` | [1948B - Array Fix](https://codeforces.com/contest/1948/problem/B) | [`arrayFix.cpp`](./ratings/1100/arrayFix.cpp) | [`brute force`](./tags/brute-force/), [`dp`](./tags/dp/), [`greedy`](./tags/greedy/), [`implementation`](./tags/implementation/) | 2025-11-01 |
 | `1100` | [2169B - Drifting Away](https://codeforces.com/contest/2169/problem/B) | [`driftingAway.cpp`](./ratings/1100/driftingAway.cpp) | [`greedy`](./tags/greedy/), [`implementation`](./tags/implementation/) | 2026-04-16 |
 | `1100` | [2193D - Monster Game](https://codeforces.com/contest/2193/problem/D) | [`monsterGame.cpp`](./ratings/1100/monsterGame.cpp) | [`binary search`](./tags/binary-search/), [`sortings`](./tags/sortings/), [`two pointers`](./tags/two-pointers/) | 2026-11-07 |
@@ -118,6 +123,14 @@ These fundamental competitive programming tags appear frequently at your target 
 - `1200` — [2161C: Loyalty](https://codeforces.com/contest/2161/problem/C) ([`loyalty.cpp`](./ratings/1200/loyalty.cpp))
 - `1300` — [1794C: Scoring Subsequences](https://codeforces.com/contest/1794/problem/C) ([`scoringSubsequences.cpp`](./ratings/1300/scoringSubsequences.cpp))
 
+### [`implementation`](./tags/implementation/) (5)
+
+- `1100` — [1829E: The Lakes](https://codeforces.com/contest/1829/problem/E) ([`theLakes.cpp`](./ratings/1100/theLakes.cpp))
+- `1100` — [1948B: Array Fix](https://codeforces.com/contest/1948/problem/B) ([`arrayFix.cpp`](./ratings/1100/arrayFix.cpp))
+- `1100` — [2169B: Drifting Away](https://codeforces.com/contest/2169/problem/B) ([`driftingAway.cpp`](./ratings/1100/driftingAway.cpp))
+- `1200` — [1832C: Contrast Value](https://codeforces.com/contest/1832/problem/C) ([`contrastValue.cpp`](./ratings/1200/contrastValue.cpp))
+- `1300` — [2041A: The Bento Box Adventure](https://codeforces.com/contest/2041/problem/A) ([`bentoBoxAdventure.cpp`](./ratings/1300/bentoBoxAdventure.cpp))
+
 ### [`math`](./tags/math/) (5)
 
 - `800` — [2145A: Candies for Nephews](https://codeforces.com/contest/2145/problem/A) ([`candiesForNephews.cpp`](./ratings/0800/candiesForNephews.cpp))
@@ -132,13 +145,6 @@ These fundamental competitive programming tags appear frequently at your target 
 - `1200` — [1982C: Boring Day](https://codeforces.com/contest/1982/problem/C) ([`boringDay.cpp`](./ratings/1200/boringDay.cpp))
 - `1200` — [2020B: Brightness Begins](https://codeforces.com/contest/2020/problem/B) ([`brightnessBegins.cpp`](./ratings/1200/brightnessBegins.cpp))
 - `1300` — [1794C: Scoring Subsequences](https://codeforces.com/contest/1794/problem/C) ([`scoringSubsequences.cpp`](./ratings/1300/scoringSubsequences.cpp))
-
-### [`implementation`](./tags/implementation/) (4)
-
-- `1100` — [1948B: Array Fix](https://codeforces.com/contest/1948/problem/B) ([`arrayFix.cpp`](./ratings/1100/arrayFix.cpp))
-- `1100` — [2169B: Drifting Away](https://codeforces.com/contest/2169/problem/B) ([`driftingAway.cpp`](./ratings/1100/driftingAway.cpp))
-- `1200` — [1832C: Contrast Value](https://codeforces.com/contest/1832/problem/C) ([`contrastValue.cpp`](./ratings/1200/contrastValue.cpp))
-- `1300` — [2041A: The Bento Box Adventure](https://codeforces.com/contest/2041/problem/A) ([`bentoBoxAdventure.cpp`](./ratings/1300/bentoBoxAdventure.cpp))
 
 ### [`sortings`](./tags/sortings/) (4)
 
@@ -177,6 +183,18 @@ These fundamental competitive programming tags appear frequently at your target 
 ### [`data structures`](./tags/data-structures/) (1)
 
 - `1200` — [1982C: Boring Day](https://codeforces.com/contest/1982/problem/C) ([`boringDay.cpp`](./ratings/1200/boringDay.cpp))
+
+### [`dfs and similar`](./tags/dfs-and-similar/) (1)
+
+- `1100` — [1829E: The Lakes](https://codeforces.com/contest/1829/problem/E) ([`theLakes.cpp`](./ratings/1100/theLakes.cpp))
+
+### [`dsu`](./tags/dsu/) (1)
+
+- `1100` — [1829E: The Lakes](https://codeforces.com/contest/1829/problem/E) ([`theLakes.cpp`](./ratings/1100/theLakes.cpp))
+
+### [`graphs`](./tags/graphs/) (1)
+
+- `1100` — [1829E: The Lakes](https://codeforces.com/contest/1829/problem/E) ([`theLakes.cpp`](./ratings/1100/theLakes.cpp))
 
 </details>
 

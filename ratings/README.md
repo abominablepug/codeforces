@@ -5,7 +5,7 @@
 | Folder | Rating | Solved | Problems |
 | :--- | :---: | :---: | :--- |
 | [`0800/`](./0800/) | `800` | **1** | [`candiesForNephews.cpp`](./0800/candiesForNephews.cpp) |
-| [`1100/`](./1100/) | `1100` | **3** | [`arrayFix.cpp`](./1100/arrayFix.cpp), [`driftingAway.cpp`](./1100/driftingAway.cpp), [`monsterGame.cpp`](./1100/monsterGame.cpp) |
+| [`1100/`](./1100/) | `1100` | **4** | [`theLakes.cpp`](./1100/theLakes.cpp), [`arrayFix.cpp`](./1100/arrayFix.cpp), [`driftingAway.cpp`](./1100/driftingAway.cpp), [`monsterGame.cpp`](./1100/monsterGame.cpp) |
 | [`1200/`](./1200/) | `1200` | **6** | [`contrastValue.cpp`](./1200/contrastValue.cpp), [`turtleTenacityContinualMods.cpp`](./1200/turtleTenacityContinualMods.cpp), [`boringDay.cpp`](./1200/boringDay.cpp), [`brightnessBegins.cpp`](./1200/brightnessBegins.cpp), [`loyalty.cpp`](./1200/loyalty.cpp), [`honeyCake.cpp`](./1200/honeyCake.cpp) |
 | [`1300/`](./1300/) | `1300` | **2** | [`scoringSubsequences.cpp`](./1300/scoringSubsequences.cpp), [`bentoBoxAdventure.cpp`](./1300/bentoBoxAdventure.cpp) |
 
@@ -14,6 +14,7 @@
 | Difficulty | Problem | Solution | Tags | Completed |
 | :---: | :--- | :--- | :--- | :---: |
 | `800` | [2145A - Candies for Nephews](https://codeforces.com/contest/2145/problem/A) | [`candiesForNephews.cpp`](./0800/candiesForNephews.cpp) | [`math`](../tags/math/) | 2025-11-01 |
+| `1100` | [1829E - The Lakes](https://codeforces.com/contest/1829/problem/E) | [`theLakes.cpp`](./1100/theLakes.cpp) | [`dfs and similar`](../tags/dfs-and-similar/), [`dsu`](../tags/dsu/), [`graphs`](../tags/graphs/), [`implementation`](../tags/implementation/) | 2026-11-07 |
 | `1100` | [1948B - Array Fix](https://codeforces.com/contest/1948/problem/B) | [`arrayFix.cpp`](./1100/arrayFix.cpp) | [`brute force`](../tags/brute-force/), [`dp`](../tags/dp/), [`greedy`](../tags/greedy/), [`implementation`](../tags/implementation/) | 2025-11-01 |
 | `1100` | [2169B - Drifting Away](https://codeforces.com/contest/2169/problem/B) | [`driftingAway.cpp`](./1100/driftingAway.cpp) | [`greedy`](../tags/greedy/), [`implementation`](../tags/implementation/) | 2026-04-16 |
 | `1100` | [2193D - Monster Game](https://codeforces.com/contest/2193/problem/D) | [`monsterGame.cpp`](./1100/monsterGame.cpp) | [`binary search`](../tags/binary-search/), [`sortings`](../tags/sortings/), [`two pointers`](../tags/two-pointers/) | 2026-11-07 |

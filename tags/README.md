@@ -2,16 +2,16 @@
 
 [← Back to Main Dashboard](../README.md) · [Browse by Difficulty →](../ratings/README.md)
 
-**Practiced Tags:** `11 / 37` &nbsp;|&nbsp; **Core Unpracticed (`0` solved):** `9` &nbsp;|&nbsp; **Advanced Unpracticed (`0` solved):** `17`
+**Practiced Tags:** `14 / 37` &nbsp;|&nbsp; **Core Unpracticed (`0` solved):** `6` &nbsp;|&nbsp; **Advanced Unpracticed (`0` solved):** `17`
 
 ## Practiced Tags
 
 | Tag Folder | Solved | Progress | Difficulty Range | Solutions |
 | :--- | :---: | :--- | :---: | :--- |
 | [`greedy`](./greedy/) | **7** | `███████░` | `1100–1300` | [`arrayFix.cpp`](../ratings/1100/arrayFix.cpp), [`driftingAway.cpp`](../ratings/1100/driftingAway.cpp), [`contrastValue.cpp`](../ratings/1200/contrastValue.cpp), [`turtleTenacityContinualMods.cpp`](../ratings/1200/turtleTenacityContinualMods.cpp), [`boringDay.cpp`](../ratings/1200/boringDay.cpp), [`loyalty.cpp`](../ratings/1200/loyalty.cpp), [`scoringSubsequences.cpp`](../ratings/1300/scoringSubsequences.cpp) |
+| [`implementation`](./implementation/) | **5** | `█████░░░` | `1100–1300` | [`theLakes.cpp`](../ratings/1100/theLakes.cpp), [`arrayFix.cpp`](../ratings/1100/arrayFix.cpp), [`driftingAway.cpp`](../ratings/1100/driftingAway.cpp), [`contrastValue.cpp`](../ratings/1200/contrastValue.cpp), [`bentoBoxAdventure.cpp`](../ratings/1300/bentoBoxAdventure.cpp) |
 | [`math`](./math/) | **5** | `█████░░░` | `800–1300` | [`candiesForNephews.cpp`](../ratings/0800/candiesForNephews.cpp), [`turtleTenacityContinualMods.cpp`](../ratings/1200/turtleTenacityContinualMods.cpp), [`brightnessBegins.cpp`](../ratings/1200/brightnessBegins.cpp), [`honeyCake.cpp`](../ratings/1200/honeyCake.cpp), [`scoringSubsequences.cpp`](../ratings/1300/scoringSubsequences.cpp) |
 | [`binary search`](./binary-search/) | **4** | `████░░░░` | `1100–1300` | [`monsterGame.cpp`](../ratings/1100/monsterGame.cpp), [`boringDay.cpp`](../ratings/1200/boringDay.cpp), [`brightnessBegins.cpp`](../ratings/1200/brightnessBegins.cpp), [`scoringSubsequences.cpp`](../ratings/1300/scoringSubsequences.cpp) |
-| [`implementation`](./implementation/) | **4** | `████░░░░` | `1100–1300` | [`arrayFix.cpp`](../ratings/1100/arrayFix.cpp), [`driftingAway.cpp`](../ratings/1100/driftingAway.cpp), [`contrastValue.cpp`](../ratings/1200/contrastValue.cpp), [`bentoBoxAdventure.cpp`](../ratings/1300/bentoBoxAdventure.cpp) |
 | [`sortings`](./sortings/) | **4** | `████░░░░` | `1100–1300` | [`monsterGame.cpp`](../ratings/1100/monsterGame.cpp), [`turtleTenacityContinualMods.cpp`](../ratings/1200/turtleTenacityContinualMods.cpp), [`loyalty.cpp`](../ratings/1200/loyalty.cpp), [`bentoBoxAdventure.cpp`](../ratings/1300/bentoBoxAdventure.cpp) |
 | [`two pointers`](./two-pointers/) | **4** | `████░░░░` | `1100–1300` | [`monsterGame.cpp`](../ratings/1100/monsterGame.cpp), [`boringDay.cpp`](../ratings/1200/boringDay.cpp), [`loyalty.cpp`](../ratings/1200/loyalty.cpp), [`scoringSubsequences.cpp`](../ratings/1300/scoringSubsequences.cpp) |
 | [`brute force`](./brute-force/) | **2** | `██░░░░░░` | `1100–1200` | [`arrayFix.cpp`](../ratings/1100/arrayFix.cpp), [`honeyCake.cpp`](../ratings/1200/honeyCake.cpp) |
@@ -19,6 +19,9 @@
 | [`dp`](./dp/) | **2** | `██░░░░░░` | `1100–1200` | [`arrayFix.cpp`](../ratings/1100/arrayFix.cpp), [`boringDay.cpp`](../ratings/1200/boringDay.cpp) |
 | [`number theory`](./number-theory/) | **2** | `██░░░░░░` | `1200` | [`turtleTenacityContinualMods.cpp`](../ratings/1200/turtleTenacityContinualMods.cpp), [`honeyCake.cpp`](../ratings/1200/honeyCake.cpp) |
 | [`data structures`](./data-structures/) | **1** | `█░░░░░░░` | `1200` | [`boringDay.cpp`](../ratings/1200/boringDay.cpp) |
+| [`dfs and similar`](./dfs-and-similar/) | **1** | `█░░░░░░░` | `1100` | [`theLakes.cpp`](../ratings/1100/theLakes.cpp) |
+| [`dsu`](./dsu/) | **1** | `█░░░░░░░` | `1100` | [`theLakes.cpp`](../ratings/1100/theLakes.cpp) |
+| [`graphs`](./graphs/) | **1** | `█░░░░░░░` | `1100` | [`theLakes.cpp`](../ratings/1100/theLakes.cpp) |
 
 ## Core Topics Not Yet Practiced (`0` Solved — High Priority `<= 1500`)
 
@@ -28,12 +31,9 @@ Click into any folder below for starter problem recommendations at your level:
 | :--- | :---: | :---: | :--- |
 | [`strings`](./strings/) | `0` | 384 | Open folder for starter challenges |
 | [`bitmasks`](./bitmasks/) | `0` | 143 | Open folder for starter challenges |
-| [`dfs and similar`](./dfs-and-similar/) | `0` | 123 | Open folder for starter challenges |
-| [`graphs`](./graphs/) | `0` | 118 | Open folder for starter challenges |
 | [`games`](./games/) | `0` | 115 | Open folder for starter challenges |
 | [`combinatorics`](./combinatorics/) | `0` | 113 | Open folder for starter challenges |
 | [`geometry`](./geometry/) | `0` | 93 | Open folder for starter challenges |
-| [`dsu`](./dsu/) | `0` | 57 | Open folder for starter challenges |
 | [`trees`](./trees/) | `0` | 50 | Open folder for starter challenges |
 
 ## Advanced / Specialized Topics (`0` Solved — Mostly `1600+`)

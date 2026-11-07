@@ -12,6 +12,21 @@
     "completed": "2025-11-01"
   },
   {
+    "id": "1829E",
+    "contestId": 1829,
+    "index": "E",
+    "name": "The Lakes",
+    "rating": 1100,
+    "tags": [
+      "dfs and similar",
+      "dsu",
+      "graphs",
+      "implementation"
+    ],
+    "file": "theLakes.cpp",
+    "completed": "2026-11-07"
+  },
+  {
     "id": "1948B",
     "contestId": 1948,
     "index": "B",
