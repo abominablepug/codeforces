@@ -7,6 +7,7 @@
 | [800](./0800/) | [2145A - Candies for Nephews](https://codeforces.com/contest/2145/problem/A) | [candiesForNephews.cpp](./0800/candiesForNephews.cpp) | 2025-11-01 |
 | [1100](./1100/) | [1829E - The Lakes](https://codeforces.com/contest/1829/problem/E) | [theLakes.cpp](./1100/theLakes.cpp) | 2026-11-07 |
 | [1100](./1100/) | [1948B - Array Fix](https://codeforces.com/contest/1948/problem/B) | [arrayFix.cpp](./1100/arrayFix.cpp) | 2025-11-01 |
+| [1100](./1100/) | [1999D - Slavic's Exam](https://codeforces.com/contest/1999/problem/D) | [slavicsExam.cpp](./1100/slavicsExam.cpp) | 2026-11-07 |
 | [1100](./1100/) | [2169B - Drifting Away](https://codeforces.com/contest/2169/problem/B) | [driftingAway.cpp](./1100/driftingAway.cpp) | 2026-04-16 |
 | [1100](./1100/) | [2193D - Monster Game](https://codeforces.com/contest/2193/problem/D) | [monsterGame.cpp](./1100/monsterGame.cpp) | 2026-11-07 |
 | [1200](./1200/) | [1832C - Contrast Value](https://codeforces.com/contest/1832/problem/C) | [contrastValue.cpp](./1200/contrastValue.cpp) | 2025-11-02 |

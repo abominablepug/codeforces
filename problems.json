@@ -42,6 +42,20 @@
     "completed": "2025-11-01"
   },
   {
+    "id": "1999D",
+    "contestId": 1999,
+    "index": "D",
+    "name": "Slavic's Exam",
+    "rating": 1100,
+    "tags": [
+      "greedy",
+      "implementation",
+      "strings"
+    ],
+    "file": "slavicsExam.cpp",
+    "completed": "2026-11-07"
+  },
+  {
     "id": "2169B",
     "contestId": 2169,
     "index": "B",

@@ -2,13 +2,12 @@
 
 [← Dashboard](../README.md) · [By Difficulty →](../ratings/README.md)
 
-**14 / 37** practiced · **8** lightly practiced · **6** core blind spots
+**15 / 37** practiced · **9** lightly practiced · **5** core blind spots
 
 ## Core Topic Blind Spots (0 Solved)
 
 | Tag | CF Problems <= 1500 |
 | :--- | :---: |
-| [strings](./strings/) | 384 |
 | [bitmasks](./bitmasks/) | 143 |
 | [games](./games/) | 115 |
 | [combinatorics](./combinatorics/) | 113 |
@@ -27,13 +26,14 @@
 | [dfs and similar](./dfs-and-similar/) | 1 | 1100 |
 | [dsu](./dsu/) | 1 | 1100 |
 | [graphs](./graphs/) | 1 | 1100 |
+| [strings](./strings/) | 1 | 1100 |
 
 ## Practiced Topics (3+ Solved)
 
 | Tag | Solved | Rating Range |
 | :--- | :---: | :---: |
-| [greedy](./greedy/) | 7 | 1100–1300 |
-| [implementation](./implementation/) | 5 | 1100–1300 |
+| [greedy](./greedy/) | 8 | 1100–1300 |
+| [implementation](./implementation/) | 6 | 1100–1300 |
 | [math](./math/) | 5 | 800–1300 |
 | [binary search](./binary-search/) | 4 | 1100–1300 |
 | [sortings](./sortings/) | 4 | 1100–1300 |
