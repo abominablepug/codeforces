@@ -1,0 +1,171 @@
+[
+  {
+    "id": "2145A",
+    "contestId": 2145,
+    "index": "A",
+    "name": "Candies for Nephews",
+    "rating": 800,
+    "tags": [
+      "math"
+    ],
+    "file": "candiesForNephews.cpp",
+    "completed": "2025-11-01"
+  },
+  {
+    "id": "1948B",
+    "contestId": 1948,
+    "index": "B",
+    "name": "Array Fix",
+    "rating": 1100,
+    "tags": [
+      "brute force",
+      "dp",
+      "greedy",
+      "implementation"
+    ],
+    "file": "arrayFix.cpp",
+    "completed": "2025-11-01"
+  },
+  {
+    "id": "2169B",
+    "contestId": 2169,
+    "index": "B",
+    "name": "Drifting Away",
+    "rating": 1100,
+    "tags": [
+      "greedy",
+      "implementation"
+    ],
+    "file": "driftingAway.cpp",
+    "completed": "2026-04-16"
+  },
+  {
+    "id": "2193D",
+    "contestId": 2193,
+    "index": "D",
+    "name": "Monster Game",
+    "rating": 1100,
+    "tags": [
+      "binary search",
+      "sortings",
+      "two pointers"
+    ],
+    "file": "monsterGame.cpp",
+    "completed": "2026-11-07"
+  },
+  {
+    "id": "1832C",
+    "contestId": 1832,
+    "index": "C",
+    "name": "Contrast Value",
+    "rating": 1200,
+    "tags": [
+      "greedy",
+      "implementation"
+    ],
+    "file": "contrastValue.cpp",
+    "completed": "2025-11-02"
+  },
+  {
+    "id": "1933D",
+    "contestId": 1933,
+    "index": "D",
+    "name": "Turtle Tenacity: Continual Mods",
+    "rating": 1200,
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "number theory",
+      "sortings"
+    ],
+    "file": "turtleTenacityContinualMods.cpp",
+    "completed": "2026-04-17"
+  },
+  {
+    "id": "1982C",
+    "contestId": 1982,
+    "index": "C",
+    "name": "Boring Day",
+    "rating": 1200,
+    "tags": [
+      "binary search",
+      "data structures",
+      "dp",
+      "greedy",
+      "two pointers"
+    ],
+    "file": "boringDay.cpp",
+    "completed": "2026-04-15"
+  },
+  {
+    "id": "2020B",
+    "contestId": 2020,
+    "index": "B",
+    "name": "Brightness Begins",
+    "rating": 1200,
+    "tags": [
+      "binary search",
+      "math"
+    ],
+    "file": "brightnessBegins.cpp",
+    "completed": "2026-04-13"
+  },
+  {
+    "id": "2161C",
+    "contestId": 2161,
+    "index": "C",
+    "name": "Loyalty",
+    "rating": 1200,
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "sortings",
+      "two pointers"
+    ],
+    "file": "loyalty.cpp",
+    "completed": "2026-04-14"
+  },
+  {
+    "id": "2181H",
+    "contestId": 2181,
+    "index": "H",
+    "name": "Honey Cake",
+    "rating": 1200,
+    "tags": [
+      "brute force",
+      "math",
+      "number theory"
+    ],
+    "file": "honeyCake.cpp",
+    "completed": "2026-04-15"
+  },
+  {
+    "id": "1794C",
+    "contestId": 1794,
+    "index": "C",
+    "name": "Scoring Subsequences",
+    "rating": 1300,
+    "tags": [
+      "binary search",
+      "greedy",
+      "math",
+      "two pointers"
+    ],
+    "file": "scoringSubsequences.cpp",
+    "completed": "2025-11-02"
+  },
+  {
+    "id": "2041A",
+    "contestId": 2041,
+    "index": "A",
+    "name": "The Bento Box Adventure",
+    "rating": 1300,
+    "tags": [
+      "implementation",
+      "sortings"
+    ],
+    "file": "bentoBoxAdventure.cpp",
+    "completed": "2025-11-02"
+  }
+]

@@ -1,0 +1,1 @@
+../../ratings/1200/brightnessBegins.cpp

@@ -1,4 +1,28 @@
+# Ignore compiled C++ binaries and unknown artifacts by default
 *
+
+# Traverse subdirectories (ratings/, tags/, .github/, etc.)
+!*/
+
+# Track solutions, documentation, metadata, and automation scripts
 !*.cpp
+!*.cc
+!*.c
+!*.h
+!*.hpp
 !*.rs
+!*.py
+!*.md
+!*.yml
+!*.yaml
+!problems.json
 !.gitignore
+
+# Always ignore local caches, build directories, and object files
+.cache/
+__pycache__/
+target/
+build/
+*.o
+*.out
+*.exe
