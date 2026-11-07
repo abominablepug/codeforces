@@ -656,8 +656,7 @@ def write_ratings_readme(records: list[dict[str, Any]]) -> None:
 
 
 def write_tags_readme(records: list[dict[str, Any]], index: ProblemIndex) -> None:
-    solved_ids = {r["id"] for r in records}
-    comfort, _, stretch_high = compute_comfort_and_target(records)
+    comfort, _, _ = compute_comfort_and_target(records)
     extra_tags = {t for r in records for t in r["tags"]} - set(ALL_CF_TAGS)
     all_tags = sorted(set(ALL_CF_TAGS) | extra_tags)
     core_tags, _ = classify_tags(index, comfort, all_tags)
@@ -669,7 +668,11 @@ def write_tags_readme(records: list[dict[str, Any]], index: ProblemIndex) -> Non
         for t in rec["tags"]:
             by_tag[t].append(rec)
 
-    practiced = sorted([t for t in all_tags if by_tag[t]], key=lambda t: (-len(by_tag[t]), t))
+    solid = sorted([t for t in all_tags if len(by_tag[t]) >= 3], key=lambda t: (-len(by_tag[t]), t))
+    lightly_practiced = sorted(
+        [t for t in all_tags if 1 <= len(by_tag[t]) <= 2],
+        key=lambda t: (-len(by_tag[t]), t),
+    )
     unpracticed_core = sorted(
         [t for t in all_tags if not by_tag[t] and t in core_tags],
         key=lambda t: (-cf_counts[t], t),
@@ -679,59 +682,66 @@ def write_tags_readme(records: list[dict[str, Any]], index: ProblemIndex) -> Non
         key=lambda t: (-cf_counts[t], t),
     )
 
+    practiced_total = len(solid) + len(lightly_practiced)
+
     lines = [
         "# By Topic Tag",
         "",
         "[← Dashboard](../README.md) · [By Difficulty →](../ratings/README.md)",
         "",
-        f"**{len(practiced)} / {len(all_tags)}** tags practiced · **{len(unpracticed_core)}** core gaps · **{len(unpracticed_adv)}** advanced",
-        "",
-        "### Practiced",
-        "",
-        "| Tag | Solved | Rating Range |",
-        "| :--- | :---: | :---: |",
+        f"**{practiced_total} / {len(all_tags)}** practiced · **{len(lightly_practiced)}** lightly practiced · **{len(unpracticed_core)}** core blind spots",
     ]
-
-    for t in practiced:
-        slug = tag_to_slug(t)
-        r_vals = [r["rating"] for r in by_tag[t] if r["rating"] is not None]
-        r_span = (
-            f"{min(r_vals)}–{max(r_vals)}"
-            if len(set(r_vals)) > 1
-            else (str(r_vals[0]) if r_vals else "unrated")
-        )
-        lines.append(f"| [{t}](./{slug}/) | {len(by_tag[t])} | {r_span} |")
 
     if unpracticed_core:
         lines.extend(
             [
                 "",
-                "### Core Gaps (0 Solved)",
+                "## Core Topic Blind Spots (0 Solved)",
                 "",
-                "| Tag | Starter Problem | Rating |",
-                "| :--- | :--- | :---: |",
+                f"| Tag | CF Problems <= {cap} |",
+                "| :--- | :---: |",
             ]
         )
-        used: set[str] = set()
         for t in unpracticed_core:
             slug = tag_to_slug(t)
-            picks = index.recommend(
-                solved_ids,
-                tag=t,
-                min_rating=max(800, comfort - 100),
-                max_rating=stretch_high,
-                limit=1,
-                exclude_ids=used,
+            cnt = cf_counts[t] if index.available else "—"
+            lines.append(f"| [{t}](./{slug}/) | {cnt} |")
+
+    if lightly_practiced:
+        lines.extend(
+            [
+                "",
+                "## Lightly Practiced Topics (1–2 Solved)",
+                "",
+                "| Tag | Solved | Highest Rating |",
+                "| :--- | :---: | :---: |",
+            ]
+        )
+        for t in lightly_practiced:
+            slug = tag_to_slug(t)
+            r_vals = [r["rating"] for r in by_tag[t] if r["rating"] is not None]
+            max_r = str(max(r_vals)) if r_vals else "unrated"
+            lines.append(f"| [{t}](./{slug}/) | {len(by_tag[t])} | {max_r} |")
+
+    if solid:
+        lines.extend(
+            [
+                "",
+                "## Practiced Topics (3+ Solved)",
+                "",
+                "| Tag | Solved | Rating Range |",
+                "| :--- | :---: | :---: |",
+            ]
+        )
+        for t in solid:
+            slug = tag_to_slug(t)
+            r_vals = [r["rating"] for r in by_tag[t] if r["rating"] is not None]
+            r_span = (
+                f"{min(r_vals)}–{max(r_vals)}"
+                if len(set(r_vals)) > 1
+                else (str(r_vals[0]) if r_vals else "unrated")
             )
-            if picks:
-                p = picks[0]
-                used.add(p["id"])
-                p_cell = f"[{p['id']} - {p['name']}]({problem_url(p['contestId'], p['index'])})"
-                r_cell = str(p["rating"])
-            else:
-                p_cell = "—"
-                r_cell = "—"
-            lines.append(f"| [{t}](./{slug}/) | {p_cell} | {r_cell} |")
+            lines.append(f"| [{t}](./{slug}/) | {len(by_tag[t])} | {r_span} |")
 
     if unpracticed_adv:
         adv_links = " · ".join(f"[{t}](./{tag_to_slug(t)}/)" for t in unpracticed_adv)
@@ -739,7 +749,7 @@ def write_tags_readme(records: list[dict[str, Any]], index: ProblemIndex) -> Non
             [
                 "",
                 "<details>",
-                f"<summary>Advanced / 1600+ Tags ({len(unpracticed_adv)} unpracticed)</summary>",
+                f"<summary>Advanced / 1600+ Topics ({len(unpracticed_adv)} unpracticed)</summary>",
                 "",
                 adv_links,
                 "",
@@ -751,14 +761,94 @@ def write_tags_readme(records: list[dict[str, Any]], index: ProblemIndex) -> Non
     (TAGS_DIR / "README.md").write_text("\n".join(lines), encoding="utf-8")
 
 
-def write_root_readme(records: list[dict[str, Any]], index: ProblemIndex) -> None:
+def select_blind_challenges(
+    records: list[dict[str, Any]],
+    index: ProblemIndex,
+) -> list[dict[str, Any]]:
+    """Pick 5 balanced challenge problems (stretch difficulty + weak/unpracticed topics) without spoiling tags."""
+    if not index.available:
+        return []
+
     solved_ids = {r["id"] for r in records}
     comfort, stretch_low, stretch_high = compute_comfort_and_target(records)
+    core_tags, _ = classify_tags(index, comfort, ALL_CF_TAGS)
+    cap = max(1500, comfort + 300)
+    cf_counts = index.count_tag_up_to_rating(cap)
+
+    by_tag: dict[str, list[dict[str, Any]]] = collections.defaultdict(list)
+    for rec in records:
+        for t in rec["tags"]:
+            by_tag[t].append(rec)
+
+    lightly_practiced = sorted(
+        [t for t in core_tags if 1 <= len(by_tag[t]) <= 2],
+        key=lambda t: (len(by_tag[t]), -cf_counts[t], t),
+    )
+    unpracticed_core = sorted(
+        [t for t in core_tags if not by_tag[t]],
+        key=lambda t: (-cf_counts[t], t),
+    )
+
+    shown_ids: set[str] = set()
+    picks_out: list[dict[str, Any]] = []
+
+    p_low = index.recommend(
+        solved_ids, min_rating=stretch_low, max_rating=stretch_low, limit=1, exclude_ids=shown_ids
+    )
+    if p_low:
+        shown_ids.add(p_low[0]["id"])
+        picks_out.append(p_low[0])
+
+    if stretch_high > stretch_low:
+        p_high = index.recommend(
+            solved_ids,
+            min_rating=stretch_high,
+            max_rating=stretch_high,
+            limit=1,
+            exclude_ids=shown_ids,
+        )
+        if p_high:
+            shown_ids.add(p_high[0]["id"])
+            picks_out.append(p_high[0])
+
+    for t in unpracticed_core[:2]:
+        cand = index.recommend(
+            solved_ids,
+            tag=t,
+            min_rating=max(800, comfort - 100),
+            max_rating=stretch_high,
+            limit=1,
+            exclude_ids=shown_ids,
+        )
+        if cand:
+            shown_ids.add(cand[0]["id"])
+            picks_out.append(cand[0])
+
+    for t in lightly_practiced[:1]:
+        r_vals = [r["rating"] for r in by_tag[t] if r["rating"] is not None]
+        max_t = max(r_vals) if r_vals else comfort
+        next_min = max(comfort, max_t + 100 if len(by_tag[t]) >= 2 else max_t)
+        cand = index.recommend(
+            solved_ids,
+            tag=t,
+            min_rating=next_min,
+            max_rating=max(stretch_high, next_min + 100),
+            limit=1,
+            exclude_ids=shown_ids,
+        )
+        if cand:
+            shown_ids.add(cand[0]["id"])
+            picks_out.append(cand[0])
+
+    # Sort purely by rating then ID so order doesn't hint which row came from which bucket
+    picks_out.sort(key=lambda p: (p["rating"] or 9999, p["id"]))
+    return picks_out
+
+
+def write_root_readme(records: list[dict[str, Any]], index: ProblemIndex) -> None:
+    _, stretch_low, stretch_high = compute_comfort_and_target(records)
     extra_tags = {t for r in records for t in r["tags"]} - set(ALL_CF_TAGS)
     all_tags = sorted(set(ALL_CF_TAGS) | extra_tags)
-    core_tags, _ = classify_tags(index, comfort, all_tags)
-    cap = max(1500, comfort + 300)
-    cf_counts = index.count_tag_up_to_rating(cap) if index.available else collections.Counter()
 
     by_tag: dict[str, list[dict[str, Any]]] = collections.defaultdict(list)
     for rec in records:
@@ -776,162 +866,63 @@ def write_root_readme(records: list[dict[str, Any]], index: ProblemIndex) -> Non
     ratings_only = sorted(by_rating.keys())
     min_r = min(ratings_only) if ratings_only else 800
     max_r = max(ratings_only) if ratings_only else 800
-
-    practiced = sorted([t for t in all_tags if by_tag[t]], key=lambda t: (-len(by_tag[t]), t))
-    lightly_practiced = [t for t in practiced if len(by_tag[t]) <= 2 and t in core_tags]
-    unpracticed_core = sorted(
-        [t for t in all_tags if not by_tag[t] and t in core_tags],
-        key=lambda t: (-cf_counts[t], t),
-    )
+    practiced_count = sum(1 for t in all_tags if by_tag[t])
 
     lines = [
         "# Codeforces Solutions",
         "",
-        f"**{len(records)}** solved · **{min_r}–{max_r}** rating · next target **{stretch_low}–{stretch_high}** · **{len(practiced)} / {len(all_tags)}** tags",
+        f"**{len(records)}** solved · **{min_r}–{max_r}** rating · target **{stretch_low}–{stretch_high}** · **{practiced_count} / {len(all_tags)}** tags",
         "",
-        "## Progress",
+        "## [By Difficulty](./ratings/README.md)",
         "",
-        "### [By Difficulty](./ratings/README.md)",
-        "",
-        "| Rating | Solved | |",
-        "| :--- | :---: | :--- |",
+        "| Rating | Solved |",
+        "| :--- | :---: |",
     ]
 
-    display_ratings = sorted(set(ratings_only) | {stretch_high})
-    for r in display_ratings:
+    for r in sorted(set(ratings_only) | {stretch_high}):
         cnt = len(by_rating.get(r, []))
         r_dir = format_rating_dir(r)
-        if cnt > 0:
-            label = f"[{r}](./ratings/{r_dir}/)"
-            bar = f"`{'█' * cnt}`"
-        else:
-            label = f"**{r}** *(goal)*"
-            bar = "—"
-        lines.append(f"| {label} | {cnt} | {bar} |")
+        label = f"[{r}](./ratings/{r_dir}/)" if cnt > 0 else f"**{r}** *(goal)*"
+        lines.append(f"| {label} | {cnt} |")
 
     if unrated_recs:
-        lines.append(
-            f"| [unrated](./ratings/unrated/) | {len(unrated_recs)} | `{'█' * len(unrated_recs)}` |"
-        )
+        lines.append(f"| [unrated](./ratings/unrated/) | {len(unrated_recs)} |")
 
-    lines.extend(
-        [
-            "",
-            "### [By Topic](./tags/README.md)",
-            "",
-            "| Tag | Solved | Range |",
-            "| :--- | :---: | :---: |",
-        ]
-    )
-    for t in practiced:
-        slug = tag_to_slug(t)
-        r_vals = [r["rating"] for r in by_tag[t] if r["rating"] is not None]
-        span = (
-            f"{min(r_vals)}–{max(r_vals)}"
-            if len(set(r_vals)) > 1
-            else (str(r_vals[0]) if r_vals else "unrated")
-        )
-        lines.append(f"| [{t}](./tags/{slug}/) | {len(by_tag[t])} | {span} |")
-
-    if unpracticed_core:
-        core_links = " · ".join(f"[{t}](./tags/{tag_to_slug(t)}/)" for t in unpracticed_core)
-        lines.extend(["", f"**Core gaps (0 solved):** {core_links}"])
-
-    # Single compact 5-row "Up Next" challenge table
-    shown_ids: set[str] = set()
-    up_next: list[tuple[str, dict[str, Any]]] = []
-
-    p_low = index.recommend(
-        solved_ids, min_rating=stretch_low, max_rating=stretch_low, limit=1, exclude_ids=shown_ids
-    )
-    if p_low:
-        shown_ids.add(p_low[0]["id"])
-        up_next.append((f"Push {stretch_low}", p_low[0]))
-
-    if stretch_high > stretch_low:
-        p_high = index.recommend(
-            solved_ids,
-            min_rating=stretch_high,
-            max_rating=stretch_high,
-            limit=1,
-            exclude_ids=shown_ids,
-        )
-        if p_high:
-            shown_ids.add(p_high[0]["id"])
-            up_next.append((f"Break into {stretch_high}", p_high[0]))
-
-    for t in unpracticed_core[:2]:
-        picks = index.recommend(
-            solved_ids,
-            tag=t,
-            min_rating=max(800, comfort - 100),
-            max_rating=stretch_high,
-            limit=1,
-            exclude_ids=shown_ids,
-        )
-        if picks:
-            shown_ids.add(picks[0]["id"])
-            up_next.append((f"Unlock [{t}](./tags/{tag_to_slug(t)}/)", picks[0]))
-
-    for t in lightly_practiced[:1]:
-        r_vals = [r["rating"] for r in by_tag[t] if r["rating"] is not None]
-        max_t = max(r_vals) if r_vals else comfort
-        next_min = max(comfort, max_t + 100 if len(by_tag[t]) >= 2 else max_t)
-        picks = index.recommend(
-            solved_ids,
-            tag=t,
-            min_rating=next_min,
-            max_rating=max(stretch_high, next_min + 100),
-            limit=1,
-            exclude_ids=shown_ids,
-        )
-        if picks:
-            shown_ids.add(picks[0]["id"])
-            up_next.append((f"Build [{t}](./tags/{tag_to_slug(t)}/)", picks[0]))
-
-    if up_next:
+    challenges = select_blind_challenges(records, index)
+    if challenges:
         lines.extend(
             [
                 "",
-                "## Up Next",
+                "## Suggested Challenges",
                 "",
-                "| Focus | Problem | Rating |",
-                "| :--- | :--- | :---: |",
+                "| Problem | Rating |",
+                "| :--- | :---: |",
             ]
         )
-        for focus, p in up_next:
+        for p in challenges:
             p_link = f"[{p['id']} - {p['name']}]({problem_url(p['contestId'], p['index'])})"
-            lines.append(f"| {focus} | {p_link} | {p['rating']} |")
+            lines.append(f"| {p_link} | {p['rating']} |")
 
-    # Compact expandable drawer for full solved list
+    ordered_tags = sorted(all_tags, key=lambda t: (-len(by_tag[t]), t))
     lines.extend(
         [
             "",
-            "<details>",
-            f"<summary>All Solved Problems ({len(records)})</summary>",
+            "## [All Tags](./tags/README.md)",
             "",
-            "| Rating | Problem | Solution | Date |",
-            "| :---: | :--- | :--- | :---: |",
+            "| Tag | Solved |",
+            "| :--- | :---: |",
         ]
     )
-    for rec in sorted(
-        records,
-        key=lambda r: (r["rating"] if r["rating"] is not None else 9999, r["id"], r["file"]),
-    ):
-        r_dir = format_rating_dir(rec["rating"])
-        r_disp = str(rec["rating"]) if rec["rating"] is not None else "unrated"
-        p_link = f"[{rec['id']} - {rec['name']}]({problem_url(rec['contestId'], rec['index'])})"
-        s_link = f"[{rec['file']}](./ratings/{r_dir}/{rec['file']})"
-        lines.append(f"| {r_disp} | {p_link} | {s_link} | {rec['completed']} |")
+    for t in ordered_tags:
+        slug = tag_to_slug(t)
+        lines.append(f"| [{t}](./tags/{slug}/) | {len(by_tag[t])} |")
 
     lines.extend(
         [
-            "",
-            "</details>",
             "",
             "---",
             "",
-            "Add new solutions to the repo root and run `python3 organize.py` (or push to `main`). Run `python3 organize.py --challenge` for more picks.",
+            "Add new solutions to the repo root and run `python3 organize.py` (or push to `main`). Run `python3 organize.py --challenge` for spoiler-free picks.",
             "",
         ]
     )
@@ -963,50 +954,14 @@ def print_challenge_cli(
             print(f"  [{p['rating']}] {p['id']:6s} {p['name']} -> {problem_url(p['contestId'], p['index'])}")
         return
 
-    shown_ids: set[str] = set()
-    r_lo = filter_rating if filter_rating else stretch_low
-    r_hi = filter_rating if filter_rating else stretch_high
-    print(f"1) Stretch Difficulty Challenges ({r_lo}-{r_hi}):")
-    if r_lo < r_hi:
-        cli_stretch = index.recommend(solved_ids, min_rating=r_lo, max_rating=r_lo, limit=2, exclude_ids=shown_ids)
-        shown_ids.update(p["id"] for p in cli_stretch)
-        cli_high = index.recommend(solved_ids, min_rating=r_hi, max_rating=r_hi, limit=2, exclude_ids=shown_ids)
-        shown_ids.update(p["id"] for p in cli_high)
-        cli_stretch.extend(cli_high)
+    if filter_rating:
+        picks = index.recommend(solved_ids, min_rating=filter_rating, max_rating=filter_rating, limit=6)
     else:
-        cli_stretch = index.recommend(solved_ids, min_rating=r_lo, max_rating=r_hi, limit=4, exclude_ids=shown_ids)
-        shown_ids.update(p["id"] for p in cli_stretch)
+        picks = select_blind_challenges(records, index)
 
-    for p in cli_stretch:
-        print(
-            f"  [{p['rating']}] {p['id']:6s} {p['name']} ({', '.join(p['tags'])})\n"
-            f"         {problem_url(p['contestId'], p['index'])}"
-        )
-
-    practiced_tags = {t for r in records for t in r["tags"]}
-    core_tags, _ = classify_tags(index, comfort, ALL_CF_TAGS)
-    cap = max(1500, comfort + 300)
-    cf_counts = index.count_tag_up_to_rating(cap)
-    unpracticed_core = sorted(core_tags - practiced_tags, key=lambda t: (-cf_counts[t], t))
-
-    if unpracticed_core:
-        print("\n2) Unlock Unpracticed Core Topics (0 solved so far):")
-        for t in unpracticed_core[:5]:
-            picks = index.recommend(
-                solved_ids,
-                tag=t,
-                min_rating=max(800, comfort - 100),
-                max_rating=stretch_high,
-                limit=1,
-                exclude_ids=shown_ids,
-            )
-            if picks:
-                p = picks[0]
-                shown_ids.add(p["id"])
-                print(
-                    f"  • {t:20s} -> [{p['rating']}] {p['id']} - {p['name']} "
-                    f"({problem_url(p['contestId'], p['index'])})"
-                )
+    print("Suggested Challenges (spoiler-free):")
+    for p in picks:
+        print(f"  [{p['rating']}] {p['id']:6s} {p['name']} -> {problem_url(p['contestId'], p['index'])}")
 
 
 def parse_overrides(raw_overrides: list[str]) -> dict[str, str]:
