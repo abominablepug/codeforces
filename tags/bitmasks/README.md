@@ -1,14 +1,13 @@
-# Tag: `bitmasks`
+# bitmasks
 
-[← All Tags](../README.md) · [← Main Dashboard](../../README.md)
+[← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-> **0 problems solved in `bitmasks` so far!** Pick one of the starter challenges below to unlock this topic.
+*0 solved so far.*
 
-## Starter Challenges to Unlock `bitmasks`
+### Try Next
 
-| Difficulty | Problem | All Tags |
-| :---: | :--- | :--- |
-| `1200` | [1909B - Make Almost Equal With Mod](https://codeforces.com/contest/1909/problem/B) | `bitmasks`, `constructive algorithms`, `math`, `number theory` |
-| `1300` | [1669H - Maximal AND](https://codeforces.com/contest/1669/problem/H) | `bitmasks`, `greedy`, `math` |
-| `1100` | [1807G2 - Subsequence Addition (Hard Version)](https://codeforces.com/contest/1807/problem/G2) | `bitmasks`, `dp`, `greedy`, `implementation`, `sortings` |
-| `1100` | [1682B - AND Sorting](https://codeforces.com/contest/1682/problem/B) | `bitmasks`, `constructive algorithms`, `sortings` |
+| Rating | Problem |
+| :---: | :--- |
+| 1200 | [1909B - Make Almost Equal With Mod](https://codeforces.com/contest/1909/problem/B) |
+| 1300 | [1669H - Maximal AND](https://codeforces.com/contest/1669/problem/H) |
+| 1100 | [1807G2 - Subsequence Addition (Hard Version)](https://codeforces.com/contest/1807/problem/G2) |

@@ -578,65 +578,53 @@ def rebuild_tags_directory(records: list[dict[str, Any]], index: ProblemIndex) -
             tag=tag,
             min_rating=rec_min,
             max_rating=rec_max,
-            limit=4,
+            limit=3,
         )
 
         lines = [
-            f"# Tag: `{tag}`",
+            f"# {tag}",
             "",
-            "[← All Tags](../README.md) · [← Main Dashboard](../../README.md)",
+            "[← All Tags](../README.md) · [← Dashboard](../../README.md)",
             "",
         ]
 
         if tag_records:
             r_vals = [r["rating"] for r in tag_records if r["rating"] is not None]
-            r_span = f"{min(r_vals)}–{max(r_vals)}" if r_vals else "unrated"
+            r_span = (
+                f"{min(r_vals)}–{max(r_vals)}"
+                if len(set(r_vals)) > 1
+                else (str(r_vals[0]) if r_vals else "unrated")
+            )
             lines.extend(
                 [
-                    f"**Solved:** `{len(tag_records)}` &nbsp;|&nbsp; **Difficulty Range:** `{r_span}`",
+                    f"**{len(tag_records)}** solved · rating **{r_span}**",
                     "",
-                    "## Solved Problems (Sorted by Difficulty)",
-                    "",
-                    "| Difficulty | Problem | Solution | Other Tags | Completed |",
-                    "| :---: | :--- | :--- | :--- | :---: |",
+                    "| Rating | Problem | Solution |",
+                    "| :---: | :--- | :--- |",
                 ]
             )
             for rec in tag_records:
-                r_disp = f"`{rec['rating']}`" if rec["rating"] is not None else "`unrated`"
+                r_disp = str(rec["rating"]) if rec["rating"] is not None else "unrated"
                 p_link = f"[{rec['id']} - {rec['name']}]({problem_url(rec['contestId'], rec['index'])})"
                 r_dir = format_rating_dir(rec["rating"])
-                s_link = f"[`{rec['file']}`](../../ratings/{r_dir}/{rec['file']})"
-                other_tags = ", ".join(
-                    f"[`{t}`](../{tag_to_slug(t)}/)" for t in rec["tags"] if t != tag
-                ) or "—"
-                lines.append(f"| {r_disp} | {p_link} | {s_link} | {other_tags} | {rec['completed']} |")
+                s_link = f"[{rec['file']}](../../ratings/{r_dir}/{rec['file']})"
+                lines.append(f"| {r_disp} | {p_link} | {s_link} |")
             lines.append("")
         else:
-            lines.extend(
-                [
-                    "> **0 problems solved in `" + tag + "` so far!** Pick one of the starter challenges below to unlock this topic.",
-                    "",
-                ]
-            )
+            lines.extend(["*0 solved so far.*", ""])
 
         if suggestions:
-            heading = (
-                f"## Next Challenges in `{tag}`"
-                if tag_records
-                else f"## Starter Challenges to Unlock `{tag}`"
-            )
             lines.extend(
                 [
-                    heading,
+                    "### Try Next",
                     "",
-                    "| Difficulty | Problem | All Tags |",
-                    "| :---: | :--- | :--- |",
+                    "| Rating | Problem |",
+                    "| :---: | :--- |",
                 ]
             )
             for s in suggestions:
                 s_link = f"[{s['id']} - {s['name']}]({problem_url(s['contestId'], s['index'])})"
-                s_tags = ", ".join(f"`{t}`" for t in s["tags"])
-                lines.append(f"| `{s['rating']}` | {s_link} | {s_tags} |")
+                lines.append(f"| {s['rating']} | {s_link} |")
             lines.append("")
 
         (tag_dir / "README.md").write_text("\n".join(lines), encoding="utf-8")
@@ -644,49 +632,32 @@ def rebuild_tags_directory(records: list[dict[str, Any]], index: ProblemIndex) -
 
 def write_ratings_readme(records: list[dict[str, Any]]) -> None:
     RATINGS_DIR.mkdir(parents=True, exist_ok=True)
-    by_rating: dict[str, list[dict[str, Any]]] = collections.defaultdict(list)
-    for rec in records:
-        by_rating[format_rating_dir(rec["rating"])].append(rec)
-
     lines = [
-        "# Solutions by Difficulty Rating",
+        "# By Difficulty",
         "",
-        "[← Back to Main Dashboard](../README.md) · [Browse by Topic Tag →](../tags/README.md)",
+        "[← Dashboard](../README.md) · [By Tag →](../tags/README.md)",
         "",
-        "| Folder | Rating | Solved | Problems |",
-        "| :--- | :---: | :---: | :--- |",
+        "| Rating | Problem | Solution | Completed |",
+        "| :---: | :--- | :--- | :---: |",
     ]
-
-    for r_dir in sorted(by_rating.keys()):
-        items = sorted(by_rating[r_dir], key=lambda x: (x["id"], x["file"]))
-        r_label = f"`{items[0]['rating']}`" if items[0]["rating"] is not None else "`unrated`"
-        prob_links = ", ".join(f"[`{it['file']}`](./{r_dir}/{it['file']})" for it in items)
-        lines.append(f"| [`{r_dir}/`](./{r_dir}/) | {r_label} | **{len(items)}** | {prob_links} |")
-
-    lines.extend(["", "## Full List (Easiest → Hardest)", ""])
-    lines.extend(
-        [
-            "| Difficulty | Problem | Solution | Tags | Completed |",
-            "| :---: | :--- | :--- | :--- | :---: |",
-        ]
-    )
     for rec in sorted(
         records,
         key=lambda r: (r["rating"] if r["rating"] is not None else 9999, r["id"], r["file"]),
     ):
         r_dir = format_rating_dir(rec["rating"])
-        r_disp = f"`{rec['rating']}`" if rec["rating"] is not None else "`unrated`"
+        r_label = str(rec["rating"]) if rec["rating"] is not None else "unrated"
+        r_link = f"[{r_label}](./{r_dir}/)"
         p_link = f"[{rec['id']} - {rec['name']}]({problem_url(rec['contestId'], rec['index'])})"
-        s_link = f"[`{rec['file']}`](./{r_dir}/{rec['file']})"
-        t_links = ", ".join(f"[`{t}`](../tags/{tag_to_slug(t)}/)" for t in rec["tags"])
-        lines.append(f"| {r_disp} | {p_link} | {s_link} | {t_links} | {rec['completed']} |")
+        s_link = f"[{rec['file']}](./{r_dir}/{rec['file']})"
+        lines.append(f"| {r_link} | {p_link} | {s_link} | {rec['completed']} |")
 
     lines.append("")
     (RATINGS_DIR / "README.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def write_tags_readme(records: list[dict[str, Any]], index: ProblemIndex) -> None:
-    comfort, _, _ = compute_comfort_and_target(records)
+    solved_ids = {r["id"] for r in records}
+    comfort, _, stretch_high = compute_comfort_and_target(records)
     extra_tags = {t for r in records for t in r["tags"]} - set(ALL_CF_TAGS)
     all_tags = sorted(set(ALL_CF_TAGS) | extra_tags)
     core_tags, _ = classify_tags(index, comfort, all_tags)
@@ -698,8 +669,7 @@ def write_tags_readme(records: list[dict[str, Any]], index: ProblemIndex) -> Non
         for t in rec["tags"]:
             by_tag[t].append(rec)
 
-    practiced = [t for t in all_tags if by_tag[t]]
-    practiced.sort(key=lambda t: (-len(by_tag[t]), t))
+    practiced = sorted([t for t in all_tags if by_tag[t]], key=lambda t: (-len(by_tag[t]), t))
     unpracticed_core = sorted(
         [t for t in all_tags if not by_tag[t] and t in core_tags],
         key=lambda t: (-cf_counts[t], t),
@@ -710,68 +680,72 @@ def write_tags_readme(records: list[dict[str, Any]], index: ProblemIndex) -> Non
     )
 
     lines = [
-        "# Solutions by Codeforces Topic Tag",
+        "# By Topic Tag",
         "",
-        "[← Back to Main Dashboard](../README.md) · [Browse by Difficulty →](../ratings/README.md)",
+        "[← Dashboard](../README.md) · [By Difficulty →](../ratings/README.md)",
         "",
-        f"**Practiced Tags:** `{len(practiced)} / {len(all_tags)}` &nbsp;|&nbsp; "
-        f"**Core Unpracticed (`0` solved):** `{len(unpracticed_core)}` &nbsp;|&nbsp; "
-        f"**Advanced Unpracticed (`0` solved):** `{len(unpracticed_adv)}`",
+        f"**{len(practiced)} / {len(all_tags)}** tags practiced · **{len(unpracticed_core)}** core gaps · **{len(unpracticed_adv)}** advanced",
         "",
-        "## Practiced Tags",
+        "### Practiced",
         "",
-        "| Tag Folder | Solved | Progress | Difficulty Range | Solutions |",
-        "| :--- | :---: | :--- | :---: | :--- |",
+        "| Tag | Solved | Rating Range |",
+        "| :--- | :---: | :---: |",
     ]
 
     for t in practiced:
         slug = tag_to_slug(t)
-        items = sorted(
-            by_tag[t],
-            key=lambda r: (r["rating"] if r["rating"] is not None else 9999, r["id"]),
+        r_vals = [r["rating"] for r in by_tag[t] if r["rating"] is not None]
+        r_span = (
+            f"{min(r_vals)}–{max(r_vals)}"
+            if len(set(r_vals)) > 1
+            else (str(r_vals[0]) if r_vals else "unrated")
         )
-        r_vals = [r["rating"] for r in items if r["rating"] is not None]
-        r_span = f"`{min(r_vals)}–{max(r_vals)}`" if len(set(r_vals)) > 1 else (
-            f"`{r_vals[0]}`" if r_vals else "`unrated`"
-        )
-        sols = ", ".join(
-            f"[`{it['file']}`](../ratings/{format_rating_dir(it['rating'])}/{it['file']})"
-            for it in items
-        )
-        lines.append(
-            f"| [`{t}`](./{slug}/) | **{len(items)}** | `{progress_bar(len(items))}` | {r_span} | {sols} |"
-        )
+        lines.append(f"| [{t}](./{slug}/) | {len(by_tag[t])} | {r_span} |")
 
-    lines.extend(
-        [
-            "",
-            f"## Core Topics Not Yet Practiced (`0` Solved — High Priority `<= {cap}`)",
-            "",
-            "Click into any folder below for starter problem recommendations at your level:",
-            "",
-            "| Tag Folder | Solved | CF Problems `<= " + str(cap) + "` | Status |",
-            "| :--- | :---: | :---: | :--- |",
-        ]
-    )
-    for t in unpracticed_core:
-        slug = tag_to_slug(t)
-        cnt = cf_counts[t] if index.available else "—"
-        lines.append(f"| [`{t}`](./{slug}/) | `0` | {cnt} | Open folder for starter challenges |")
-
-    if unpracticed_adv:
+    if unpracticed_core:
         lines.extend(
             [
                 "",
-                "## Advanced / Specialized Topics (`0` Solved — Mostly `1600+`)",
+                "### Core Gaps (0 Solved)",
                 "",
-                "| Tag Folder | Solved | CF Problems `<= " + str(cap) + "` |",
-                "| :--- | :---: | :---: |",
+                "| Tag | Starter Problem | Rating |",
+                "| :--- | :--- | :---: |",
             ]
         )
-        for t in unpracticed_adv:
+        used: set[str] = set()
+        for t in unpracticed_core:
             slug = tag_to_slug(t)
-            cnt = cf_counts[t] if index.available else "—"
-            lines.append(f"| [`{t}`](./{slug}/) | `0` | {cnt} |")
+            picks = index.recommend(
+                solved_ids,
+                tag=t,
+                min_rating=max(800, comfort - 100),
+                max_rating=stretch_high,
+                limit=1,
+                exclude_ids=used,
+            )
+            if picks:
+                p = picks[0]
+                used.add(p["id"])
+                p_cell = f"[{p['id']} - {p['name']}]({problem_url(p['contestId'], p['index'])})"
+                r_cell = str(p["rating"])
+            else:
+                p_cell = "—"
+                r_cell = "—"
+            lines.append(f"| [{t}](./{slug}/) | {p_cell} | {r_cell} |")
+
+    if unpracticed_adv:
+        adv_links = " · ".join(f"[{t}](./{tag_to_slug(t)}/)" for t in unpracticed_adv)
+        lines.extend(
+            [
+                "",
+                "<details>",
+                f"<summary>Advanced / 1600+ Tags ({len(unpracticed_adv)} unpracticed)</summary>",
+                "",
+                adv_links,
+                "",
+                "</details>",
+            ]
+        )
 
     lines.append("")
     (TAGS_DIR / "README.md").write_text("\n".join(lines), encoding="utf-8")
@@ -809,229 +783,135 @@ def write_root_readme(records: list[dict[str, Any]], index: ProblemIndex) -> Non
         [t for t in all_tags if not by_tag[t] and t in core_tags],
         key=lambda t: (-cf_counts[t], t),
     )
-    unpracticed_adv = sorted(
-        [t for t in all_tags if not by_tag[t] and t not in core_tags],
-        key=lambda t: (-cf_counts[t], t),
-    )
 
     lines = [
-        "# Codeforces Solutions & Progress Tracker",
+        "# Codeforces Solutions",
         "",
-        "Organized both by **difficulty rating** ([`ratings/`](./ratings/)) and across **all 37 official Codeforces topic tags** ([`tags/`](./tags/)).",
+        f"**{len(records)}** solved · **{min_r}–{max_r}** rating · next target **{stretch_low}–{stretch_high}** · **{len(practiced)} / {len(all_tags)}** tags",
         "",
-        "| Total Solved | Solved Rating Span | Current Comfort Zone | Next Stretch Target | Tags Unlocked |",
-        "| :---: | :---: | :---: | :---: | :---: |",
-        f"| **{len(records)}** | `{min_r} – {max_r}` | **`{comfort}`** | **`{stretch_low} – {stretch_high}`** | **`{len(practiced)} / {len(all_tags)}`** |",
+        "## Progress",
         "",
-        "---",
+        "### [By Difficulty](./ratings/README.md)",
         "",
-        "## What to Work On Next",
-        "",
-        "### 1. Difficulty Ladder — Push Ceiling to `"
-        + f"{stretch_low}–{stretch_high}"
-        + "`",
-        "",
-        "| Rating | Solved | Distribution | Folder / Status |",
-        "| :---: | :---: | :--- | :--- |",
+        "| Rating | Solved | |",
+        "| :--- | :---: | :--- |",
     ]
 
-    ladder_top = max(1500, max_r + 200)
-    for r in range(800, ladder_top + 100, 100):
+    display_ratings = sorted(set(ratings_only) | {stretch_high})
+    for r in display_ratings:
         cnt = len(by_rating.get(r, []))
-        bar = "█" * cnt + ("░" if cnt == 0 else "")
         r_dir = format_rating_dir(r)
         if cnt > 0:
-            note = f"[`ratings/{r_dir}/`](./ratings/{r_dir}/)"
-            if r == comfort:
-                note += " *(comfort zone)*"
-            elif r == max_r:
-                note += " *(current ceiling)*"
+            label = f"[{r}](./ratings/{r_dir}/)"
+            bar = f"`{'█' * cnt}`"
         else:
-            if stretch_low <= r <= stretch_high:
-                note = "**Next milestone — target this band!**"
-            else:
-                note = "—"
-        lines.append(f"| `{r}` | **{cnt}** | `{bar}` | {note} |")
+            label = f"**{r}** *(goal)*"
+            bar = "—"
+        lines.append(f"| {label} | {cnt} | {bar} |")
 
     if unrated_recs:
         lines.append(
-            f"| `unrated` | **{len(unrated_recs)}** | `{'█' * len(unrated_recs)}` | [`ratings/unrated/`](./ratings/unrated/) |"
+            f"| [unrated](./ratings/unrated/) | {len(unrated_recs)} | `{'█' * len(unrated_recs)}` |"
         )
 
-    shown_ids: set[str] = set()
-
-    # Stretch difficulty problem picks (balanced across stretch_low and stretch_high)
-    if stretch_low < stretch_high:
-        low_picks = index.recommend(
-            solved_ids,
-            min_rating=stretch_low,
-            max_rating=stretch_low,
-            limit=2,
-            exclude_ids=shown_ids,
-        )
-        shown_ids.update(p["id"] for p in low_picks)
-        high_picks = index.recommend(
-            solved_ids,
-            min_rating=stretch_high,
-            max_rating=stretch_high,
-            limit=2,
-            exclude_ids=shown_ids,
-        )
-        shown_ids.update(p["id"] for p in high_picks)
-        stretch_picks = low_picks + high_picks
-    else:
-        stretch_picks = index.recommend(
-            solved_ids,
-            min_rating=stretch_low,
-            max_rating=stretch_high,
-            limit=4,
-            exclude_ids=shown_ids,
-        )
-        shown_ids.update(p["id"] for p in stretch_picks)
-
-    if stretch_picks:
-        lines.extend(
-            [
-                "",
-                f"**Recommended `{stretch_low}–{stretch_high}` Stretch Problems:**",
-                "",
-                "| Rating | Problem | Tags |",
-                "| :---: | :--- | :--- |",
-            ]
-        )
-        for p in stretch_picks:
-            p_link = f"[{p['id']} - {p['name']}]({problem_url(p['contestId'], p['index'])})"
-            p_tags = ", ".join(f"[`{t}`](./tags/{tag_to_slug(t)}/)" for t in p["tags"])
-            lines.append(f"| `{p['rating']}` | {p_link} | {p_tags} |")
-
-    # Core 0-solved blind spots with 1 unique entry challenge each
-    if unpracticed_core:
-        lines.extend(
-            [
-                "",
-                "### 2. Core Topic Blind Spots (`0` Solved)",
-                "",
-                "These fundamental competitive programming tags appear frequently at your target rating, and you currently have **`0` solutions** in them:",
-                "",
-                "| Unpracticed Core Tag | Starter Challenge to Break the Ice | Rating |",
-                "| :--- | :--- | :---: |",
-            ]
-        )
-        for t in unpracticed_core[:8]:
-            slug = tag_to_slug(t)
-            picks = index.recommend(
-                solved_ids,
-                tag=t,
-                min_rating=max(800, comfort - 100),
-                max_rating=stretch_high,
-                limit=1,
-                exclude_ids=shown_ids,
-            )
-            if picks:
-                p = picks[0]
-                shown_ids.add(p["id"])
-                pick_cell = f"[{p['id']} - {p['name']}]({problem_url(p['contestId'], p['index'])})"
-                r_cell = f"`{p['rating']}`"
-            else:
-                pick_cell = f"See [`tags/{slug}/`](./tags/{slug}/)"
-                r_cell = "—"
-            lines.append(f"| [`{t}`](./tags/{slug}/) | {pick_cell} | {r_cell} |")
-
-    # Lightly practiced core tags (1-2 solved)
-    if lightly_practiced:
-        lines.extend(
-            [
-                "",
-                "### 3. Lightly Practiced Topics (`1–2` Solved — Build Consistency)",
-                "",
-                "| Tag | Solved | Highest Solved | Suggested Next Step |",
-                "| :--- | :---: | :---: | :--- |",
-            ]
-        )
-        for t in lightly_practiced:
-            slug = tag_to_slug(t)
-            r_vals = [r["rating"] for r in by_tag[t] if r["rating"] is not None]
-            max_t = max(r_vals) if r_vals else comfort
-            next_min = max(comfort, max_t + 100 if len(by_tag[t]) >= 2 else max_t)
-            picks = index.recommend(
-                solved_ids,
-                tag=t,
-                min_rating=next_min,
-                max_rating=max(stretch_high, next_min + 100),
-                limit=1,
-                exclude_ids=shown_ids,
-            )
-            if picks:
-                shown_ids.add(picks[0]["id"])
-            next_cell = (
-                f"[{picks[0]['id']} - {picks[0]['name']}]({problem_url(picks[0]['contestId'], picks[0]['index'])}) (`{picks[0]['rating']}`)"
-                if picks
-                else f"[`tags/{slug}/`](./tags/{slug}/)"
-            )
-            lines.append(
-                f"| [`{t}`](./tags/{slug}/) | `{len(by_tag[t])}` | `{max_t}` | {next_cell} |"
-            )
-
-    # Full Tag Coverage Matrix
     lines.extend(
         [
             "",
-            "---",
+            "### [By Topic](./tags/README.md)",
             "",
-            "## Topic Tag Coverage (All 37 Codeforces Tags)",
-            "",
-            "### Practiced Tags",
-            "",
-            "| Tag | Solved | Bar | Rating Span | Folder |",
-            "| :--- | :---: | :--- | :---: | :--- |",
+            "| Tag | Solved | Range |",
+            "| :--- | :---: | :---: |",
         ]
     )
     for t in practiced:
         slug = tag_to_slug(t)
-        items = by_tag[t]
-        r_vals = [r["rating"] for r in items if r["rating"] is not None]
+        r_vals = [r["rating"] for r in by_tag[t] if r["rating"] is not None]
         span = (
-            f"`{min(r_vals)}–{max(r_vals)}`"
+            f"{min(r_vals)}–{max(r_vals)}"
             if len(set(r_vals)) > 1
-            else (f"`{r_vals[0]}`" if r_vals else "`unrated`")
+            else (str(r_vals[0]) if r_vals else "unrated")
         )
-        lines.append(
-            f"| [`{t}`](./tags/{slug}/) | **{len(items)}** | `{progress_bar(len(items))}` | {span} | [`tags/{slug}/`](./tags/{slug}/) |"
-        )
+        lines.append(f"| [{t}](./tags/{slug}/) | {len(by_tag[t])} | {span} |")
 
     if unpracticed_core:
-        core_links = " · ".join(f"[`{t}`](./tags/{tag_to_slug(t)}/)" for t in unpracticed_core)
+        core_links = " · ".join(f"[{t}](./tags/{tag_to_slug(t)}/)" for t in unpracticed_core)
+        lines.extend(["", f"**Core gaps (0 solved):** {core_links}"])
+
+    # Single compact 5-row "Up Next" challenge table
+    shown_ids: set[str] = set()
+    up_next: list[tuple[str, dict[str, Any]]] = []
+
+    p_low = index.recommend(
+        solved_ids, min_rating=stretch_low, max_rating=stretch_low, limit=1, exclude_ids=shown_ids
+    )
+    if p_low:
+        shown_ids.add(p_low[0]["id"])
+        up_next.append((f"Push {stretch_low}", p_low[0]))
+
+    if stretch_high > stretch_low:
+        p_high = index.recommend(
+            solved_ids,
+            min_rating=stretch_high,
+            max_rating=stretch_high,
+            limit=1,
+            exclude_ids=shown_ids,
+        )
+        if p_high:
+            shown_ids.add(p_high[0]["id"])
+            up_next.append((f"Break into {stretch_high}", p_high[0]))
+
+    for t in unpracticed_core[:2]:
+        picks = index.recommend(
+            solved_ids,
+            tag=t,
+            min_rating=max(800, comfort - 100),
+            max_rating=stretch_high,
+            limit=1,
+            exclude_ids=shown_ids,
+        )
+        if picks:
+            shown_ids.add(picks[0]["id"])
+            up_next.append((f"Unlock [{t}](./tags/{tag_to_slug(t)}/)", picks[0]))
+
+    for t in lightly_practiced[:1]:
+        r_vals = [r["rating"] for r in by_tag[t] if r["rating"] is not None]
+        max_t = max(r_vals) if r_vals else comfort
+        next_min = max(comfort, max_t + 100 if len(by_tag[t]) >= 2 else max_t)
+        picks = index.recommend(
+            solved_ids,
+            tag=t,
+            min_rating=next_min,
+            max_rating=max(stretch_high, next_min + 100),
+            limit=1,
+            exclude_ids=shown_ids,
+        )
+        if picks:
+            shown_ids.add(picks[0]["id"])
+            up_next.append((f"Build [{t}](./tags/{tag_to_slug(t)}/)", picks[0]))
+
+    if up_next:
         lines.extend(
             [
                 "",
-                f"**Unpracticed Core Tags (`0` solved):** {core_links}",
+                "## Up Next",
+                "",
+                "| Focus | Problem | Rating |",
+                "| :--- | :--- | :---: |",
             ]
         )
+        for focus, p in up_next:
+            p_link = f"[{p['id']} - {p['name']}]({problem_url(p['contestId'], p['index'])})"
+            lines.append(f"| {focus} | {p_link} | {p['rating']} |")
 
-    if unpracticed_adv:
-        adv_links = " · ".join(f"[`{t}`](./tags/{tag_to_slug(t)}/)" for t in unpracticed_adv)
-        lines.extend(
-            [
-                "",
-                "<details>",
-                f"<summary><strong>Unpracticed Advanced / Specialized Tags ({len(unpracticed_adv)} tags, typically 1600+)</strong></summary>",
-                "",
-                adv_links,
-                "",
-                "</details>",
-            ]
-        )
-
-    # All Solved Problems Sorted by Difficulty
+    # Compact expandable drawer for full solved list
     lines.extend(
         [
             "",
-            "---",
+            "<details>",
+            f"<summary>All Solved Problems ({len(records)})</summary>",
             "",
-            "## Solved Problems (Sorted by Difficulty)",
-            "",
-            "| Difficulty | Problem | Solution | Tags | Completed |",
-            "| :---: | :--- | :--- | :--- | :---: |",
+            "| Rating | Problem | Solution | Date |",
+            "| :---: | :--- | :--- | :---: |",
         ]
     )
     for rec in sorted(
@@ -1039,63 +919,19 @@ def write_root_readme(records: list[dict[str, Any]], index: ProblemIndex) -> Non
         key=lambda r: (r["rating"] if r["rating"] is not None else 9999, r["id"], r["file"]),
     ):
         r_dir = format_rating_dir(rec["rating"])
-        r_disp = f"`{rec['rating']}`" if rec["rating"] is not None else "`unrated`"
+        r_disp = str(rec["rating"]) if rec["rating"] is not None else "unrated"
         p_link = f"[{rec['id']} - {rec['name']}]({problem_url(rec['contestId'], rec['index'])})"
-        s_link = f"[`{rec['file']}`](./ratings/{r_dir}/{rec['file']})"
-        t_links = ", ".join(f"[`{t}`](./tags/{tag_to_slug(t)}/)" for t in rec["tags"])
-        lines.append(f"| {r_disp} | {p_link} | {s_link} | {t_links} | {rec['completed']} |")
+        s_link = f"[{rec['file']}](./ratings/{r_dir}/{rec['file']})"
+        lines.append(f"| {r_disp} | {p_link} | {s_link} | {rec['completed']} |")
 
-    # Collapsible Problems Grouped by Tag
     lines.extend(
         [
             "",
-            "<details>",
-            "<summary><strong>View Solved Problems Grouped by Tag</strong></summary>",
+            "</details>",
             "",
-        ]
-    )
-    for t in practiced:
-        slug = tag_to_slug(t)
-        items = sorted(
-            by_tag[t],
-            key=lambda r: (r["rating"] if r["rating"] is not None else 9999, r["id"]),
-        )
-        lines.append(f"### [`{t}`](./tags/{slug}/) ({len(items)})")
-        lines.append("")
-        for it in items:
-            r_dir = format_rating_dir(it["rating"])
-            r_str = it["rating"] if it["rating"] is not None else "unrated"
-            lines.append(
-                f"- `{r_str}` — [{it['id']}: {it['name']}]({problem_url(it['contestId'], it['index'])}) "
-                f"([`{it['file']}`](./ratings/{r_dir}/{it['file']}))"
-            )
-        lines.append("")
-    lines.extend(["</details>", ""])
-
-    # Workflow guide
-    lines.extend(
-        [
             "---",
             "",
-            "## Adding New Solutions",
-            "",
-            "You never need to manually create folders or symlinks:",
-            "",
-            "1. Save your new solution right in the repo root (e.g., `problemName.cpp` or `2193D.cpp` — or add `// CF: 2193D` on line 1).",
-            "2. Run the organizer (or simply push to `main` and let GitHub Actions run it for you):",
-            "",
-            "```bash",
-            "python3 organize.py",
-            "```",
-            "",
-            "### Useful Commands",
-            "",
-            "```bash",
-            "python3 organize.py --challenge              # Get next challenge suggestions in terminal",
-            "python3 organize.py --challenge --tag graphs # Get starter/next problems for a specific tag",
-            "python3 organize.py --set mySol.cpp=2193D    # Explicitly link a custom filename to a CF ID",
-            "python3 organize.py --refresh                # Force refresh Codeforces problemset cache",
-            "```",
+            "Add new solutions to the repo root and run `python3 organize.py` (or push to `main`). Run `python3 organize.py --challenge` for more picks.",
             "",
         ]
     )

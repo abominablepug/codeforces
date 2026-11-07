@@ -1,14 +1,13 @@
-# Tag: `matrices`
+# matrices
 
-[← All Tags](../README.md) · [← Main Dashboard](../../README.md)
+[← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-> **0 problems solved in `matrices` so far!** Pick one of the starter challenges below to unlock this topic.
+*0 solved so far.*
 
-## Starter Challenges to Unlock `matrices`
+### Try Next
 
-| Difficulty | Problem | All Tags |
-| :---: | :--- | :--- |
-| `1400` | [1648A - Weird Sum](https://codeforces.com/contest/1648/problem/A) | `combinatorics`, `data structures`, `geometry`, `math`, `matrices`, `sortings` |
-| `1200` | [2069B - Set of Strangers](https://codeforces.com/contest/2069/problem/B) | `greedy`, `matrices` |
-| `1300` | [2036D - I Love 1543](https://codeforces.com/contest/2036/problem/D) | `brute force`, `implementation`, `matrices` |
-| `1400` | [485A - Factory](https://codeforces.com/contest/485/problem/A) | `implementation`, `math`, `matrices` |
+| Rating | Problem |
+| :---: | :--- |
+| 1400 | [1648A - Weird Sum](https://codeforces.com/contest/1648/problem/A) |
+| 1200 | [2069B - Set of Strangers](https://codeforces.com/contest/2069/problem/B) |
+| 1300 | [2036D - I Love 1543](https://codeforces.com/contest/2036/problem/D) |

@@ -1,14 +1,13 @@
-# Tag: `strings`
+# strings
 
-[← All Tags](../README.md) · [← Main Dashboard](../../README.md)
+[← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-> **0 problems solved in `strings` so far!** Pick one of the starter challenges below to unlock this topic.
+*0 solved so far.*
 
-## Starter Challenges to Unlock `strings`
+### Try Next
 
-| Difficulty | Problem | All Tags |
-| :---: | :--- | :--- |
-| `1100` | [1917B - Erase First or Second Letter](https://codeforces.com/contest/1917/problem/B) | `brute force`, `combinatorics`, `data structures`, `dp`, `strings` |
-| `1100` | [1999D - Slavic's Exam](https://codeforces.com/contest/1999/problem/D) | `greedy`, `implementation`, `strings` |
-| `1100` | [1971D - Binary Cut](https://codeforces.com/contest/1971/problem/D) | `dp`, `greedy`, `implementation`, `sortings`, `strings` |
-| `1200` | [1800D - Remove Two Letters](https://codeforces.com/contest/1800/problem/D) | `data structures`, `greedy`, `hashing`, `strings` |
+| Rating | Problem |
+| :---: | :--- |
+| 1100 | [1917B - Erase First or Second Letter](https://codeforces.com/contest/1917/problem/B) |
+| 1100 | [1999D - Slavic's Exam](https://codeforces.com/contest/1999/problem/D) |
+| 1100 | [1971D - Binary Cut](https://codeforces.com/contest/1971/problem/D) |

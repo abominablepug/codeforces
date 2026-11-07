@@ -1,14 +1,13 @@
-# Tag: `chinese remainder theorem`
+# chinese remainder theorem
 
-[← All Tags](../README.md) · [← Main Dashboard](../../README.md)
+[← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-> **0 problems solved in `chinese remainder theorem` so far!** Pick one of the starter challenges below to unlock this topic.
+*0 solved so far.*
 
-## Starter Challenges to Unlock `chinese remainder theorem`
+### Try Next
 
-| Difficulty | Problem | All Tags |
-| :---: | :--- | :--- |
-| `1300` | [2217C - Grid Covering](https://codeforces.com/contest/2217/problem/C) | `chinese remainder theorem`, `math`, `number theory` |
-| `1700` | [1770C - Koxia and Number Theory](https://codeforces.com/contest/1770/problem/C) | `brute force`, `chinese remainder theorem`, `math`, `number theory` |
-| `1800` | [687B - Remainders Game](https://codeforces.com/contest/687/problem/B) | `chinese remainder theorem`, `math`, `number theory` |
-| `1900` | [2264D - Dr. Agos's Dark Mode](https://codeforces.com/contest/2264/problem/D) | `brute force`, `chinese remainder theorem`, `constructive algorithms`, `math`, `strings` |
+| Rating | Problem |
+| :---: | :--- |
+| 1300 | [2217C - Grid Covering](https://codeforces.com/contest/2217/problem/C) |
+| 1700 | [1770C - Koxia and Number Theory](https://codeforces.com/contest/1770/problem/C) |
+| 1800 | [687B - Remainders Game](https://codeforces.com/contest/687/problem/B) |
