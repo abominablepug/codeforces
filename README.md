@@ -1,6 +1,6 @@
 # Codeforces Solutions
 
-**15** solved · **800–1300** rating · target **1400–1500** · **16 / 37** tags
+**16** solved · **800–1500** rating · target **1500–1600** · **16 / 37** tags
 
 ## [By Difficulty](./ratings/README.md)
 
@@ -10,7 +10,8 @@
 | [1100](./ratings/1100/) | 5 |
 | [1200](./ratings/1200/) | 6 |
 | [1300](./ratings/1300/) | 3 |
-| **1500** *(goal)* | 0 |
+| [1500](./ratings/1500/) | 1 |
+| **1600** *(goal)* | 0 |
 
 ## Suggested Challenges
 
@@ -18,9 +19,9 @@
 | :--- | :---: |
 | [1917B - Erase First or Second Letter](https://codeforces.com/contest/1917/problem/B) | 1100 |
 | [1800D - Remove Two Letters](https://codeforces.com/contest/1800/problem/D) | 1200 |
-| [1919C - Grouping Increases](https://codeforces.com/contest/1919/problem/C) | 1400 |
 | [1931E - Anna and the Valentine's Day Gift](https://codeforces.com/contest/1931/problem/E) | 1400 |
-| [1881E - Block Sequence](https://codeforces.com/contest/1881/problem/E) | 1500 |
+| [1915F - Greetings](https://codeforces.com/contest/1915/problem/F) | 1500 |
+| [1920C - Partitioning the Array](https://codeforces.com/contest/1920/problem/C) | 1600 |
 
 ## [All Tags](./tags/README.md)
 
@@ -32,9 +33,9 @@
 | [binary search](./tags/binary-search/) | 4 |
 | [sortings](./tags/sortings/) | 4 |
 | [two pointers](./tags/two-pointers/) | 4 |
+| [dp](./tags/dp/) | 3 |
 | [brute force](./tags/brute-force/) | 2 |
 | [constructive algorithms](./tags/constructive-algorithms/) | 2 |
-| [dp](./tags/dp/) | 2 |
 | [number theory](./tags/number-theory/) | 2 |
 | [bitmasks](./tags/bitmasks/) | 1 |
 | [data structures](./tags/data-structures/) | 1 |

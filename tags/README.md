@@ -2,7 +2,7 @@
 
 [← Dashboard](../README.md) · [By Difficulty →](../ratings/README.md)
 
-**16 / 37** practiced · **10** lightly practiced · **4** core blind spots
+**16 / 37** practiced · **9** lightly practiced · **4** core blind spots
 
 ## Core Topic Blind Spots (0 Solved)
 
@@ -19,7 +19,6 @@
 | :--- | :---: | :---: |
 | [brute force](./brute-force/) | 2 | 1200 |
 | [constructive algorithms](./constructive-algorithms/) | 2 | 1200 |
-| [dp](./dp/) | 2 | 1200 |
 | [number theory](./number-theory/) | 2 | 1200 |
 | [bitmasks](./bitmasks/) | 1 | 1300 |
 | [data structures](./data-structures/) | 1 | 1200 |
@@ -38,6 +37,7 @@
 | [binary search](./binary-search/) | 4 | 1100–1300 |
 | [sortings](./sortings/) | 4 | 1100–1300 |
 | [two pointers](./two-pointers/) | 4 | 1100–1300 |
+| [dp](./dp/) | 3 | 1100–1500 |
 
 <details>
 <summary>Advanced / 1600+ Topics (17 unpracticed)</summary>

@@ -8,6 +8,6 @@
 
 | Rating | Problem |
 | :---: | :--- |
-| 1500 | [1400C - Binary String Reconstruction](https://codeforces.com/contest/1400/problem/C) |
+| 1600 | [2018A - Cards Partition](https://codeforces.com/contest/2018/problem/A) |
+| 1600 | [2061C - Kevin and Puzzle](https://codeforces.com/contest/2061/problem/C) |
 | 1400 | [2097A - Sports Betting](https://codeforces.com/contest/2097/problem/A) |
-| 1500 | [2259E - Treasure Map Destruction (Constructive Version)](https://codeforces.com/contest/2259/problem/E) |

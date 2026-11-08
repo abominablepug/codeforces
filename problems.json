@@ -210,5 +210,17 @@
     ],
     "file": "bentoBoxAdventure.cpp",
     "completed": "2025-11-02"
+  },
+  {
+    "id": "1881E",
+    "contestId": 1881,
+    "index": "E",
+    "name": "Block Sequence",
+    "rating": 1500,
+    "tags": [
+      "dp"
+    ],
+    "file": "blockSequence.cpp",
+    "completed": "2026-11-07"
   }
 ]

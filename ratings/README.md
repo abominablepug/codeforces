@@ -19,3 +19,4 @@
 | [1300](./1300/) | [1669H - Maximal AND](https://codeforces.com/contest/1669/problem/H) | [maximalAND.cpp](./1300/maximalAND.cpp) | 2026-11-07 |
 | [1300](./1300/) | [1794C - Scoring Subsequences](https://codeforces.com/contest/1794/problem/C) | [scoringSubsequences.cpp](./1300/scoringSubsequences.cpp) | 2025-11-02 |
 | [1300](./1300/) | [2041A - The Bento Box Adventure](https://codeforces.com/contest/2041/problem/A) | [bentoBoxAdventure.cpp](./1300/bentoBoxAdventure.cpp) | 2025-11-02 |
+| [1500](./1500/) | [1881E - Block Sequence](https://codeforces.com/contest/1881/problem/E) | [blockSequence.cpp](./1500/blockSequence.cpp) | 2026-11-07 |

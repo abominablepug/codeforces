@@ -8,6 +8,6 @@
 
 | Rating | Problem |
 | :---: | :--- |
-| 1500 | [166E - Tetrahedron](https://codeforces.com/contest/166/problem/E) |
-| 1400 | [1648A - Weird Sum](https://codeforces.com/contest/1648/problem/A) |
 | 1200 | [2069B - Set of Strangers](https://codeforces.com/contest/2069/problem/B) |
+| 1300 | [2036D - I Love 1543](https://codeforces.com/contest/2036/problem/D) |
+| 1600 | [1980E - Permutation of Rows and Columns](https://codeforces.com/contest/1980/problem/E) |

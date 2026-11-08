@@ -8,6 +8,6 @@
 
 | Rating | Problem |
 | :---: | :--- |
-| 1200 | [489B - BerSU Ball](https://codeforces.com/contest/489/problem/B) |
-| 1100 | [1360C - Similar Pairs](https://codeforces.com/contest/1360/problem/C) |
-| 1100 | [1624C - Division by Two and Permutation](https://codeforces.com/contest/1624/problem/C) |
+| 1300 | [2049B - pspspsps](https://codeforces.com/contest/2049/problem/B) |
+| 1600 | [2059C - Customer Service](https://codeforces.com/contest/2059/problem/C) |
+| 1400 | [2204D - Alternating Path](https://codeforces.com/contest/2204/problem/D) |
