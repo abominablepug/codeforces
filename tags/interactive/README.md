@@ -9,5 +9,5 @@
 | Rating | Problem |
 | :---: | :--- |
 | 1300 | [1807E - Interview](https://codeforces.com/contest/1807/problem/E) |
+| 1500 | [1999G1 - Ruler (easy version)](https://codeforces.com/contest/1999/problem/G1) |
 | 1400 | [2013C - Password Cracking](https://codeforces.com/contest/2013/problem/C) |
-| 1400 | [2133C - The Nether](https://codeforces.com/contest/2133/problem/C) |

@@ -170,6 +170,20 @@
     "completed": "2026-04-15"
   },
   {
+    "id": "1669H",
+    "contestId": 1669,
+    "index": "H",
+    "name": "Maximal AND",
+    "rating": 1300,
+    "tags": [
+      "bitmasks",
+      "greedy",
+      "math"
+    ],
+    "file": "maximalAND.cpp",
+    "completed": "2026-11-07"
+  },
+  {
     "id": "1794C",
     "contestId": 1794,
     "index": "C",

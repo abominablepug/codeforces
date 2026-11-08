@@ -8,6 +8,6 @@
 
 | Rating | Problem |
 | :---: | :--- |
-| 1100 | [1288A - Deadline](https://codeforces.com/contest/1288/problem/A) |
-| 1400 | [289B - Polo the Penguin and Matrix](https://codeforces.com/contest/289/problem/B) |
-| 1300 | [1574C - Slay the Dragon](https://codeforces.com/contest/1574/problem/C) |
+| 1400 | [2020C - Bitwise Balancing](https://codeforces.com/contest/2020/problem/C) |
+| 1400 | [2009E - Klee's SUPER DUPER LARGE Array!!!](https://codeforces.com/contest/2009/problem/E) |
+| 1500 | [1933E - Turtle vs. Rabbit Race: Optimal Trainings](https://codeforces.com/contest/1933/problem/E) |

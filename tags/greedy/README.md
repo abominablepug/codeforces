@@ -2,7 +2,7 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**8** solved · rating **1100–1300**
+**9** solved · rating **1100–1300**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
@@ -13,6 +13,7 @@
 | 1200 | [1933D - Turtle Tenacity: Continual Mods](https://codeforces.com/contest/1933/problem/D) | [turtleTenacityContinualMods.cpp](../../ratings/1200/turtleTenacityContinualMods.cpp) |
 | 1200 | [1982C - Boring Day](https://codeforces.com/contest/1982/problem/C) | [boringDay.cpp](../../ratings/1200/boringDay.cpp) |
 | 1200 | [2161C - Loyalty](https://codeforces.com/contest/2161/problem/C) | [loyalty.cpp](../../ratings/1200/loyalty.cpp) |
+| 1300 | [1669H - Maximal AND](https://codeforces.com/contest/1669/problem/H) | [maximalAND.cpp](../../ratings/1300/maximalAND.cpp) |
 | 1300 | [1794C - Scoring Subsequences](https://codeforces.com/contest/1794/problem/C) | [scoringSubsequences.cpp](../../ratings/1300/scoringSubsequences.cpp) |
 
 ### Try Next

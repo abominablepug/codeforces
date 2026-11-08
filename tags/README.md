@@ -2,13 +2,12 @@
 
 [← Dashboard](../README.md) · [By Difficulty →](../ratings/README.md)
 
-**15 / 37** practiced · **9** lightly practiced · **5** core blind spots
+**16 / 37** practiced · **10** lightly practiced · **4** core blind spots
 
 ## Core Topic Blind Spots (0 Solved)
 
 | Tag | CF Problems <= 1500 |
 | :--- | :---: |
-| [bitmasks](./bitmasks/) | 143 |
 | [games](./games/) | 115 |
 | [combinatorics](./combinatorics/) | 113 |
 | [geometry](./geometry/) | 93 |
@@ -22,6 +21,7 @@
 | [constructive algorithms](./constructive-algorithms/) | 2 | 1200 |
 | [dp](./dp/) | 2 | 1200 |
 | [number theory](./number-theory/) | 2 | 1200 |
+| [bitmasks](./bitmasks/) | 1 | 1300 |
 | [data structures](./data-structures/) | 1 | 1200 |
 | [dfs and similar](./dfs-and-similar/) | 1 | 1100 |
 | [dsu](./dsu/) | 1 | 1100 |
@@ -32,9 +32,9 @@
 
 | Tag | Solved | Rating Range |
 | :--- | :---: | :---: |
-| [greedy](./greedy/) | 8 | 1100–1300 |
+| [greedy](./greedy/) | 9 | 1100–1300 |
 | [implementation](./implementation/) | 6 | 1100–1300 |
-| [math](./math/) | 5 | 800–1300 |
+| [math](./math/) | 6 | 800–1300 |
 | [binary search](./binary-search/) | 4 | 1100–1300 |
 | [sortings](./sortings/) | 4 | 1100–1300 |
 | [two pointers](./two-pointers/) | 4 | 1100–1300 |

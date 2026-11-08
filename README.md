@@ -1,6 +1,6 @@
 # Codeforces Solutions
 
-**14** solved · **800–1300** rating · target **1300–1400** · **15 / 37** tags
+**15** solved · **800–1300** rating · target **1400–1500** · **16 / 37** tags
 
 ## [By Difficulty](./ratings/README.md)
 
@@ -9,26 +9,26 @@
 | [800](./ratings/0800/) | 1 |
 | [1100](./ratings/1100/) | 5 |
 | [1200](./ratings/1200/) | 6 |
-| [1300](./ratings/1300/) | 2 |
-| **1400** *(goal)* | 0 |
+| [1300](./ratings/1300/) | 3 |
+| **1500** *(goal)* | 0 |
 
 ## Suggested Challenges
 
 | Problem | Rating |
 | :--- | :---: |
+| [1917B - Erase First or Second Letter](https://codeforces.com/contest/1917/problem/B) | 1100 |
 | [1800D - Remove Two Letters](https://codeforces.com/contest/1800/problem/D) | 1200 |
-| [1909B - Make Almost Equal With Mod](https://codeforces.com/contest/1909/problem/B) | 1200 |
-| [1915E - Romantic Glasses](https://codeforces.com/contest/1915/problem/E) | 1300 |
 | [1919C - Grouping Increases](https://codeforces.com/contest/1919/problem/C) | 1400 |
 | [1931E - Anna and the Valentine's Day Gift](https://codeforces.com/contest/1931/problem/E) | 1400 |
+| [1881E - Block Sequence](https://codeforces.com/contest/1881/problem/E) | 1500 |
 
 ## [All Tags](./tags/README.md)
 
 | Tag | Solved |
 | :--- | :---: |
-| [greedy](./tags/greedy/) | 8 |
+| [greedy](./tags/greedy/) | 9 |
 | [implementation](./tags/implementation/) | 6 |
-| [math](./tags/math/) | 5 |
+| [math](./tags/math/) | 6 |
 | [binary search](./tags/binary-search/) | 4 |
 | [sortings](./tags/sortings/) | 4 |
 | [two pointers](./tags/two-pointers/) | 4 |
@@ -36,13 +36,13 @@
 | [constructive algorithms](./tags/constructive-algorithms/) | 2 |
 | [dp](./tags/dp/) | 2 |
 | [number theory](./tags/number-theory/) | 2 |
+| [bitmasks](./tags/bitmasks/) | 1 |
 | [data structures](./tags/data-structures/) | 1 |
 | [dfs and similar](./tags/dfs-and-similar/) | 1 |
 | [dsu](./tags/dsu/) | 1 |
 | [graphs](./tags/graphs/) | 1 |
 | [strings](./tags/strings/) | 1 |
 | [2-sat](./tags/2-sat/) | 0 |
-| [bitmasks](./tags/bitmasks/) | 0 |
 | [chinese remainder theorem](./tags/chinese-remainder-theorem/) | 0 |
 | [combinatorics](./tags/combinatorics/) | 0 |
 | [communication](./tags/communication/) | 0 |
