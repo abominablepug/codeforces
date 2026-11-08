@@ -9,10 +9,11 @@
 | 1100 | [1948B - Array Fix](https://codeforces.com/contest/1948/problem/B) | [arrayFix.cpp](../../ratings/1100/arrayFix.cpp) |
 | 1200 | [2181H - Honey Cake](https://codeforces.com/contest/2181/problem/H) | [honeyCake.cpp](../../ratings/1200/honeyCake.cpp) |
 
-### Try Next
+## Suggested Sprint — Fixing One Variable & Bounded Search *(Sprint 1 · 0/4)*
 
-| Rating | Problem |
-| :---: | :--- |
-| 1200 | [1914D - Three Activities](https://codeforces.com/contest/1914/problem/D) |
-| 1300 | [1927D - Find the Different Ones!](https://codeforces.com/contest/1927/problem/D) |
-| 1300 | [1692F - 3SUM](https://codeforces.com/contest/1692/problem/F) |
+Pin down one discrete parameter by brute force so the remaining degrees of freedom collapse into an `O(1)` or `O(n)` check. As ratings climb, prove tight upper bounds that shrink a huge-looking loop to a few dozen steps.
+
+1. [ ] **1200** · [1363A - Odd Selection](https://codeforces.com/contest/1363/problem/A)
+2. [ ] **1300** · [1850F - We Were Both Children](https://codeforces.com/contest/1850/problem/F)
+3. [ ] **1400** · [2114D - Come a Little Closer](https://codeforces.com/contest/2114/problem/D)
+4. [ ] **1500** · [1616C - Representative Edges](https://codeforces.com/contest/1616/problem/C)

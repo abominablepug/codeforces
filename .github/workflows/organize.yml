@@ -10,6 +10,7 @@ on:
       - "*.rs"
       - "ratings/**"
       - "problems.json"
+      - "sprints.json"
       - "organize.py"
   workflow_dispatch:
 

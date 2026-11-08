@@ -8,10 +8,11 @@
 | :---: | :--- | :--- |
 | 1100 | [1829E - The Lakes](https://codeforces.com/contest/1829/problem/E) | [theLakes.cpp](../../ratings/1100/theLakes.cpp) |
 
-### Try Next
+## Suggested Sprint — Connected Components, Degrees & Traversal *(Sprint 1 · 0/4)*
 
-| Rating | Problem |
-| :---: | :--- |
-| 1300 | [1676G - White-Black Balanced Subtrees](https://codeforces.com/contest/1676/problem/G) |
-| 1300 | [1829F - Forever Winter](https://codeforces.com/contest/1829/problem/F) |
-| 1400 | [1830A - Copil Copac Draws Trees](https://codeforces.com/contest/1830/problem/A) |
+Inspect vertex degrees (`deg = 1` leaves, `deg = 2` chains/cycles) and component summaries first—many graph problems resolve directly from component sizes and edge counts.
+
+1. [ ] **1200** · [129B - Students and Shoelaces](https://codeforces.com/contest/129/problem/B)
+2. [ ] **1300** · [1829F - Forever Winter](https://codeforces.com/contest/1829/problem/F)
+3. [ ] **1400** · [1761C - Set Construction](https://codeforces.com/contest/1761/problem/C)
+4. [ ] **1500** · [2060E - Graph Composition](https://codeforces.com/contest/2060/problem/E)

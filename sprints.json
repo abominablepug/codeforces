@@ -1,0 +1,1441 @@
+{
+  "seq": 0,
+  "tags": {
+    "2-sat": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "implication-graphs",
+        "title": "Implication Graphs & Forced Choices",
+        "description": "Model each binary decision as `x` vs. `\u00acx` and turn every 'cannot pick both' rule into directed edges `a \u2192 \u00acb` and `b \u2192 \u00aca`. Start by spotting 2-choice constraints, then use SCC topological order to reconstruct valid assignments.",
+        "problems": [
+          {
+            "id": "2259E",
+            "contestId": 2259,
+            "index": "E",
+            "name": "Treasure Map Destruction (Constructive Version)",
+            "rating": 1500
+          },
+          {
+            "id": "2061C",
+            "contestId": 2061,
+            "index": "C",
+            "name": "Kevin and Puzzle",
+            "rating": 1600
+          },
+          {
+            "id": "228E",
+            "contestId": 228,
+            "index": "E",
+            "name": "The Road to Berland is Paved With Good Intentions",
+            "rating": 1900
+          },
+          {
+            "id": "2245D2",
+            "contestId": 2245,
+            "index": "D2",
+            "name": "Construct an Array (Hard Version)",
+            "rating": 2000
+          }
+        ]
+      },
+      "completed": []
+    },
+    "binary search": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "monotonic-predicate",
+        "title": "Monotonic Predicate (Search on the Answer)",
+        "description": "Reframe 'find the optimal `X`' into a yes/no threshold check `can(X)` with a single true-to-false cutoff. Start with direct `O(n)` arithmetic checks, then build greedy sweep simulations inside `can(X)` as constraints tighten.",
+        "problems": [
+          {
+            "id": "2022B",
+            "contestId": 2022,
+            "index": "B",
+            "name": "Kar Salesman",
+            "rating": 1300
+          },
+          {
+            "id": "2132C2",
+            "contestId": 2132,
+            "index": "C2",
+            "name": "The Cunning Seller (hard version)",
+            "rating": 1400
+          },
+          {
+            "id": "2183C",
+            "contestId": 2183,
+            "index": "C",
+            "name": "War Strategy",
+            "rating": 1500
+          },
+          {
+            "id": "2232C2",
+            "contestId": 2232,
+            "index": "C2",
+            "name": "Seating Arrangement (Hard Version)",
+            "rating": 1600
+          }
+        ]
+      },
+      "completed": []
+    },
+    "bitmasks": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "bitwise-column-greedy",
+        "title": "Bitwise Column Independence (`AND` / `OR` / `XOR`)",
+        "description": "Since bitwise operations never carry across positions, analyze the 30 bit columns independently and lock in decisions from MSB down to LSB. Later steps mix bitwise constraints with sums where carries reappear.",
+        "problems": [
+          {
+            "id": "1420B",
+            "contestId": 1420,
+            "index": "B",
+            "name": "Rock and Lever",
+            "rating": 1200
+          },
+          {
+            "id": "1926D",
+            "contestId": 1926,
+            "index": "D",
+            "name": "Vlad and Division",
+            "rating": 1300
+          },
+          {
+            "id": "1918C",
+            "contestId": 1918,
+            "index": "C",
+            "name": "XOR-distance",
+            "rating": 1400
+          },
+          {
+            "id": "2203C",
+            "contestId": 2203,
+            "index": "C",
+            "name": "Test Generator",
+            "rating": 1500
+          }
+        ]
+      },
+      "completed": []
+    },
+    "brute force": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "fix-one-variable",
+        "title": "Fixing One Variable & Bounded Search",
+        "description": "Pin down one discrete parameter by brute force so the remaining degrees of freedom collapse into an `O(1)` or `O(n)` check. As ratings climb, prove tight upper bounds that shrink a huge-looking loop to a few dozen steps.",
+        "problems": [
+          {
+            "id": "1363A",
+            "contestId": 1363,
+            "index": "A",
+            "name": "Odd Selection",
+            "rating": 1200
+          },
+          {
+            "id": "1850F",
+            "contestId": 1850,
+            "index": "F",
+            "name": "We Were Both Children",
+            "rating": 1300
+          },
+          {
+            "id": "2114D",
+            "contestId": 2114,
+            "index": "D",
+            "name": "Come a Little Closer",
+            "rating": 1400
+          },
+          {
+            "id": "1616C",
+            "contestId": 1616,
+            "index": "C",
+            "name": "Representative Edges",
+            "rating": 1500
+          }
+        ]
+      },
+      "completed": []
+    },
+    "chinese remainder theorem": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "simultaneous-congruences",
+        "title": "Simultaneous Congruences & Modular Cycles",
+        "description": "Merge `x \u2261 r_i (mod m_i)` constraints step-by-step via `lcm` periodicity, checking `r_1 \u2261 r_2 (mod gcd(m_1, m_2))` whenever moduli share factors. Later problems disguise congruences inside cyclic grid or array shifts.",
+        "problems": [
+          {
+            "id": "2217C",
+            "contestId": 2217,
+            "index": "C",
+            "name": "Grid Covering",
+            "rating": 1300
+          },
+          {
+            "id": "1770C",
+            "contestId": 1770,
+            "index": "C",
+            "name": "Koxia and Number Theory",
+            "rating": 1700
+          },
+          {
+            "id": "687B",
+            "contestId": 687,
+            "index": "B",
+            "name": "Remainders Game",
+            "rating": 1800
+          },
+          {
+            "id": "2264D",
+            "contestId": 2264,
+            "index": "D",
+            "name": "Dr. Agos's Dark Mode",
+            "rating": 1900
+          }
+        ]
+      },
+      "completed": []
+    },
+    "combinatorics": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "product-rule-complements",
+        "title": "Rule of Product, Complements & Pair Contributions",
+        "description": "Count invalid cases via the complement or sum how many valid configurations each individual element/pair contributes to. Later problems sort first so valid partner counts reduce to clean index arithmetic.",
+        "problems": [
+          {
+            "id": "1827A",
+            "contestId": 1827,
+            "index": "A",
+            "name": "Counting Orders",
+            "rating": 1100
+          },
+          {
+            "id": "1922B",
+            "contestId": 1922,
+            "index": "B",
+            "name": "Forming Triangles",
+            "rating": 1200
+          },
+          {
+            "id": "1931D",
+            "contestId": 1931,
+            "index": "D",
+            "name": "Divisible Pairs",
+            "rating": 1300
+          },
+          {
+            "id": "2264C",
+            "contestId": 2264,
+            "index": "C",
+            "name": "Madamant's Skating Dynasty",
+            "rating": 1400
+          }
+        ]
+      },
+      "completed": []
+    },
+    "communication": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "compact-encoding",
+        "title": "Compact State Encoding & Bit-Budget Protocols",
+        "description": "Compare total distinct hidden states against the message bit budget, using modular checksums, XOR parities, or bipartite colorings so the receiver decodes uniquely.",
+        "problems": [
+          {
+            "id": "2179F",
+            "contestId": 2179,
+            "index": "F",
+            "name": "Blackslex and Another RGB Walking",
+            "rating": 2000
+          },
+          {
+            "id": "2255C",
+            "contestId": 2255,
+            "index": "C",
+            "name": "Even If the World Turns",
+            "rating": 2100
+          },
+          {
+            "id": "2215C",
+            "contestId": 2215,
+            "index": "C",
+            "name": "Oriented Journey",
+            "rating": 2200
+          }
+        ]
+      },
+      "completed": []
+    },
+    "constructive algorithms": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "permutations-extremal-layouts",
+        "title": "Permutations, Interleaving & Parity Checks",
+        "description": "Test canonical templates first\u2014interleaving `[1, n, 2, n-1, \u2026]`, cyclic shifts, or adjacent `(2i-1, 2i)` swaps\u2014and check parity/sum invariants early for `-1` cases. Harder steps tune a custom prefix before filling the tail monotonically.",
+        "problems": [
+          {
+            "id": "1822D",
+            "contestId": 1822,
+            "index": "D",
+            "name": "Super-Permutation",
+            "rating": 1200
+          },
+          {
+            "id": "2023A",
+            "contestId": 2023,
+            "index": "A",
+            "name": "Concatenation of Arrays",
+            "rating": 1300
+          },
+          {
+            "id": "1927E",
+            "contestId": 1927,
+            "index": "E",
+            "name": "Klever Permutation",
+            "rating": 1400
+          },
+          {
+            "id": "1809C",
+            "contestId": 1809,
+            "index": "C",
+            "name": "Sum on Subarrays",
+            "rating": 1500
+          }
+        ]
+      },
+      "completed": []
+    },
+    "data structures": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "sets-maps-heaps",
+        "title": "Ordered Sets, Frequency Maps & Heaps",
+        "description": "Maintain dynamic min/max, predecessor/successor (`set` / `multiset`), or active counts (`map` / `priority_queue`) during a single pass. Later steps pair greedy heap eviction with running prefix balances.",
+        "problems": [
+          {
+            "id": "1800C2",
+            "contestId": 1800,
+            "index": "C2",
+            "name": "Powering the Hero (hard version)",
+            "rating": 1100
+          },
+          {
+            "id": "1790D",
+            "contestId": 1790,
+            "index": "D",
+            "name": "Matryoshkas",
+            "rating": 1200
+          },
+          {
+            "id": "1915E",
+            "contestId": 1915,
+            "index": "E",
+            "name": "Romantic Glasses",
+            "rating": 1300
+          },
+          {
+            "id": "2014D",
+            "contestId": 2014,
+            "index": "D",
+            "name": "Robert Hood and Mrs Hood",
+            "rating": 1400
+          }
+        ]
+      },
+      "completed": []
+    },
+    "dfs and similar": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "components-flood-fill",
+        "title": "Connected Components & Implicit Flood Fill",
+        "description": "Aggregate sizes, boundary touches, or values across each connected component in `O(V + E)`, marking visited states immediately on entry. Later problems build implicit graphs over grid states or value transitions.",
+        "problems": [
+          {
+            "id": "1623B",
+            "contestId": 1623,
+            "index": "B",
+            "name": "Game on Ranges",
+            "rating": 1100
+          },
+          {
+            "id": "1669G",
+            "contestId": 1669,
+            "index": "G",
+            "name": "Fall Down",
+            "rating": 1200
+          },
+          {
+            "id": "2056B",
+            "contestId": 2056,
+            "index": "B",
+            "name": "Find the Permutation",
+            "rating": 1300
+          },
+          {
+            "id": "1893A",
+            "contestId": 1893,
+            "index": "A",
+            "name": "Anonymous Informant",
+            "rating": 1400
+          }
+        ]
+      },
+      "completed": []
+    },
+    "divide and conquer": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "recursive-halving",
+        "title": "Recursive Halving & Cross-Boundary Counting",
+        "description": "Split the array or range at its midpoint or extremum, solve left and right recursively, and count cross-boundary pairs in linear time. Start with structural splits before inversion-style merges.",
+        "problems": [
+          {
+            "id": "1490D",
+            "contestId": 1490,
+            "index": "D",
+            "name": "Permutation Transformation",
+            "rating": 1200
+          },
+          {
+            "id": "1915F",
+            "contestId": 1915,
+            "index": "F",
+            "name": "Greetings",
+            "rating": 1500
+          },
+          {
+            "id": "768B",
+            "contestId": 768,
+            "index": "B",
+            "name": "Code For 1",
+            "rating": 1600
+          },
+          {
+            "id": "559B",
+            "contestId": 559,
+            "index": "B",
+            "name": "Equivalent Strings",
+            "rating": 1700
+          }
+        ]
+      },
+      "completed": []
+    },
+    "dp": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "linear-states",
+        "title": "Linear States & Decision Boundaries",
+        "description": "Define `dp[i]` around the minimal state needed at position `i` and isolate the exact boundary choice (skip, extend, or jump). Early steps use direct `O(1)` transitions; later problems require prefix extremes or refactoring states to drop an inner loop.",
+        "problems": [
+          {
+            "id": "189A",
+            "contestId": 189,
+            "index": "A",
+            "name": "Cut Ribbon",
+            "rating": 1300
+          },
+          {
+            "id": "698A",
+            "contestId": 698,
+            "index": "A",
+            "name": "Vacations",
+            "rating": 1400
+          },
+          {
+            "id": "1842C",
+            "contestId": 1842,
+            "index": "C",
+            "name": "Tenzing and Balls",
+            "rating": 1500
+          },
+          {
+            "id": "1875D",
+            "contestId": 1875,
+            "index": "D",
+            "name": "Jellyfish and Mex",
+            "rating": 1600
+          }
+        ]
+      },
+      "completed": []
+    },
+    "dsu": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "components-cycles",
+        "title": "Connected Components & Cycle Detection",
+        "description": "Maintain union-by-size with path compression, storing component aggregates at each root and catching the exact moment an edge links two vertices already in the same set.",
+        "problems": [
+          {
+            "id": "2008D",
+            "contestId": 2008,
+            "index": "D",
+            "name": "Sakurako's Hobby",
+            "rating": 1100
+          },
+          {
+            "id": "217A",
+            "contestId": 217,
+            "index": "A",
+            "name": "Ice Skating",
+            "rating": 1200
+          },
+          {
+            "id": "1249B2",
+            "contestId": 1249,
+            "index": "B2",
+            "name": "Books Exchange (hard version)",
+            "rating": 1300
+          },
+          {
+            "id": "1167C",
+            "contestId": 1167,
+            "index": "C",
+            "name": "News Distribution",
+            "rating": 1400
+          }
+        ]
+      },
+      "completed": []
+    },
+    "expression parsing": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "tokenizing-brackets",
+        "title": "Tokenization, Delimiters & Bracket Nesting",
+        "description": "Separate clean lexing (splitting tokens and delimiters) from evaluation, using a depth counter or explicit stack to pair nested brackets without messy index arithmetic.",
+        "problems": [
+          {
+            "id": "723B",
+            "contestId": 723,
+            "index": "B",
+            "name": "Text Document Analysis",
+            "rating": 1100
+          },
+          {
+            "id": "34C",
+            "contestId": 34,
+            "index": "C",
+            "name": "Page Numbers",
+            "rating": 1300
+          },
+          {
+            "id": "612C",
+            "contestId": 612,
+            "index": "C",
+            "name": "Replace To Make Regular Bracket Sequence",
+            "rating": 1400
+          },
+          {
+            "id": "75B",
+            "contestId": 75,
+            "index": "B",
+            "name": "Facetook Priority Wall",
+            "rating": 1500
+          }
+        ]
+      },
+      "completed": []
+    },
+    "fft": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "polynomial-convolutions",
+        "title": "Polynomial Multiplication & Sumset Convolutions",
+        "description": "Spot pairwise sum patterns `c[i + j] += a[i] \u00b7 b[j]` (and reverse one array to handle fixed differences `i - j`) so FFT/NTT computes all convolution buckets simultaneously in `O(N log N)`.",
+        "problems": [
+          {
+            "id": "1909I",
+            "contestId": 1909,
+            "index": "I",
+            "name": "Short Permutation Problem",
+            "rating": 1900
+          },
+          {
+            "id": "1438C",
+            "contestId": 1438,
+            "index": "C",
+            "name": "Engineer Artem",
+            "rating": 2000
+          },
+          {
+            "id": "2025E",
+            "contestId": 2025,
+            "index": "E",
+            "name": "Card Game",
+            "rating": 2200
+          },
+          {
+            "id": "1342E",
+            "contestId": 1342,
+            "index": "E",
+            "name": "Placing Rooks",
+            "rating": 2300
+          }
+        ]
+      },
+      "completed": []
+    },
+    "flows": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "maxflow-capacity-networks",
+        "title": "Max-Flow Modeling & Capacity Networks",
+        "description": "Encode supplies, demands, and compatibility rules as directed capacities from source to sink and run Dinic's algorithm. Keep intermediate layer vertices compact so edge counts stay sharp.",
+        "problems": [
+          {
+            "id": "1530D",
+            "contestId": 1530,
+            "index": "D",
+            "name": "Secret Santa",
+            "rating": 1600
+          },
+          {
+            "id": "1423B",
+            "contestId": 1423,
+            "index": "B",
+            "name": "Valuable Paper",
+            "rating": 1900
+          },
+          {
+            "id": "237E",
+            "contestId": 237,
+            "index": "E",
+            "name": "Build String",
+            "rating": 2000
+          },
+          {
+            "id": "546E",
+            "contestId": 546,
+            "index": "E",
+            "name": "Soldier and Traveling",
+            "rating": 2100
+          }
+        ]
+      },
+      "completed": []
+    },
+    "games": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "parity-symmetry-invariants",
+        "title": "Parity, Symmetry & First-Move Control",
+        "description": "Test small cases (`n \u2264 5`) by hand to spot an invariant\u2014total move parity, mirror copying, or an immediate winning grab\u2014instead of simulating turns when the outcome is predetermined.",
+        "problems": [
+          {
+            "id": "2107B",
+            "contestId": 2107,
+            "index": "B",
+            "name": "Apples in Boxes",
+            "rating": 1100
+          },
+          {
+            "id": "2196A",
+            "contestId": 2196,
+            "index": "A",
+            "name": "Game with a Fraction",
+            "rating": 1200
+          },
+          {
+            "id": "1943A",
+            "contestId": 1943,
+            "index": "A",
+            "name": "MEX Game 1",
+            "rating": 1300
+          },
+          {
+            "id": "1931E",
+            "contestId": 1931,
+            "index": "E",
+            "name": "Anna and the Valentine's Day Gift",
+            "rating": 1400
+          }
+        ]
+      },
+      "completed": []
+    },
+    "geometry": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "projections-slopes-bounds",
+        "title": "Bounding Boxes, Exact Slopes & Squared Distances",
+        "description": "Stay in exact 64-bit integers whenever possible\u2014compare `d^2` instead of `sqrt`, reduce direction vectors by `gcd(dx, dy)`, and check whether `x` and `y` coordinates decouple.",
+        "problems": [
+          {
+            "id": "270A",
+            "contestId": 270,
+            "index": "A",
+            "name": "Fancy Fence",
+            "rating": 1100
+          },
+          {
+            "id": "1846D",
+            "contestId": 1846,
+            "index": "D",
+            "name": "Rudolph and Christmas Tree",
+            "rating": 1200
+          },
+          {
+            "id": "1942C1",
+            "contestId": 1942,
+            "index": "C1",
+            "name": "Bessie's Birthday Cake (Easy Version)",
+            "rating": 1300
+          },
+          {
+            "id": "2009D",
+            "contestId": 2009,
+            "index": "D",
+            "name": "Satyam and Counting",
+            "rating": 1400
+          }
+        ]
+      },
+      "completed": []
+    },
+    "graph matchings": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "greedy-tree-pairings",
+        "title": "Tree & Degree-Bounded Pairing Invariants",
+        "description": "Match tree leaves greedily with their parents from the bottom up, and use parity or Hall neighborhood bottlenecks to bound maximum pairings without heavy flow code.",
+        "problems": [
+          {
+            "id": "2049B",
+            "contestId": 2049,
+            "index": "B",
+            "name": "pspspsps",
+            "rating": 1300
+          },
+          {
+            "id": "2204D",
+            "contestId": 2204,
+            "index": "D",
+            "name": "Alternating Path",
+            "rating": 1400
+          },
+          {
+            "id": "2044G1",
+            "contestId": 2044,
+            "index": "G1",
+            "name": "Medium Demon Problem (easy version)",
+            "rating": 1700
+          },
+          {
+            "id": "1949I",
+            "contestId": 1949,
+            "index": "I",
+            "name": "Disks",
+            "rating": 1800
+          }
+        ]
+      },
+      "completed": []
+    },
+    "graphs": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "components-degrees-traversal",
+        "title": "Connected Components, Degrees & Traversal",
+        "description": "Inspect vertex degrees (`deg = 1` leaves, `deg = 2` chains/cycles) and component summaries first\u2014many graph problems resolve directly from component sizes and edge counts.",
+        "problems": [
+          {
+            "id": "129B",
+            "contestId": 129,
+            "index": "B",
+            "name": "Students and Shoelaces",
+            "rating": 1200
+          },
+          {
+            "id": "1829F",
+            "contestId": 1829,
+            "index": "F",
+            "name": "Forever Winter",
+            "rating": 1300
+          },
+          {
+            "id": "1761C",
+            "contestId": 1761,
+            "index": "C",
+            "name": "Set Construction",
+            "rating": 1400
+          },
+          {
+            "id": "2060E",
+            "contestId": 2060,
+            "index": "E",
+            "name": "Graph Composition",
+            "rating": 1500
+          }
+        ]
+      },
+      "completed": []
+    },
+    "greedy": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "sorting-exchange-arguments",
+        "title": "Sorting & Exchange Arguments",
+        "description": "Compare swapping two adjacent items `i` and `j` to derive the exact sort comparator mathematically. Start with single-key sorts, then progress to custom `a_i + b_i` or ratio orderings.",
+        "problems": [
+          {
+            "id": "2187A",
+            "contestId": 2187,
+            "index": "A",
+            "name": "Restricted Sorting",
+            "rating": 1300
+          },
+          {
+            "id": "2127C",
+            "contestId": 2127,
+            "index": "C",
+            "name": "Trip Shopping",
+            "rating": 1400
+          },
+          {
+            "id": "1814C",
+            "contestId": 1814,
+            "index": "C",
+            "name": "Search in Parallel",
+            "rating": 1500
+          },
+          {
+            "id": "2207B",
+            "contestId": 2207,
+            "index": "B",
+            "name": "One Night At Freddy's",
+            "rating": 1600
+          }
+        ]
+      },
+      "completed": []
+    },
+    "hashing": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "rolling-substring-hashes",
+        "title": "Polynomial Rolling Hashes & Substring Equality",
+        "description": "Precompute prefix hashes and base powers modulo two primes (or random base mod `2^61 - 1`) so arbitrary substrings\u2014even stitched across deletions\u2014compare in `O(1)`.",
+        "problems": [
+          {
+            "id": "1553B",
+            "contestId": 1553,
+            "index": "B",
+            "name": "Reverse String",
+            "rating": 1300
+          },
+          {
+            "id": "1451C",
+            "contestId": 1451,
+            "index": "C",
+            "name": "String Equality",
+            "rating": 1400
+          },
+          {
+            "id": "1326D1",
+            "contestId": 1326,
+            "index": "D1",
+            "name": "Prefix-Suffix Palindrome (Easy version)",
+            "rating": 1500
+          },
+          {
+            "id": "1849C",
+            "contestId": 1849,
+            "index": "C",
+            "name": "Binary String Copying",
+            "rating": 1600
+          }
+        ]
+      },
+      "completed": []
+    },
+    "implementation": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "state-simulation-invariants",
+        "title": "Clean State Simulation & Boundary Discipline",
+        "description": "Normalize inputs early (0-indexing, sentinels, canonical orientation) to keep your main loop flat and bug-free, double-checking `n = 1` and all-equal edge cases.",
+        "problems": [
+          {
+            "id": "1954B",
+            "contestId": 1954,
+            "index": "B",
+            "name": "Make It Ugly",
+            "rating": 1200
+          },
+          {
+            "id": "1851D",
+            "contestId": 1851,
+            "index": "D",
+            "name": "Prefix Permutation Sums",
+            "rating": 1300
+          },
+          {
+            "id": "1993C",
+            "contestId": 1993,
+            "index": "C",
+            "name": "Light Switches",
+            "rating": 1400
+          },
+          {
+            "id": "2137E",
+            "contestId": 2137,
+            "index": "E",
+            "name": "Mexification",
+            "rating": 1500
+          }
+        ]
+      },
+      "completed": []
+    },
+    "interactive": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "binary-search-queries",
+        "title": "Query-Budget Halving & Binary Search",
+        "description": "Let the query cap guide your algorithm (`~30\u201360` queries means `O(log n)` halving): design a probe whose answer splits the remaining candidate interval cleanly, and flush every output.",
+        "problems": [
+          {
+            "id": "1807E",
+            "contestId": 1807,
+            "index": "E",
+            "name": "Interview",
+            "rating": 1300
+          },
+          {
+            "id": "2162D",
+            "contestId": 2162,
+            "index": "D",
+            "name": "Beautiful Permutation",
+            "rating": 1400
+          },
+          {
+            "id": "1999G1",
+            "contestId": 1999,
+            "index": "G1",
+            "name": "Ruler (easy version)",
+            "rating": 1500
+          },
+          {
+            "id": "1520F1",
+            "contestId": 1520,
+            "index": "F1",
+            "name": "Guess the K-th Zero (Easy version)",
+            "rating": 1600
+          }
+        ]
+      },
+      "completed": []
+    },
+    "math": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "parity-ceilings-bounds",
+        "title": "Parity, Ceilings & Closed-Form Bounds",
+        "description": "Check sum parity, modular invariants, and integer ceilings `(a + b - 1) / b` before simulating\u2014multi-round processes often collapse into `max(ceil(sum / k), max_a)`.",
+        "problems": [
+          {
+            "id": "1846E1",
+            "contestId": 1846,
+            "index": "E1",
+            "name": "Rudolf and Snowflakes (simple version)",
+            "rating": 1300
+          },
+          {
+            "id": "2151C",
+            "contestId": 2151,
+            "index": "C",
+            "name": "Incremental Stay",
+            "rating": 1400
+          },
+          {
+            "id": "1419C",
+            "contestId": 1419,
+            "index": "C",
+            "name": "Killjoy",
+            "rating": 1500
+          },
+          {
+            "id": "1811D",
+            "contestId": 1811,
+            "index": "D",
+            "name": "Umka and a Long Flight",
+            "rating": 1600
+          }
+        ]
+      },
+      "completed": []
+    },
+    "matrices": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "grid-submatrix-invariants",
+        "title": "2D Grid Parity, Submatrices & Layer Scans",
+        "description": "Check `(r + c) mod 2` chessboard invariants, 2D prefix sums, and whether row and column operations decouple before treating all `R \u00d7 C` cells as entangled.",
+        "problems": [
+          {
+            "id": "2069B",
+            "contestId": 2069,
+            "index": "B",
+            "name": "Set of Strangers",
+            "rating": 1200
+          },
+          {
+            "id": "2036D",
+            "contestId": 2036,
+            "index": "D",
+            "name": "I Love 1543",
+            "rating": 1300
+          },
+          {
+            "id": "485A",
+            "contestId": 485,
+            "index": "A",
+            "name": "Factory",
+            "rating": 1400
+          },
+          {
+            "id": "337C",
+            "contestId": 337,
+            "index": "C",
+            "name": "Quiz",
+            "rating": 1600
+          }
+        ]
+      },
+      "completed": []
+    },
+    "meet-in-the-middle": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "split-half-lookup",
+        "title": "Split-in-Half Enumeration & Sorted Lookup",
+        "description": "When `n \u2248 36\u201344` makes `2^n` impossible, split into two `n/2` halves (`2^20 \u2248 10^6`), sort all left-half outcomes, and binary-search or two-pointer each right-half state against them.",
+        "problems": [
+          {
+            "id": "1263C",
+            "contestId": 1263,
+            "index": "C",
+            "name": "Everyone is a Winner!",
+            "rating": 1400
+          },
+          {
+            "id": "1249C2",
+            "contestId": 1249,
+            "index": "C2",
+            "name": "Good Numbers (hard version)",
+            "rating": 1500
+          },
+          {
+            "id": "1043D",
+            "contestId": 1043,
+            "index": "D",
+            "name": "Mysterious Crime",
+            "rating": 1700
+          },
+          {
+            "id": "888E",
+            "contestId": 888,
+            "index": "E",
+            "name": "Maximum Subsequence",
+            "rating": 1800
+          }
+        ]
+      },
+      "completed": []
+    },
+    "number theory": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "gcd-lcm-invariants",
+        "title": "GCD, LCM & Difference Invariance",
+        "description": "Use `gcd(a, b) = gcd(a, |a - b|)` whenever constants shift an array, and remember prefix GCDs can change at most `log2(V)` times because each drop divides by at least `2`.",
+        "problems": [
+          {
+            "id": "1736B",
+            "contestId": 1736,
+            "index": "B",
+            "name": "Playing with GCD",
+            "rating": 1200
+          },
+          {
+            "id": "1881D",
+            "contestId": 1881,
+            "index": "D",
+            "name": "Divide and Equalize",
+            "rating": 1300
+          },
+          {
+            "id": "762A",
+            "contestId": 762,
+            "index": "A",
+            "name": "k-th divisor",
+            "rating": 1400
+          },
+          {
+            "id": "2007C",
+            "contestId": 2007,
+            "index": "C",
+            "name": "Dora and C++",
+            "rating": 1500
+          }
+        ]
+      },
+      "completed": []
+    },
+    "probabilities": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "linearity-of-expectation",
+        "title": "Linearity of Expectation & Indicator Events",
+        "description": "`E[\u2211 X_i] = \u2211 E[X_i]` holds even when events are strongly dependent. Decompose total score/size into 0/1 indicator variables ('does item `i` contribute?') and sum their individual probabilities.",
+        "problems": [
+          {
+            "id": "312B",
+            "contestId": 312,
+            "index": "B",
+            "name": "Archer",
+            "rating": 1300
+          },
+          {
+            "id": "453A",
+            "contestId": 453,
+            "index": "A",
+            "name": "Little Pony and Expected Maximum",
+            "rating": 1600
+          },
+          {
+            "id": "1279D",
+            "contestId": 1279,
+            "index": "D",
+            "name": "Santa's Bot",
+            "rating": 1700
+          },
+          {
+            "id": "1824B1",
+            "contestId": 1824,
+            "index": "B1",
+            "name": "LuoTianyi and the Floating Islands (Easy Version)",
+            "rating": 1800
+          }
+        ]
+      },
+      "completed": []
+    },
+    "schedules": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "deadline-exchange-order",
+        "title": "Deadlines, Bottlenecks & Exchange Ordering",
+        "description": "Compare executing job `A` then `B` vs. `B` then `A` to establish the optimal processing order (earliest deadline or Smith's ratio), then simulate or DP along that sorted sequence.",
+        "problems": [
+          {
+            "id": "2197B",
+            "contestId": 2197,
+            "index": "B",
+            "name": "Array and Permutation",
+            "rating": 1100
+          },
+          {
+            "id": "400B",
+            "contestId": 400,
+            "index": "B",
+            "name": "Inna and New Matrix of Candies",
+            "rating": 1200
+          },
+          {
+            "id": "1736C1",
+            "contestId": 1736,
+            "index": "C1",
+            "name": "Good Subarrays (Easy Version)",
+            "rating": 1300
+          },
+          {
+            "id": "2162E",
+            "contestId": 2162,
+            "index": "E",
+            "name": "Beautiful Palindromes",
+            "rating": 1600
+          }
+        ]
+      },
+      "completed": []
+    },
+    "shortest paths": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "bfs-01bfs-multisource",
+        "title": "Multi-Source BFS & 0-1 Deque Layers",
+        "description": "Seed the queue with all starting sources at distance `0` simultaneously, and reach for a 0-1 deque (`0`-edges to front, `1`-edges to back) in `O(V + E)` before heavier heaps.",
+        "problems": [
+          {
+            "id": "1540A",
+            "contestId": 1540,
+            "index": "A",
+            "name": "Great Graphs",
+            "rating": 1400
+          },
+          {
+            "id": "329B",
+            "contestId": 329,
+            "index": "B",
+            "name": "Biridian Forest",
+            "rating": 1500
+          },
+          {
+            "id": "1833E",
+            "contestId": 1833,
+            "index": "E",
+            "name": "Round Dance",
+            "rating": 1600
+          },
+          {
+            "id": "2041D",
+            "contestId": 2041,
+            "index": "D",
+            "name": "Drunken Maze",
+            "rating": 1700
+          }
+        ]
+      },
+      "completed": []
+    },
+    "sortings": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "medians-extremal-pairs",
+        "title": "Medians, Order Statistics & Adjacent Gaps",
+        "description": "Recall the median minimizes `\u2211|a_i - x|` and closest values always become neighbors after sorting. Check whether pairing extremes `(a[i], a[n-1-i])` or adjacent items wins.",
+        "problems": [
+          {
+            "id": "2121D",
+            "contestId": 2121,
+            "index": "D",
+            "name": "1709",
+            "rating": 1300
+          },
+          {
+            "id": "2231C",
+            "contestId": 2231,
+            "index": "C",
+            "name": "Chipmunk Theo and Equality",
+            "rating": 1400
+          },
+          {
+            "id": "1857E",
+            "contestId": 1857,
+            "index": "E",
+            "name": "Power of Points",
+            "rating": 1500
+          },
+          {
+            "id": "1475E",
+            "contestId": 1475,
+            "index": "E",
+            "name": "Advertising Agency",
+            "rating": 1600
+          }
+        ]
+      },
+      "completed": []
+    },
+    "string suffix structures": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "kmp-z-borders",
+        "title": "Prefix Function (KMP), Z-Array & Periodicity",
+        "description": "Compute `pi[i]` or `Z[i]` in `O(n)` to enumerate all prefix-suffix borders and minimal periods `n - pi[n-1]`. Join `pattern + '#' + text` to turn matching into array scans.",
+        "problems": [
+          {
+            "id": "2010C2",
+            "contestId": 2010,
+            "index": "C2",
+            "name": "Message Transmission Error (hard version)",
+            "rating": 1700
+          },
+          {
+            "id": "1326D2",
+            "contestId": 1326,
+            "index": "D2",
+            "name": "Prefix-Suffix Palindrome (Hard version)",
+            "rating": 1800
+          },
+          {
+            "id": "535D",
+            "contestId": 535,
+            "index": "D",
+            "name": "Tavas and Malekas",
+            "rating": 1900
+          },
+          {
+            "id": "432D",
+            "contestId": 432,
+            "index": "D",
+            "name": "Prefixes and Suffixes",
+            "rating": 2000
+          }
+        ]
+      },
+      "completed": []
+    },
+    "strings": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "frequencies-rle-scans",
+        "title": "Run-Length Blocks, Palindromes & 26-Way Scans",
+        "description": "Compress consecutive identical letters into run-length blocks and leverage the tiny 26-letter alphabet\u2014iterating all 26 target characters often turns a hard string problem into `O(26 \u00b7 n)`.",
+        "problems": [
+          {
+            "id": "1820B",
+            "contestId": 1820,
+            "index": "B",
+            "name": "JoJo's Incredible Adventures",
+            "rating": 1100
+          },
+          {
+            "id": "2174A",
+            "contestId": 2174,
+            "index": "A",
+            "name": "Needle in a Haystack",
+            "rating": 1200
+          },
+          {
+            "id": "1821C",
+            "contestId": 1821,
+            "index": "C",
+            "name": "Tear It Apart",
+            "rating": 1300
+          },
+          {
+            "id": "1748B",
+            "contestId": 1748,
+            "index": "B",
+            "name": "Diverse Substrings",
+            "rating": 1400
+          }
+        ]
+      },
+      "completed": []
+    },
+    "ternary search": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "unimodal-integer-valleys",
+        "title": "Unimodal Valleys & Discrete Derivative Search",
+        "description": "When total cost is a sum of convex U-shaped terms, binary-search where the discrete slope `f(x + 1) - f(x)` crosses `0` to dodge flat-plateau pitfalls on integers.",
+        "problems": [
+          {
+            "id": "1574C",
+            "contestId": 1574,
+            "index": "C",
+            "name": "Slay the Dragon",
+            "rating": 1300
+          },
+          {
+            "id": "2009E",
+            "contestId": 2009,
+            "index": "E",
+            "name": "Klee's SUPER DUPER LARGE Array!!!",
+            "rating": 1400
+          },
+          {
+            "id": "1933E",
+            "contestId": 1933,
+            "index": "E",
+            "name": "Turtle vs. Rabbit Race: Optimal Trainings",
+            "rating": 1500
+          },
+          {
+            "id": "2132E",
+            "contestId": 2132,
+            "index": "E",
+            "name": "Arithmetics Competition",
+            "rating": 1700
+          }
+        ]
+      },
+      "completed": []
+    },
+    "trees": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "subtree-dfs-depths",
+        "title": "Subtree Sizes, Depths & Post-Order DFS",
+        "description": "Root at node `1` and compute `sz[u]` and `dep[u]` in one DFS\u2014remember removing any single tree edge splits the vertices cleanly into `sz[v]` inside vs. `n - sz[v]` outside.",
+        "problems": [
+          {
+            "id": "1843D",
+            "contestId": 1843,
+            "index": "D",
+            "name": "Apple Tree",
+            "rating": 1200
+          },
+          {
+            "id": "1900C",
+            "contestId": 1900,
+            "index": "C",
+            "name": "Anji's Binary Tree",
+            "rating": 1300
+          },
+          {
+            "id": "1830A",
+            "contestId": 1830,
+            "index": "A",
+            "name": "Copil Copac Draws Trees",
+            "rating": 1400
+          },
+          {
+            "id": "580C",
+            "contestId": 580,
+            "index": "C",
+            "name": "Kefa and Park",
+            "rating": 1500
+          }
+        ]
+      },
+      "completed": []
+    },
+    "two pointers": {
+      "active": {
+        "sprint": 1,
+        "track_slug": "sliding-window-monotonic",
+        "title": "Sliding Window & Monotonic Subarray Validity",
+        "description": "Verify window monotonicity first (shrinking `L` preserves validity); then advance `R` one step at a time and pull `L` forward in a `while` loop for `O(n)` total work.",
+        "problems": [
+          {
+            "id": "1364B",
+            "contestId": 1364,
+            "index": "B",
+            "name": "Most socially-distanced subsequence",
+            "rating": 1300
+          },
+          {
+            "id": "2033C",
+            "contestId": 2033,
+            "index": "C",
+            "name": "Sakurako's Field Trip",
+            "rating": 1400
+          },
+          {
+            "id": "2069C",
+            "contestId": 2069,
+            "index": "C",
+            "name": "Beautiful Sequence",
+            "rating": 1500
+          },
+          {
+            "id": "1774D",
+            "contestId": 1774,
+            "index": "D",
+            "name": "Same Count One",
+            "rating": 1600
+          }
+        ]
+      },
+      "completed": []
+    }
+  }
+}

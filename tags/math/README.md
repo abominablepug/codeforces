@@ -13,10 +13,11 @@
 | 1300 | [1669H - Maximal AND](https://codeforces.com/contest/1669/problem/H) | [maximalAND.cpp](../../ratings/1300/maximalAND.cpp) |
 | 1300 | [1794C - Scoring Subsequences](https://codeforces.com/contest/1794/problem/C) | [scoringSubsequences.cpp](../../ratings/1300/scoringSubsequences.cpp) |
 
-### Try Next
+## Suggested Sprint — Parity, Ceilings & Closed-Form Bounds *(Sprint 1 · 0/4)*
 
-| Rating | Problem |
-| :---: | :--- |
-| 1300 | [1915E - Romantic Glasses](https://codeforces.com/contest/1915/problem/E) |
-| 1300 | [1931D - Divisible Pairs](https://codeforces.com/contest/1931/problem/D) |
-| 1300 | [1857D - Strong Vertices](https://codeforces.com/contest/1857/problem/D) |
+Check sum parity, modular invariants, and integer ceilings `(a + b - 1) / b` before simulating—multi-round processes often collapse into `max(ceil(sum / k), max_a)`.
+
+1. [ ] **1300** · [1846E1 - Rudolf and Snowflakes (simple version)](https://codeforces.com/contest/1846/problem/E1)
+2. [ ] **1400** · [2151C - Incremental Stay](https://codeforces.com/contest/2151/problem/C)
+3. [ ] **1500** · [1419C - Killjoy](https://codeforces.com/contest/1419/problem/C)
+4. [ ] **1600** · [1811D - Umka and a Long Flight](https://codeforces.com/contest/1811/problem/D)

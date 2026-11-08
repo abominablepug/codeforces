@@ -4,10 +4,11 @@
 
 *0 solved so far.*
 
-### Try Next
+## Suggested Sprint — Subtree Sizes, Depths & Post-Order DFS *(Sprint 1 · 0/4)*
 
-| Rating | Problem |
-| :---: | :--- |
-| 1300 | [1857D - Strong Vertices](https://codeforces.com/contest/1857/problem/D) |
-| 1300 | [1676G - White-Black Balanced Subtrees](https://codeforces.com/contest/1676/problem/G) |
-| 1200 | [1843D - Apple Tree](https://codeforces.com/contest/1843/problem/D) |
+Root at node `1` and compute `sz[u]` and `dep[u]` in one DFS—remember removing any single tree edge splits the vertices cleanly into `sz[v]` inside vs. `n - sz[v]` outside.
+
+1. [ ] **1200** · [1843D - Apple Tree](https://codeforces.com/contest/1843/problem/D)
+2. [ ] **1300** · [1900C - Anji's Binary Tree](https://codeforces.com/contest/1900/problem/C)
+3. [ ] **1400** · [1830A - Copil Copac Draws Trees](https://codeforces.com/contest/1830/problem/A)
+4. [ ] **1500** · [580C - Kefa and Park](https://codeforces.com/contest/580/problem/C)

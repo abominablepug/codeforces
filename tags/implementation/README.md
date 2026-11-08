@@ -13,10 +13,11 @@
 | 1200 | [1832C - Contrast Value](https://codeforces.com/contest/1832/problem/C) | [contrastValue.cpp](../../ratings/1200/contrastValue.cpp) |
 | 1300 | [2041A - The Bento Box Adventure](https://codeforces.com/contest/2041/problem/A) | [bentoBoxAdventure.cpp](../../ratings/1300/bentoBoxAdventure.cpp) |
 
-### Try Next
+## Suggested Sprint — Clean State Simulation & Boundary Discipline *(Sprint 1 · 0/4)*
 
-| Rating | Problem |
-| :---: | :--- |
-| 1300 | [1846E1 - Rudolf and Snowflakes (simple version)](https://codeforces.com/contest/1846/problem/E1) |
-| 1400 | [1701C - Schedule Management](https://codeforces.com/contest/1701/problem/C) |
-| 1300 | [1850F - We Were Both Children](https://codeforces.com/contest/1850/problem/F) |
+Normalize inputs early (0-indexing, sentinels, canonical orientation) to keep your main loop flat and bug-free, double-checking `n = 1` and all-equal edge cases.
+
+1. [ ] **1200** · [1954B - Make It Ugly](https://codeforces.com/contest/1954/problem/B)
+2. [ ] **1300** · [1851D - Prefix Permutation Sums](https://codeforces.com/contest/1851/problem/D)
+3. [ ] **1400** · [1993C - Light Switches](https://codeforces.com/contest/1993/problem/C)
+4. [ ] **1500** · [2137E - Mexification](https://codeforces.com/contest/2137/problem/E)

@@ -11,10 +11,11 @@
 | 1200 | [2020B - Brightness Begins](https://codeforces.com/contest/2020/problem/B) | [brightnessBegins.cpp](../../ratings/1200/brightnessBegins.cpp) |
 | 1300 | [1794C - Scoring Subsequences](https://codeforces.com/contest/1794/problem/C) | [scoringSubsequences.cpp](../../ratings/1300/scoringSubsequences.cpp) |
 
-### Try Next
+## Suggested Sprint — Monotonic Predicate (Search on the Answer) *(Sprint 1 · 0/4)*
 
-| Rating | Problem |
-| :---: | :--- |
-| 1300 | [1927D - Find the Different Ones!](https://codeforces.com/contest/1927/problem/D) |
-| 1300 | [1703F - Yet Another Problem About Pairs Satisfying an Inequality](https://codeforces.com/contest/1703/problem/F) |
-| 1400 | [1904C - Array Game](https://codeforces.com/contest/1904/problem/C) |
+Reframe 'find the optimal `X`' into a yes/no threshold check `can(X)` with a single true-to-false cutoff. Start with direct `O(n)` arithmetic checks, then build greedy sweep simulations inside `can(X)` as constraints tighten.
+
+1. [ ] **1300** · [2022B - Kar Salesman](https://codeforces.com/contest/2022/problem/B)
+2. [ ] **1400** · [2132C2 - The Cunning Seller (hard version)](https://codeforces.com/contest/2132/problem/C2)
+3. [ ] **1500** · [2183C - War Strategy](https://codeforces.com/contest/2183/problem/C)
+4. [ ] **1600** · [2232C2 - Seating Arrangement (Hard Version)](https://codeforces.com/contest/2232/problem/C2)

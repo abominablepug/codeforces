@@ -4,10 +4,11 @@
 
 *0 solved so far.*
 
-### Try Next
+## Suggested Sprint — Max-Flow Modeling & Capacity Networks *(Sprint 1 · 0/4)*
 
-| Rating | Problem |
-| :---: | :--- |
-| 1100 | [1624C - Division by Two and Permutation](https://codeforces.com/contest/1624/problem/C) |
-| 1300 | [1119B - Alyona and a Narrow Fridge](https://codeforces.com/contest/1119/problem/B) |
-| 1400 | [1706C - Qpwoeirut And The City](https://codeforces.com/contest/1706/problem/C) |
+Encode supplies, demands, and compatibility rules as directed capacities from source to sink and run Dinic's algorithm. Keep intermediate layer vertices compact so edge counts stay sharp.
+
+1. [ ] **1600** · [1530D - Secret Santa](https://codeforces.com/contest/1530/problem/D)
+2. [ ] **1900** · [1423B - Valuable Paper](https://codeforces.com/contest/1423/problem/B)
+3. [ ] **2000** · [237E - Build String](https://codeforces.com/contest/237/problem/E)
+4. [ ] **2100** · [546E - Soldier and Traveling](https://codeforces.com/contest/546/problem/E)

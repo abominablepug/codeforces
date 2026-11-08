@@ -11,10 +11,11 @@
 | 1200 | [2161C - Loyalty](https://codeforces.com/contest/2161/problem/C) | [loyalty.cpp](../../ratings/1200/loyalty.cpp) |
 | 1300 | [2041A - The Bento Box Adventure](https://codeforces.com/contest/2041/problem/A) | [bentoBoxAdventure.cpp](../../ratings/1300/bentoBoxAdventure.cpp) |
 
-### Try Next
+## Suggested Sprint — Medians, Order Statistics & Adjacent Gaps *(Sprint 1 · 0/4)*
 
-| Rating | Problem |
-| :---: | :--- |
-| 1300 | [1703F - Yet Another Problem About Pairs Satisfying an Inequality](https://codeforces.com/contest/1703/problem/F) |
-| 1300 | [1857D - Strong Vertices](https://codeforces.com/contest/1857/problem/D) |
-| 1400 | [1692G - 2^Sort](https://codeforces.com/contest/1692/problem/G) |
+Recall the median minimizes `∑|a_i - x|` and closest values always become neighbors after sorting. Check whether pairing extremes `(a[i], a[n-1-i])` or adjacent items wins.
+
+1. [ ] **1300** · [2121D - 1709](https://codeforces.com/contest/2121/problem/D)
+2. [ ] **1400** · [2231C - Chipmunk Theo and Equality](https://codeforces.com/contest/2231/problem/C)
+3. [ ] **1500** · [1857E - Power of Points](https://codeforces.com/contest/1857/problem/E)
+4. [ ] **1600** · [1475E - Advertising Agency](https://codeforces.com/contest/1475/problem/E)

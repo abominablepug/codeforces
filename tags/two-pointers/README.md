@@ -11,10 +11,11 @@
 | 1200 | [2161C - Loyalty](https://codeforces.com/contest/2161/problem/C) | [loyalty.cpp](../../ratings/1200/loyalty.cpp) |
 | 1300 | [1794C - Scoring Subsequences](https://codeforces.com/contest/1794/problem/C) | [scoringSubsequences.cpp](../../ratings/1300/scoringSubsequences.cpp) |
 
-### Try Next
+## Suggested Sprint — Sliding Window & Monotonic Subarray Validity *(Sprint 1 · 0/4)*
 
-| Rating | Problem |
-| :---: | :--- |
-| 1300 | [1927D - Find the Different Ones!](https://codeforces.com/contest/1927/problem/D) |
-| 1400 | [1692G - 2^Sort](https://codeforces.com/contest/1692/problem/G) |
-| 1400 | [1904C - Array Game](https://codeforces.com/contest/1904/problem/C) |
+Verify window monotonicity first (shrinking `L` preserves validity); then advance `R` one step at a time and pull `L` forward in a `while` loop for `O(n)` total work.
+
+1. [ ] **1300** · [1364B - Most socially-distanced subsequence](https://codeforces.com/contest/1364/problem/B)
+2. [ ] **1400** · [2033C - Sakurako's Field Trip](https://codeforces.com/contest/2033/problem/C)
+3. [ ] **1500** · [2069C - Beautiful Sequence](https://codeforces.com/contest/2069/problem/C)
+4. [ ] **1600** · [1774D - Same Count One](https://codeforces.com/contest/1774/problem/D)

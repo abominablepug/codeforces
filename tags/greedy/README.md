@@ -16,10 +16,11 @@
 | 1300 | [1669H - Maximal AND](https://codeforces.com/contest/1669/problem/H) | [maximalAND.cpp](../../ratings/1300/maximalAND.cpp) |
 | 1300 | [1794C - Scoring Subsequences](https://codeforces.com/contest/1794/problem/C) | [scoringSubsequences.cpp](../../ratings/1300/scoringSubsequences.cpp) |
 
-### Try Next
+## Suggested Sprint — Sorting & Exchange Arguments *(Sprint 1 · 0/4)*
 
-| Rating | Problem |
-| :---: | :--- |
-| 1300 | [1915E - Romantic Glasses](https://codeforces.com/contest/1915/problem/E) |
-| 1300 | [1927D - Find the Different Ones!](https://codeforces.com/contest/1927/problem/D) |
-| 1300 | [1703F - Yet Another Problem About Pairs Satisfying an Inequality](https://codeforces.com/contest/1703/problem/F) |
+Compare swapping two adjacent items `i` and `j` to derive the exact sort comparator mathematically. Start with single-key sorts, then progress to custom `a_i + b_i` or ratio orderings.
+
+1. [ ] **1300** · [2187A - Restricted Sorting](https://codeforces.com/contest/2187/problem/A)
+2. [ ] **1400** · [2127C - Trip Shopping](https://codeforces.com/contest/2127/problem/C)
+3. [ ] **1500** · [1814C - Search in Parallel](https://codeforces.com/contest/1814/problem/C)
+4. [ ] **1600** · [2207B - One Night At Freddy's](https://codeforces.com/contest/2207/problem/B)

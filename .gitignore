@@ -16,6 +16,7 @@
 !*.yml
 !*.yaml
 !problems.json
+!sprints.json
 !.gitignore
 
 # Always ignore local caches, build directories, and object files
