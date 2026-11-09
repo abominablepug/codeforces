@@ -1,6 +1,6 @@
 # Codeforces Solutions
 
-**16** solved · **800–1500** rating · target **1500–1600** · **16 / 37** tags
+**19** solved · **800–1500** rating · target **1500–1600** · **16 / 37** tags
 
 ## [By Difficulty](./ratings/README.md)
 
@@ -9,8 +9,9 @@
 | [800](./ratings/0800/) | 1 |
 | [1100](./ratings/1100/) | 5 |
 | [1200](./ratings/1200/) | 6 |
-| [1300](./ratings/1300/) | 3 |
-| [1500](./ratings/1500/) | 1 |
+| [1300](./ratings/1300/) | 4 |
+| [1400](./ratings/1400/) | 1 |
+| [1500](./ratings/1500/) | 2 |
 | **1600** *(goal)* | 0 |
 
 ## Suggested Challenges
@@ -18,8 +19,8 @@
 | Problem | Rating |
 | :--- | :---: |
 | [1917B - Erase First or Second Letter](https://codeforces.com/contest/1917/problem/B) | 1100 |
-| [2004C - Splitting Items](https://codeforces.com/contest/2004/problem/C) | 1100 |
 | [1800D - Remove Two Letters](https://codeforces.com/contest/1800/problem/D) | 1200 |
+| [1931E - Anna and the Valentine's Day Gift](https://codeforces.com/contest/1931/problem/E) | 1400 |
 | [1915F - Greetings](https://codeforces.com/contest/1915/problem/F) | 1500 |
 | [1920C - Partitioning the Array](https://codeforces.com/contest/1920/problem/C) | 1600 |
 
@@ -27,14 +28,23 @@
 
 Ordered progressions focusing on a specific subtopic or algorithm. Submitting solutions checks off steps automatically; finishing a sprint unlocks a new one in that tag. *(All 37 tag sprints in [All Tags](./tags/README.md).)*
 
-### [dp](./tags/dp/) — Linear States & Decision Boundaries *(Sprint 1 · 0/4)*
+### [dp](./tags/dp/) — Linear States & Decision Boundaries *(Sprint 1 · 3/4)*
 
 Define `dp[i]` around the minimal state needed at position `i` and isolate the exact boundary choice (skip, extend, or jump). Early steps use direct `O(1)` transitions; later problems require prefix extremes or refactoring states to drop an inner loop.
 
-1. [ ] **1300** · [189A - Cut Ribbon](https://codeforces.com/contest/189/problem/A)
-2. [ ] **1400** · [698A - Vacations](https://codeforces.com/contest/698/problem/A)
-3. [ ] **1500** · [1842C - Tenzing and Balls](https://codeforces.com/contest/1842/problem/C)
+1. [x] **1300** · [189A - Cut Ribbon](https://codeforces.com/contest/189/problem/A) — [cutRibbon.cpp](./ratings/1300/cutRibbon.cpp)
+2. [x] **1400** · [698A - Vacations](https://codeforces.com/contest/698/problem/A) — [vacations.cpp](./ratings/1400/vacations.cpp)
+3. [x] **1500** · [1842C - Tenzing and Balls](https://codeforces.com/contest/1842/problem/C) — [tenzingAndBalls.cpp](./ratings/1500/tenzingAndBalls.cpp)
 4. [ ] **1600** · [1875D - Jellyfish and Mex](https://codeforces.com/contest/1875/problem/D)
+
+### [binary search](./tags/binary-search/) — Monotonic Predicate (Search on the Answer) *(Sprint 1 · 0/4)*
+
+Reframe 'find the optimal `X`' into a yes/no threshold check `can(X)` with a single true-to-false cutoff. Start with direct `O(n)` arithmetic checks, then build greedy sweep simulations inside `can(X)` as constraints tighten.
+
+1. [ ] **1300** · [2022B - Kar Salesman](https://codeforces.com/contest/2022/problem/B)
+2. [ ] **1400** · [2132C2 - The Cunning Seller (hard version)](https://codeforces.com/contest/2132/problem/C2)
+3. [ ] **1500** · [2183C - War Strategy](https://codeforces.com/contest/2183/problem/C)
+4. [ ] **1600** · [2232C2 - Seating Arrangement (Hard Version)](https://codeforces.com/contest/2232/problem/C2)
 
 ### [strings](./tags/strings/) — Run-Length Blocks, Palindromes & 26-Way Scans *(Sprint 1 · 0/4)*
 
@@ -54,27 +64,18 @@ Maintain dynamic min/max, predecessor/successor (`set` / `multiset`), or active 
 3. [ ] **1300** · [1915E - Romantic Glasses](https://codeforces.com/contest/1915/problem/E)
 4. [ ] **1400** · [2014D - Robert Hood and Mrs Hood](https://codeforces.com/contest/2014/problem/D)
 
-### [games](./tags/games/) — Parity, Symmetry & First-Move Control *(Sprint 1 · 0/4)*
-
-Test small cases (`n ≤ 5`) by hand to spot an invariant—total move parity, mirror copying, or an immediate winning grab—instead of simulating turns when the outcome is predetermined.
-
-1. [ ] **1100** · [2107B - Apples in Boxes](https://codeforces.com/contest/2107/problem/B)
-2. [ ] **1200** · [2196A - Game with a Fraction](https://codeforces.com/contest/2196/problem/A)
-3. [ ] **1300** · [1943A - MEX Game 1](https://codeforces.com/contest/1943/problem/A)
-4. [ ] **1400** · [1931E - Anna and the Valentine's Day Gift](https://codeforces.com/contest/1931/problem/E)
-
 ## [All Tags](./tags/README.md)
 
 | Tag | Solved |
 | :--- | :---: |
 | [greedy](./tags/greedy/) | 9 |
+| [dp](./tags/dp/) | 6 |
 | [implementation](./tags/implementation/) | 6 |
 | [math](./tags/math/) | 6 |
 | [binary search](./tags/binary-search/) | 4 |
 | [sortings](./tags/sortings/) | 4 |
 | [two pointers](./tags/two-pointers/) | 4 |
-| [dp](./tags/dp/) | 3 |
-| [brute force](./tags/brute-force/) | 2 |
+| [brute force](./tags/brute-force/) | 3 |
 | [constructive algorithms](./tags/constructive-algorithms/) | 2 |
 | [number theory](./tags/number-theory/) | 2 |
 | [bitmasks](./tags/bitmasks/) | 1 |

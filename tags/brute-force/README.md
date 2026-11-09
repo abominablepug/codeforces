@@ -2,12 +2,13 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**2** solved · rating **1100–1200**
+**3** solved · rating **1100–1300**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
 | 1100 | [1948B - Array Fix](https://codeforces.com/contest/1948/problem/B) | [arrayFix.cpp](../../ratings/1100/arrayFix.cpp) |
 | 1200 | [2181H - Honey Cake](https://codeforces.com/contest/2181/problem/H) | [honeyCake.cpp](../../ratings/1200/honeyCake.cpp) |
+| 1300 | [189A - Cut Ribbon](https://codeforces.com/contest/189/problem/A) | [cutRibbon.cpp](../../ratings/1300/cutRibbon.cpp) |
 
 ## Suggested Sprint — Fixing One Variable & Bounded Search *(Sprint 1 · 0/4)*
 

@@ -1,0 +1,1 @@
+../../ratings/1300/cutRibbon.cpp

@@ -199,6 +199,19 @@
     "completed": "2025-11-02"
   },
   {
+    "id": "189A",
+    "contestId": 189,
+    "index": "A",
+    "name": "Cut Ribbon",
+    "rating": 1300,
+    "tags": [
+      "brute force",
+      "dp"
+    ],
+    "file": "cutRibbon.cpp",
+    "completed": "2026-11-08"
+  },
+  {
     "id": "2041A",
     "contestId": 2041,
     "index": "A",
@@ -210,6 +223,30 @@
     ],
     "file": "bentoBoxAdventure.cpp",
     "completed": "2025-11-02"
+  },
+  {
+    "id": "698A",
+    "contestId": 698,
+    "index": "A",
+    "name": "Vacations",
+    "rating": 1400,
+    "tags": [
+      "dp"
+    ],
+    "file": "vacations.cpp",
+    "completed": "2026-11-08"
+  },
+  {
+    "id": "1842C",
+    "contestId": 1842,
+    "index": "C",
+    "name": "Tenzing and Balls",
+    "rating": 1500,
+    "tags": [
+      "dp"
+    ],
+    "file": "tenzingAndBalls.cpp",
+    "completed": "2026-11-08"
   },
   {
     "id": "1881E",
