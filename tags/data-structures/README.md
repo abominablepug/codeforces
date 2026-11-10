@@ -2,10 +2,11 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**1** solved · rating **1200**
+**2** solved · rating **800–1200**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
+| 800 | [2275B - Did Not Go to Print](https://codeforces.com/contest/2275/problem/B) | [didNotGoToPrint.cpp](../../ratings/0800/didNotGoToPrint.cpp) |
 | 1200 | [1982C - Boring Day](https://codeforces.com/contest/1982/problem/C) | [boringDay.cpp](../../ratings/1200/boringDay.cpp) |
 
 ## Suggested Sprint — Ordered Sets, Frequency Maps & Heaps *(Sprint 1 · 0/4)*

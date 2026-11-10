@@ -2,11 +2,12 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**11** solved · rating **800–1300**
+**12** solved · rating **800–1300**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
 | 800 | [2266A - Good Contest](https://codeforces.com/contest/2266/problem/A) | [goodContest.cpp](../../ratings/0800/goodContest.cpp) |
+| 800 | [2276A - Perfect Sandwiches](https://codeforces.com/contest/2276/problem/A) | [perfectSandwiches.cpp](../../ratings/0800/perfectSandwiches.cpp) |
 | 900 | [2229C1 - We Be Flipping (Easy Version)](https://codeforces.com/contest/2229/problem/C1) | [weBeFlippingEasyVersion.cpp](../../ratings/0900/weBeFlippingEasyVersion.cpp) |
 | 1100 | [1948B - Array Fix](https://codeforces.com/contest/1948/problem/B) | [arrayFix.cpp](../../ratings/1100/arrayFix.cpp) |
 | 1100 | [1999D - Slavic's Exam](https://codeforces.com/contest/1999/problem/D) | [slavicsExam.cpp](../../ratings/1100/slavicsExam.cpp) |

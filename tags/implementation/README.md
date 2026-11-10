@@ -2,10 +2,13 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**6** solved · rating **1100–1300**
+**9** solved · rating **800–1300**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
+| 800 | [2274A - The Projections of Paco](https://codeforces.com/contest/2274/problem/A) | [theProjectionsOfPaco.cpp](../../ratings/0800/theProjectionsOfPaco.cpp) |
+| 800 | [2275A - In Search of Convenience](https://codeforces.com/contest/2275/problem/A) | [inSearchOfConvenience.cpp](../../ratings/0800/inSearchOfConvenience.cpp) |
+| 800 | [2275B - Did Not Go to Print](https://codeforces.com/contest/2275/problem/B) | [didNotGoToPrint.cpp](../../ratings/0800/didNotGoToPrint.cpp) |
 | 1100 | [1829E - The Lakes](https://codeforces.com/contest/1829/problem/E) | [theLakes.cpp](../../ratings/1100/theLakes.cpp) |
 | 1100 | [1948B - Array Fix](https://codeforces.com/contest/1948/problem/B) | [arrayFix.cpp](../../ratings/1100/arrayFix.cpp) |
 | 1100 | [1999D - Slavic's Exam](https://codeforces.com/contest/1999/problem/D) | [slavicsExam.cpp](../../ratings/1100/slavicsExam.cpp) |

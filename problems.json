@@ -24,6 +24,74 @@
     "completed": "2026-11-09"
   },
   {
+    "id": "2271A",
+    "contestId": 2271,
+    "index": "A",
+    "name": "Robot Odd Moves",
+    "rating": 800,
+    "tags": [
+      "constructive algorithms",
+      "math"
+    ],
+    "file": "robotOddMoves.cpp",
+    "completed": "2026-11-10"
+  },
+  {
+    "id": "2274A",
+    "contestId": 2274,
+    "index": "A",
+    "name": "The Projections of Paco",
+    "rating": 800,
+    "tags": [
+      "dfs and similar",
+      "dp",
+      "hashing",
+      "implementation",
+      "math"
+    ],
+    "file": "theProjectionsOfPaco.cpp",
+    "completed": "2026-11-10"
+  },
+  {
+    "id": "2275A",
+    "contestId": 2275,
+    "index": "A",
+    "name": "In Search of Convenience",
+    "rating": 800,
+    "tags": [
+      "geometry",
+      "implementation"
+    ],
+    "file": "inSearchOfConvenience.cpp",
+    "completed": "2026-11-10"
+  },
+  {
+    "id": "2275B",
+    "contestId": 2275,
+    "index": "B",
+    "name": "Did Not Go to Print",
+    "rating": 800,
+    "tags": [
+      "data structures",
+      "implementation"
+    ],
+    "file": "didNotGoToPrint.cpp",
+    "completed": "2026-11-10"
+  },
+  {
+    "id": "2276A",
+    "contestId": 2276,
+    "index": "A",
+    "name": "Perfect Sandwiches",
+    "rating": 800,
+    "tags": [
+      "greedy",
+      "math"
+    ],
+    "file": "perfectSandwiches.cpp",
+    "completed": "2026-11-10"
+  },
+  {
     "id": "2229C1",
     "contestId": 2229,
     "index": "C1",

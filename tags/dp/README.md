@@ -2,10 +2,11 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**6** solved · rating **1100–1500**
+**7** solved · rating **800–1500**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
+| 800 | [2274A - The Projections of Paco](https://codeforces.com/contest/2274/problem/A) | [theProjectionsOfPaco.cpp](../../ratings/0800/theProjectionsOfPaco.cpp) |
 | 1100 | [1948B - Array Fix](https://codeforces.com/contest/1948/problem/B) | [arrayFix.cpp](../../ratings/1100/arrayFix.cpp) |
 | 1200 | [1982C - Boring Day](https://codeforces.com/contest/1982/problem/C) | [boringDay.cpp](../../ratings/1200/boringDay.cpp) |
 | 1300 | [189A - Cut Ribbon](https://codeforces.com/contest/189/problem/A) | [cutRibbon.cpp](../../ratings/1300/cutRibbon.cpp) |

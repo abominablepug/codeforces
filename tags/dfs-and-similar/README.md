@@ -2,10 +2,11 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**1** solved · rating **1100**
+**2** solved · rating **800–1100**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
+| 800 | [2274A - The Projections of Paco](https://codeforces.com/contest/2274/problem/A) | [theProjectionsOfPaco.cpp](../../ratings/0800/theProjectionsOfPaco.cpp) |
 | 1100 | [1829E - The Lakes](https://codeforces.com/contest/1829/problem/E) | [theLakes.cpp](../../ratings/1100/theLakes.cpp) |
 
 ## Suggested Sprint — Connected Components & Implicit Flood Fill *(Sprint 1 · 0/4)*

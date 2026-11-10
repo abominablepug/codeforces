@@ -2,7 +2,11 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-*0 solved so far.*
+**1** solved · rating **800**
+
+| Rating | Problem | Solution |
+| :---: | :--- | :--- |
+| 800 | [2275A - In Search of Convenience](https://codeforces.com/contest/2275/problem/A) | [inSearchOfConvenience.cpp](../../ratings/0800/inSearchOfConvenience.cpp) |
 
 ## Suggested Sprint — Bounding Boxes, Exact Slopes & Squared Distances *(Sprint 1 · 0/4)*
 

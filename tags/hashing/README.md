@@ -2,7 +2,11 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-*0 solved so far.*
+**1** solved · rating **800**
+
+| Rating | Problem | Solution |
+| :---: | :--- | :--- |
+| 800 | [2274A - The Projections of Paco](https://codeforces.com/contest/2274/problem/A) | [theProjectionsOfPaco.cpp](../../ratings/0800/theProjectionsOfPaco.cpp) |
 
 ## Suggested Sprint — Polynomial Rolling Hashes & Substring Equality *(Sprint 1 · 0/4)*
 

@@ -2,11 +2,14 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**6** solved · rating **800–1300**
+**9** solved · rating **800–1300**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
 | 800 | [2145A - Candies for Nephews](https://codeforces.com/contest/2145/problem/A) | [candiesForNephews.cpp](../../ratings/0800/candiesForNephews.cpp) |
+| 800 | [2271A - Robot Odd Moves](https://codeforces.com/contest/2271/problem/A) | [robotOddMoves.cpp](../../ratings/0800/robotOddMoves.cpp) |
+| 800 | [2274A - The Projections of Paco](https://codeforces.com/contest/2274/problem/A) | [theProjectionsOfPaco.cpp](../../ratings/0800/theProjectionsOfPaco.cpp) |
+| 800 | [2276A - Perfect Sandwiches](https://codeforces.com/contest/2276/problem/A) | [perfectSandwiches.cpp](../../ratings/0800/perfectSandwiches.cpp) |
 | 1200 | [1933D - Turtle Tenacity: Continual Mods](https://codeforces.com/contest/1933/problem/D) | [turtleTenacityContinualMods.cpp](../../ratings/1200/turtleTenacityContinualMods.cpp) |
 | 1200 | [2020B - Brightness Begins](https://codeforces.com/contest/2020/problem/B) | [brightnessBegins.cpp](../../ratings/1200/brightnessBegins.cpp) |
 | 1200 | [2181H - Honey Cake](https://codeforces.com/contest/2181/problem/H) | [honeyCake.cpp](../../ratings/1200/honeyCake.cpp) |
