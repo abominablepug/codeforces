@@ -1,0 +1,1 @@
+../../ratings/0800/goodContest.cpp

@@ -5,6 +5,8 @@
 | Rating | Problem | Solution | Completed |
 | :---: | :--- | :--- | :---: |
 | [800](./0800/) | [2145A - Candies for Nephews](https://codeforces.com/contest/2145/problem/A) | [candiesForNephews.cpp](./0800/candiesForNephews.cpp) | 2025-11-01 |
+| [800](./0800/) | [2266A - Good Contest](https://codeforces.com/contest/2266/problem/A) | [goodContest.cpp](./0800/goodContest.cpp) | 2026-11-09 |
+| [900](./0900/) | [2229C1 - We Be Flipping (Easy Version)](https://codeforces.com/contest/2229/problem/C1) | [weBeFlippingEasyVersion.cpp](./0900/weBeFlippingEasyVersion.cpp) | 2026-11-09 |
 | [1100](./1100/) | [1829E - The Lakes](https://codeforces.com/contest/1829/problem/E) | [theLakes.cpp](./1100/theLakes.cpp) | 2026-11-07 |
 | [1100](./1100/) | [1948B - Array Fix](https://codeforces.com/contest/1948/problem/B) | [arrayFix.cpp](./1100/arrayFix.cpp) | 2025-11-01 |
 | [1100](./1100/) | [1999D - Slavic's Exam](https://codeforces.com/contest/1999/problem/D) | [slavicsExam.cpp](./1100/slavicsExam.cpp) | 2026-11-07 |

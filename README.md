@@ -1,12 +1,13 @@
 # Codeforces Solutions
 
-**19** solved · **800–1500** rating · target **1500–1600** · **16 / 37** tags
+**21** solved · **800–1500** rating · target **1500–1600** · **16 / 37** tags
 
 ## [By Difficulty](./ratings/README.md)
 
 | Rating | Solved |
 | :--- | :---: |
-| [800](./ratings/0800/) | 1 |
+| [800](./ratings/0800/) | 2 |
+| [900](./ratings/0900/) | 1 |
 | [1100](./ratings/1100/) | 5 |
 | [1200](./ratings/1200/) | 6 |
 | [1300](./ratings/1300/) | 4 |
@@ -37,14 +38,14 @@ Define `dp[i]` around the minimal state needed at position `i` and isolate the e
 3. [x] **1500** · [1842C - Tenzing and Balls](https://codeforces.com/contest/1842/problem/C) — [tenzingAndBalls.cpp](./ratings/1500/tenzingAndBalls.cpp)
 4. [ ] **1600** · [1875D - Jellyfish and Mex](https://codeforces.com/contest/1875/problem/D)
 
-### [binary search](./tags/binary-search/) — Monotonic Predicate (Search on the Answer) *(Sprint 1 · 0/4)*
+### [constructive algorithms](./tags/constructive-algorithms/) — Permutations, Interleaving & Parity Checks *(Sprint 1 · 0/4)*
 
-Reframe 'find the optimal `X`' into a yes/no threshold check `can(X)` with a single true-to-false cutoff. Start with direct `O(n)` arithmetic checks, then build greedy sweep simulations inside `can(X)` as constraints tighten.
+Test canonical templates first—interleaving `[1, n, 2, n-1, …]`, cyclic shifts, or adjacent `(2i-1, 2i)` swaps—and check parity/sum invariants early for `-1` cases. Harder steps tune a custom prefix before filling the tail monotonically.
 
-1. [ ] **1300** · [2022B - Kar Salesman](https://codeforces.com/contest/2022/problem/B)
-2. [ ] **1400** · [2132C2 - The Cunning Seller (hard version)](https://codeforces.com/contest/2132/problem/C2)
-3. [ ] **1500** · [2183C - War Strategy](https://codeforces.com/contest/2183/problem/C)
-4. [ ] **1600** · [2232C2 - Seating Arrangement (Hard Version)](https://codeforces.com/contest/2232/problem/C2)
+1. [ ] **1200** · [1822D - Super-Permutation](https://codeforces.com/contest/1822/problem/D)
+2. [ ] **1300** · [2023A - Concatenation of Arrays](https://codeforces.com/contest/2023/problem/A)
+3. [ ] **1400** · [1927E - Klever Permutation](https://codeforces.com/contest/1927/problem/E)
+4. [ ] **1500** · [1809C - Sum on Subarrays](https://codeforces.com/contest/1809/problem/C)
 
 ### [strings](./tags/strings/) — Run-Length Blocks, Palindromes & 26-Way Scans *(Sprint 1 · 0/4)*
 
@@ -68,7 +69,7 @@ Maintain dynamic min/max, predecessor/successor (`set` / `multiset`), or active 
 
 | Tag | Solved |
 | :--- | :---: |
-| [greedy](./tags/greedy/) | 9 |
+| [greedy](./tags/greedy/) | 11 |
 | [dp](./tags/dp/) | 6 |
 | [implementation](./tags/implementation/) | 6 |
 | [math](./tags/math/) | 6 |
@@ -76,7 +77,7 @@ Maintain dynamic min/max, predecessor/successor (`set` / `multiset`), or active 
 | [sortings](./tags/sortings/) | 4 |
 | [two pointers](./tags/two-pointers/) | 4 |
 | [brute force](./tags/brute-force/) | 3 |
-| [constructive algorithms](./tags/constructive-algorithms/) | 2 |
+| [constructive algorithms](./tags/constructive-algorithms/) | 3 |
 | [number theory](./tags/number-theory/) | 2 |
 | [bitmasks](./tags/bitmasks/) | 1 |
 | [data structures](./tags/data-structures/) | 1 |

@@ -12,6 +12,31 @@
     "completed": "2025-11-01"
   },
   {
+    "id": "2266A",
+    "contestId": 2266,
+    "index": "A",
+    "name": "Good Contest",
+    "rating": 800,
+    "tags": [
+      "greedy"
+    ],
+    "file": "goodContest.cpp",
+    "completed": "2026-11-09"
+  },
+  {
+    "id": "2229C1",
+    "contestId": 2229,
+    "index": "C1",
+    "name": "We Be Flipping (Easy Version)",
+    "rating": 900,
+    "tags": [
+      "constructive algorithms",
+      "greedy"
+    ],
+    "file": "weBeFlippingEasyVersion.cpp",
+    "completed": "2026-11-09"
+  },
+  {
     "id": "1829E",
     "contestId": 1829,
     "index": "E",

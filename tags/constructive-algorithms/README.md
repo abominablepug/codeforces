@@ -2,10 +2,11 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**2** solved · rating **1200**
+**3** solved · rating **900–1200**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
+| 900 | [2229C1 - We Be Flipping (Easy Version)](https://codeforces.com/contest/2229/problem/C1) | [weBeFlippingEasyVersion.cpp](../../ratings/0900/weBeFlippingEasyVersion.cpp) |
 | 1200 | [1933D - Turtle Tenacity: Continual Mods](https://codeforces.com/contest/1933/problem/D) | [turtleTenacityContinualMods.cpp](../../ratings/1200/turtleTenacityContinualMods.cpp) |
 | 1200 | [2161C - Loyalty](https://codeforces.com/contest/2161/problem/C) | [loyalty.cpp](../../ratings/1200/loyalty.cpp) |
 
