@@ -1,13 +1,13 @@
 # Codeforces Solutions
 
-**26** solved · **800–1500** rating · target **1500–1600** · **18 / 37** tags
+**27** solved · **800–1500** rating · target **1500–1600** · **18 / 37** tags
 
 ## [By Difficulty](./ratings/README.md)
 
 | Rating | Solved |
 | :--- | :---: |
 | [800](./ratings/0800/) | 7 |
-| [900](./ratings/0900/) | 1 |
+| [900](./ratings/0900/) | 2 |
 | [1100](./ratings/1100/) | 5 |
 | [1200](./ratings/1200/) | 6 |
 | [1300](./ratings/1300/) | 4 |
@@ -19,8 +19,8 @@
 
 | Problem | Rating |
 | :--- | :---: |
+| [1840C - Ski Resort](https://codeforces.com/contest/1840/problem/C) | 1000 |
 | [1917B - Erase First or Second Letter](https://codeforces.com/contest/1917/problem/B) | 1100 |
-| [1800D - Remove Two Letters](https://codeforces.com/contest/1800/problem/D) | 1200 |
 | [1931E - Anna and the Valentine's Day Gift](https://codeforces.com/contest/1931/problem/E) | 1400 |
 | [1915F - Greetings](https://codeforces.com/contest/1915/problem/F) | 1500 |
 | [1920C - Partitioning the Array](https://codeforces.com/contest/1920/problem/C) | 1600 |
@@ -73,8 +73,8 @@ Since bitwise operations never carry across positions, analyze the 30 bit column
 | [implementation](./tags/implementation/) | 9 |
 | [math](./tags/math/) | 9 |
 | [dp](./tags/dp/) | 7 |
+| [constructive algorithms](./tags/constructive-algorithms/) | 5 |
 | [binary search](./tags/binary-search/) | 4 |
-| [constructive algorithms](./tags/constructive-algorithms/) | 4 |
 | [sortings](./tags/sortings/) | 4 |
 | [two pointers](./tags/two-pointers/) | 4 |
 | [brute force](./tags/brute-force/) | 3 |

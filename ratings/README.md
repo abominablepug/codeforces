@@ -12,6 +12,7 @@
 | [800](./0800/) | [2275B - Did Not Go to Print](https://codeforces.com/contest/2275/problem/B) | [didNotGoToPrint.cpp](./0800/didNotGoToPrint.cpp) | 2026-11-10 |
 | [800](./0800/) | [2276A - Perfect Sandwiches](https://codeforces.com/contest/2276/problem/A) | [perfectSandwiches.cpp](./0800/perfectSandwiches.cpp) | 2026-11-10 |
 | [900](./0900/) | [2229C1 - We Be Flipping (Easy Version)](https://codeforces.com/contest/2229/problem/C1) | [weBeFlippingEasyVersion.cpp](./0900/weBeFlippingEasyVersion.cpp) | 2026-11-09 |
+| [900](./0900/) | [2263B - Min Matrices](https://codeforces.com/contest/2263/problem/B) | [minMatrices.cpp](./0900/minMatrices.cpp) | 2026-11-10 |
 | [1100](./1100/) | [1829E - The Lakes](https://codeforces.com/contest/1829/problem/E) | [theLakes.cpp](./1100/theLakes.cpp) | 2026-11-07 |
 | [1100](./1100/) | [1948B - Array Fix](https://codeforces.com/contest/1948/problem/B) | [arrayFix.cpp](./1100/arrayFix.cpp) | 2025-11-01 |
 | [1100](./1100/) | [1999D - Slavic's Exam](https://codeforces.com/contest/1999/problem/D) | [slavicsExam.cpp](./1100/slavicsExam.cpp) | 2026-11-07 |

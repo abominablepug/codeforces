@@ -105,6 +105,18 @@
     "completed": "2026-11-09"
   },
   {
+    "id": "2263B",
+    "contestId": 2263,
+    "index": "B",
+    "name": "Min Matrices",
+    "rating": 900,
+    "tags": [
+      "constructive algorithms"
+    ],
+    "file": "minMatrices.cpp",
+    "completed": "2026-11-10"
+  },
+  {
     "id": "1829E",
     "contestId": 1829,
     "index": "E",

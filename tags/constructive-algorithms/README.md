@@ -2,12 +2,13 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**4** solved · rating **800–1200**
+**5** solved · rating **800–1200**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
 | 800 | [2271A - Robot Odd Moves](https://codeforces.com/contest/2271/problem/A) | [robotOddMoves.cpp](../../ratings/0800/robotOddMoves.cpp) |
 | 900 | [2229C1 - We Be Flipping (Easy Version)](https://codeforces.com/contest/2229/problem/C1) | [weBeFlippingEasyVersion.cpp](../../ratings/0900/weBeFlippingEasyVersion.cpp) |
+| 900 | [2263B - Min Matrices](https://codeforces.com/contest/2263/problem/B) | [minMatrices.cpp](../../ratings/0900/minMatrices.cpp) |
 | 1200 | [1933D - Turtle Tenacity: Continual Mods](https://codeforces.com/contest/1933/problem/D) | [turtleTenacityContinualMods.cpp](../../ratings/1200/turtleTenacityContinualMods.cpp) |
 | 1200 | [2161C - Loyalty](https://codeforces.com/contest/2161/problem/C) | [loyalty.cpp](../../ratings/1200/loyalty.cpp) |
 
