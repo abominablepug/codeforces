@@ -2,7 +2,11 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-*0 solved so far.*
+**1** solved · rating **1000**
+
+| Rating | Problem | Solution |
+| :---: | :--- | :--- |
+| 1000 | [1840C - Ski Resort](https://codeforces.com/contest/1840/problem/C) | [skiResort.cpp](../../ratings/1000/skiResort.cpp) |
 
 ## Suggested Sprint — Rule of Product, Complements & Pair Contributions *(Sprint 1 · 0/4)*
 

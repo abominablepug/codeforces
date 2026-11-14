@@ -2,7 +2,11 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-*0 solved so far.*
+**1** solved · rating **800**
+
+| Rating | Problem | Solution |
+| :---: | :--- | :--- |
+| 800 | [2266B - Three Piles](https://codeforces.com/contest/2266/problem/B) | [threePiles.cpp](../../ratings/0800/threePiles.cpp) |
 
 ## Suggested Sprint — Parity, Symmetry & First-Move Control *(Sprint 1 · 0/4)*
 

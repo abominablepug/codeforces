@@ -2,7 +2,7 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**9** solved · rating **800–1300**
+**10** solved · rating **800–1300**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
@@ -15,6 +15,7 @@
 | 1100 | [2169B - Drifting Away](https://codeforces.com/contest/2169/problem/B) | [driftingAway.cpp](../../ratings/1100/driftingAway.cpp) |
 | 1200 | [1832C - Contrast Value](https://codeforces.com/contest/1832/problem/C) | [contrastValue.cpp](../../ratings/1200/contrastValue.cpp) |
 | 1300 | [2041A - The Bento Box Adventure](https://codeforces.com/contest/2041/problem/A) | [bentoBoxAdventure.cpp](../../ratings/1300/bentoBoxAdventure.cpp) |
+| unrated | [2290B - Stubborn Pen](https://codeforces.com/contest/2290/problem/B) | [stubbornPen.cpp](../../ratings/unrated/stubbornPen.cpp) |
 
 ## Suggested Sprint — Clean State Simulation & Boundary Discipline *(Sprint 1 · 0/4)*
 

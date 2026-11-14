@@ -2,11 +2,13 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**1** solved · rating **1100**
+**3** solved · rating **800–1100**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
+| 800 | [2267A - Turn Into a Palindrome](https://codeforces.com/contest/2267/problem/A) | [turnIntoAPalindrome.cpp](../../ratings/0800/turnIntoAPalindrome.cpp) |
 | 1100 | [1999D - Slavic's Exam](https://codeforces.com/contest/1999/problem/D) | [slavicsExam.cpp](../../ratings/1100/slavicsExam.cpp) |
+| unrated | [2290B - Stubborn Pen](https://codeforces.com/contest/2290/problem/B) | [stubbornPen.cpp](../../ratings/unrated/stubbornPen.cpp) |
 
 ## Suggested Sprint — Run-Length Blocks, Palindromes & 26-Way Scans *(Sprint 1 · 0/4)*
 

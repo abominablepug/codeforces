@@ -2,11 +2,14 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**12** solved · rating **800–1300**
+**15** solved · rating **800–1300**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
 | 800 | [2266A - Good Contest](https://codeforces.com/contest/2266/problem/A) | [goodContest.cpp](../../ratings/0800/goodContest.cpp) |
+| 800 | [2266B - Three Piles](https://codeforces.com/contest/2266/problem/B) | [threePiles.cpp](../../ratings/0800/threePiles.cpp) |
+| 800 | [2267A - Turn Into a Palindrome](https://codeforces.com/contest/2267/problem/A) | [turnIntoAPalindrome.cpp](../../ratings/0800/turnIntoAPalindrome.cpp) |
+| 800 | [2269A - SauSaGe Bank](https://codeforces.com/contest/2269/problem/A) | [sauSaGeBank.cpp](../../ratings/0800/sauSaGeBank.cpp) |
 | 800 | [2276A - Perfect Sandwiches](https://codeforces.com/contest/2276/problem/A) | [perfectSandwiches.cpp](../../ratings/0800/perfectSandwiches.cpp) |
 | 900 | [2229C1 - We Be Flipping (Easy Version)](https://codeforces.com/contest/2229/problem/C1) | [weBeFlippingEasyVersion.cpp](../../ratings/0900/weBeFlippingEasyVersion.cpp) |
 | 1100 | [1948B - Array Fix](https://codeforces.com/contest/1948/problem/B) | [arrayFix.cpp](../../ratings/1100/arrayFix.cpp) |

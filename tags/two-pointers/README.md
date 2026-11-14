@@ -2,10 +2,11 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**4** solved · rating **1100–1300**
+**5** solved · rating **1000–1300**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
+| 1000 | [1840C - Ski Resort](https://codeforces.com/contest/1840/problem/C) | [skiResort.cpp](../../ratings/1000/skiResort.cpp) |
 | 1100 | [2193D - Monster Game](https://codeforces.com/contest/2193/problem/D) | [monsterGame.cpp](../../ratings/1100/monsterGame.cpp) |
 | 1200 | [1982C - Boring Day](https://codeforces.com/contest/1982/problem/C) | [boringDay.cpp](../../ratings/1200/boringDay.cpp) |
 | 1200 | [2161C - Loyalty](https://codeforces.com/contest/2161/problem/C) | [loyalty.cpp](../../ratings/1200/loyalty.cpp) |

@@ -24,6 +24,46 @@
     "completed": "2026-11-09"
   },
   {
+    "id": "2266B",
+    "contestId": 2266,
+    "index": "B",
+    "name": "Three Piles",
+    "rating": 800,
+    "tags": [
+      "games",
+      "greedy",
+      "math"
+    ],
+    "file": "threePiles.cpp",
+    "completed": "2026-11-14"
+  },
+  {
+    "id": "2267A",
+    "contestId": 2267,
+    "index": "A",
+    "name": "Turn Into a Palindrome",
+    "rating": 800,
+    "tags": [
+      "greedy",
+      "strings"
+    ],
+    "file": "turnIntoAPalindrome.cpp",
+    "completed": "2026-11-14"
+  },
+  {
+    "id": "2269A",
+    "contestId": 2269,
+    "index": "A",
+    "name": "SauSaGe Bank",
+    "rating": 800,
+    "tags": [
+      "greedy",
+      "math"
+    ],
+    "file": "sauSaGeBank.cpp",
+    "completed": "2026-11-14"
+  },
+  {
     "id": "2271A",
     "contestId": 2271,
     "index": "A",
@@ -117,6 +157,20 @@
     "completed": "2026-11-10"
   },
   {
+    "id": "1840C",
+    "contestId": 1840,
+    "index": "C",
+    "name": "Ski Resort",
+    "rating": 1000,
+    "tags": [
+      "combinatorics",
+      "math",
+      "two pointers"
+    ],
+    "file": "skiResort.cpp",
+    "completed": "2026-11-14"
+  },
+  {
     "id": "1829E",
     "contestId": 1829,
     "index": "E",
@@ -186,6 +240,19 @@
     ],
     "file": "monsterGame.cpp",
     "completed": "2026-11-07"
+  },
+  {
+    "id": "1420B",
+    "contestId": 1420,
+    "index": "B",
+    "name": "Rock and Lever",
+    "rating": 1200,
+    "tags": [
+      "bitmasks",
+      "math"
+    ],
+    "file": "rockAndLever.cpp",
+    "completed": "2026-11-14"
   },
   {
     "id": "1832C",
@@ -364,5 +431,18 @@
     ],
     "file": "blockSequence.cpp",
     "completed": "2026-11-07"
+  },
+  {
+    "id": "2290B",
+    "contestId": 2290,
+    "index": "B",
+    "name": "Stubborn Pen",
+    "rating": null,
+    "tags": [
+      "implementation",
+      "strings"
+    ],
+    "file": "stubbornPen.cpp",
+    "completed": "2026-11-14"
   }
 ]

@@ -1,0 +1,1 @@
+../../ratings/1000/skiResort.cpp
