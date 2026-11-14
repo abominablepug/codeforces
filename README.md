@@ -1,6 +1,6 @@
 # Codeforces Solutions
 
-**33** solved · **800–1500** rating · target **1500–1600** · **20 / 37** tags
+**34** solved · **800–1500** rating · target **1500–1600** · **20 / 37** tags
 
 ## [By Difficulty](./ratings/README.md)
 
@@ -15,7 +15,7 @@
 | [1400](./ratings/1400/) | 1 |
 | [1500](./ratings/1500/) | 2 |
 | **1600** *(goal)* | 0 |
-| [unrated](./ratings/unrated/) | 1 |
+| [unrated](./ratings/unrated/) | 2 |
 
 ## Suggested Challenges
 
@@ -70,14 +70,14 @@ Inspect vertex degrees (`deg = 1` leaves, `deg = 2` chains/cycles) and component
 
 | Tag | Solved |
 | :--- | :---: |
-| [greedy](./tags/greedy/) | 15 |
+| [greedy](./tags/greedy/) | 16 |
 | [math](./tags/math/) | 13 |
 | [implementation](./tags/implementation/) | 10 |
 | [dp](./tags/dp/) | 7 |
-| [constructive algorithms](./tags/constructive-algorithms/) | 5 |
+| [constructive algorithms](./tags/constructive-algorithms/) | 6 |
+| [sortings](./tags/sortings/) | 5 |
 | [two pointers](./tags/two-pointers/) | 5 |
 | [binary search](./tags/binary-search/) | 4 |
-| [sortings](./tags/sortings/) | 4 |
 | [brute force](./tags/brute-force/) | 3 |
 | [strings](./tags/strings/) | 3 |
 | [bitmasks](./tags/bitmasks/) | 2 |

@@ -2,7 +2,7 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**5** solved · rating **800–1200**
+**6** solved · rating **800–1200**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
@@ -11,6 +11,7 @@
 | 900 | [2263B - Min Matrices](https://codeforces.com/contest/2263/problem/B) | [minMatrices.cpp](../../ratings/0900/minMatrices.cpp) |
 | 1200 | [1933D - Turtle Tenacity: Continual Mods](https://codeforces.com/contest/1933/problem/D) | [turtleTenacityContinualMods.cpp](../../ratings/1200/turtleTenacityContinualMods.cpp) |
 | 1200 | [2161C - Loyalty](https://codeforces.com/contest/2161/problem/C) | [loyalty.cpp](../../ratings/1200/loyalty.cpp) |
+| unrated | [2290C - Books on a Shelf](https://codeforces.com/contest/2290/problem/C) | [booksOnAShelf.cpp](../../ratings/unrated/booksOnAShelf.cpp) |
 
 ## Suggested Sprint — Permutations, Interleaving & Parity Checks *(Sprint 1 · 0/4)*
 

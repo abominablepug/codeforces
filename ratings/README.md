@@ -37,3 +37,4 @@
 | [1500](./1500/) | [1842C - Tenzing and Balls](https://codeforces.com/contest/1842/problem/C) | [tenzingAndBalls.cpp](./1500/tenzingAndBalls.cpp) | 2026-11-08 |
 | [1500](./1500/) | [1881E - Block Sequence](https://codeforces.com/contest/1881/problem/E) | [blockSequence.cpp](./1500/blockSequence.cpp) | 2026-11-07 |
 | [unrated](./unrated/) | [2290B - Stubborn Pen](https://codeforces.com/contest/2290/problem/B) | [stubbornPen.cpp](./unrated/stubbornPen.cpp) | 2026-11-14 |
+| [unrated](./unrated/) | [2290C - Books on a Shelf](https://codeforces.com/contest/2290/problem/C) | [booksOnAShelf.cpp](./unrated/booksOnAShelf.cpp) | 2026-11-14 |

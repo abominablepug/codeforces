@@ -2,7 +2,7 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**4** solved · rating **1100–1300**
+**5** solved · rating **1100–1300**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
@@ -10,6 +10,7 @@
 | 1200 | [1933D - Turtle Tenacity: Continual Mods](https://codeforces.com/contest/1933/problem/D) | [turtleTenacityContinualMods.cpp](../../ratings/1200/turtleTenacityContinualMods.cpp) |
 | 1200 | [2161C - Loyalty](https://codeforces.com/contest/2161/problem/C) | [loyalty.cpp](../../ratings/1200/loyalty.cpp) |
 | 1300 | [2041A - The Bento Box Adventure](https://codeforces.com/contest/2041/problem/A) | [bentoBoxAdventure.cpp](../../ratings/1300/bentoBoxAdventure.cpp) |
+| unrated | [2290C - Books on a Shelf](https://codeforces.com/contest/2290/problem/C) | [booksOnAShelf.cpp](../../ratings/unrated/booksOnAShelf.cpp) |
 
 ## Suggested Sprint — Medians, Order Statistics & Adjacent Gaps *(Sprint 1 · 0/4)*
 

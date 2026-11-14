@@ -444,5 +444,19 @@
     ],
     "file": "stubbornPen.cpp",
     "completed": "2026-11-14"
+  },
+  {
+    "id": "2290C",
+    "contestId": 2290,
+    "index": "C",
+    "name": "Books on a Shelf",
+    "rating": null,
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "sortings"
+    ],
+    "file": "booksOnAShelf.cpp",
+    "completed": "2026-11-14"
   }
 ]
