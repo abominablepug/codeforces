@@ -384,6 +384,19 @@
     "completed": "2026-11-08"
   },
   {
+    "id": "1926D",
+    "contestId": 1926,
+    "index": "D",
+    "name": "Vlad and Division",
+    "rating": 1300,
+    "tags": [
+      "bitmasks",
+      "greedy"
+    ],
+    "file": "vladAndDivision.cpp",
+    "completed": "2026-11-14"
+  },
+  {
     "id": "2041A",
     "contestId": 2041,
     "index": "A",

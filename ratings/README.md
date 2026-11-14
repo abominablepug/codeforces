@@ -32,6 +32,7 @@
 | [1300](./1300/) | [1669H - Maximal AND](https://codeforces.com/contest/1669/problem/H) | [maximalAND.cpp](./1300/maximalAND.cpp) | 2026-11-07 |
 | [1300](./1300/) | [1794C - Scoring Subsequences](https://codeforces.com/contest/1794/problem/C) | [scoringSubsequences.cpp](./1300/scoringSubsequences.cpp) | 2025-11-02 |
 | [1300](./1300/) | [189A - Cut Ribbon](https://codeforces.com/contest/189/problem/A) | [cutRibbon.cpp](./1300/cutRibbon.cpp) | 2026-11-08 |
+| [1300](./1300/) | [1926D - Vlad and Division](https://codeforces.com/contest/1926/problem/D) | [vladAndDivision.cpp](./1300/vladAndDivision.cpp) | 2026-11-14 |
 | [1300](./1300/) | [2041A - The Bento Box Adventure](https://codeforces.com/contest/2041/problem/A) | [bentoBoxAdventure.cpp](./1300/bentoBoxAdventure.cpp) | 2025-11-02 |
 | [1400](./1400/) | [698A - Vacations](https://codeforces.com/contest/698/problem/A) | [vacations.cpp](./1400/vacations.cpp) | 2026-11-08 |
 | [1500](./1500/) | [1842C - Tenzing and Balls](https://codeforces.com/contest/1842/problem/C) | [tenzingAndBalls.cpp](./1500/tenzingAndBalls.cpp) | 2026-11-08 |

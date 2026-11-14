@@ -2,7 +2,7 @@
 
 [← All Tags](../README.md) · [← Dashboard](../../README.md)
 
-**16** solved · rating **800–1300**
+**17** solved · rating **800–1300**
 
 | Rating | Problem | Solution |
 | :---: | :--- | :--- |
@@ -21,6 +21,7 @@
 | 1200 | [2161C - Loyalty](https://codeforces.com/contest/2161/problem/C) | [loyalty.cpp](../../ratings/1200/loyalty.cpp) |
 | 1300 | [1669H - Maximal AND](https://codeforces.com/contest/1669/problem/H) | [maximalAND.cpp](../../ratings/1300/maximalAND.cpp) |
 | 1300 | [1794C - Scoring Subsequences](https://codeforces.com/contest/1794/problem/C) | [scoringSubsequences.cpp](../../ratings/1300/scoringSubsequences.cpp) |
+| 1300 | [1926D - Vlad and Division](https://codeforces.com/contest/1926/problem/D) | [vladAndDivision.cpp](../../ratings/1300/vladAndDivision.cpp) |
 | unrated | [2290C - Books on a Shelf](https://codeforces.com/contest/2290/problem/C) | [booksOnAShelf.cpp](../../ratings/unrated/booksOnAShelf.cpp) |
 
 ## Suggested Sprint — Sorting & Exchange Arguments *(Sprint 1 · 0/4)*

@@ -1,6 +1,6 @@
 # Codeforces Solutions
 
-**34** solved · **800–1500** rating · target **1500–1600** · **20 / 37** tags
+**35** solved · **800–1500** rating · target **1500–1600** · **20 / 37** tags
 
 ## [By Difficulty](./ratings/README.md)
 
@@ -11,7 +11,7 @@
 | [1000](./ratings/1000/) | 1 |
 | [1100](./ratings/1100/) | 5 |
 | [1200](./ratings/1200/) | 7 |
-| [1300](./ratings/1300/) | 4 |
+| [1300](./ratings/1300/) | 5 |
 | [1400](./ratings/1400/) | 1 |
 | [1500](./ratings/1500/) | 2 |
 | **1600** *(goal)* | 0 |
@@ -39,12 +39,12 @@ Define `dp[i]` around the minimal state needed at position `i` and isolate the e
 3. [x] **1500** · [1842C - Tenzing and Balls](https://codeforces.com/contest/1842/problem/C) — [tenzingAndBalls.cpp](./ratings/1500/tenzingAndBalls.cpp)
 4. [ ] **1600** · [1875D - Jellyfish and Mex](https://codeforces.com/contest/1875/problem/D)
 
-### [bitmasks](./tags/bitmasks/) — Bitwise Column Independence (`AND` / `OR` / `XOR`) *(Sprint 1 · 1/4)*
+### [bitmasks](./tags/bitmasks/) — Bitwise Column Independence (`AND` / `OR` / `XOR`) *(Sprint 1 · 2/4)*
 
 Since bitwise operations never carry across positions, analyze the 30 bit columns independently and lock in decisions from MSB down to LSB. Later steps mix bitwise constraints with sums where carries reappear.
 
 1. [x] **1200** · [1420B - Rock and Lever](https://codeforces.com/contest/1420/problem/B) — [rockAndLever.cpp](./ratings/1200/rockAndLever.cpp)
-2. [ ] **1300** · [1926D - Vlad and Division](https://codeforces.com/contest/1926/problem/D)
+2. [x] **1300** · [1926D - Vlad and Division](https://codeforces.com/contest/1926/problem/D) — [vladAndDivision.cpp](./ratings/1300/vladAndDivision.cpp)
 3. [ ] **1400** · [1918C - XOR-distance](https://codeforces.com/contest/1918/problem/C)
 4. [ ] **1500** · [2203C - Test Generator](https://codeforces.com/contest/2203/problem/C)
 
@@ -70,7 +70,7 @@ Inspect vertex degrees (`deg = 1` leaves, `deg = 2` chains/cycles) and component
 
 | Tag | Solved |
 | :--- | :---: |
-| [greedy](./tags/greedy/) | 16 |
+| [greedy](./tags/greedy/) | 17 |
 | [math](./tags/math/) | 13 |
 | [implementation](./tags/implementation/) | 10 |
 | [dp](./tags/dp/) | 7 |
@@ -78,9 +78,9 @@ Inspect vertex degrees (`deg = 1` leaves, `deg = 2` chains/cycles) and component
 | [sortings](./tags/sortings/) | 5 |
 | [two pointers](./tags/two-pointers/) | 5 |
 | [binary search](./tags/binary-search/) | 4 |
+| [bitmasks](./tags/bitmasks/) | 3 |
 | [brute force](./tags/brute-force/) | 3 |
 | [strings](./tags/strings/) | 3 |
-| [bitmasks](./tags/bitmasks/) | 2 |
 | [data structures](./tags/data-structures/) | 2 |
 | [dfs and similar](./tags/dfs-and-similar/) | 2 |
 | [number theory](./tags/number-theory/) | 2 |
